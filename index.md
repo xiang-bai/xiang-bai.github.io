@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ottiou Bai
+title: 13AI
 ---
 
 <div id="home">
