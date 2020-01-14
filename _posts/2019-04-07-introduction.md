@@ -2,7 +2,7 @@
 layout: post
 title:  "简介"
 date:   2019-04-07 10:54:49 +0800
-categories: 数学
+categories: math
 ---
 # 博客简介
 内容是个人的一些读书笔记，和一些数学或者AI遇到的问题的解决办法，或者一些有趣的题目的分享。
