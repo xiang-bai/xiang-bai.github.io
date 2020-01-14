@@ -4,13 +4,6 @@ title: 13AI
 ---
 
 <div id="home">
-  <h1>个人文章列表</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-  
   <h1>所有文章列表</h1>
   <ul class="posts">
     {% for cat in site.categories %}
@@ -18,20 +11,6 @@ title: 13AI
       {% for post in cat[1] %}
         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
-    {% endfor %}
-  </ul>
-  
-  <h1>数学文章列表</h1>
-  <ul class="posts">
-    {% for post in site.categories.math %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-  
-  <h1>AI文章列表</h1>
-  <ul class="posts">
-    {% for post in site.categories.AI %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 
