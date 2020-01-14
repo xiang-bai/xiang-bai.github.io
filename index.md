@@ -11,10 +11,13 @@ title: 13AI
     {% endfor %}
   </ul>
   
-  <h1>数学文章列表</h1>
+  <h1>所有文章列表</h1>
   <ul class="posts">
     {% for cat in site.categories %}
-    <h2> {{ cat[0] }} </h2>
+      <h2> {{ cat[0] }}文章列表 </h2>
+      {% for post in cat[1] %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
     {% endfor %}
   </ul>
   
