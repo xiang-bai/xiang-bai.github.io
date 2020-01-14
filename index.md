@@ -9,12 +9,8 @@ title: 13AI
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
-    {% for category in site.categories %}
-      <li><span>category[0]</span></li>
-      {% for post in category[0] %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    {% endfor %}
+    
+    
   </ul>
 
   <h1>好文推荐</h1>
