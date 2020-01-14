@@ -7,9 +7,13 @@ title: 13AI
   <h1>个人文章列表</h1>
   <ul class="posts">
     {% for post in site.posts %}
-    {% if post.categories == math %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endif %}
+    {% endfor %}
+    {% for category in site.categories %}
+      <li><span>category[0]</span></li>
+      {% for post in category[0] %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
     {% endfor %}
   </ul>
 
