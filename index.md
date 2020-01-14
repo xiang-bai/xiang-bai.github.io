@@ -4,7 +4,6 @@ title: 13AI
 ---
 
 <div id="home">
-  <h1>所有文章列表</h1>
   <ul class="posts">
     {% for cat in site.categories %}
       <h2> {{ cat[0] }}文章列表 </h2>
