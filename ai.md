@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 13AI
+title: AI
 ---
 
 <div id="home">
