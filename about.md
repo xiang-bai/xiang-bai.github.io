@@ -1,18 +1,11 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+作者：
+数学学者，曾是ai工程师，研究兴趣：PDEs，调和分析，分析，代数图论，统计分析，深度学习，强化学习，传统算法优化。
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+博客内容：
+分享作者的数学和人工智能笔记，已经一些经验和想法。
