@@ -10,6 +10,12 @@ title: 13AI
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
     
+    {% for category in site.categories %}
+      <li><span>{{ category[0] | date_to_string }}</span></li>
+      {% for post in category[1] %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    {% endfor %}
     
   </ul>
 
