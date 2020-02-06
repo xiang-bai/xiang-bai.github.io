@@ -162,13 +162,13 @@ ul.posts {
 
   #post ul,
   #post ol {
-    margin-left: 0.5em;
+    margin-left: 1.35em;
   }
 
   #post code {
     border: 1px solid #ddd;
     background-color: #eef;
-    font-size: 85%;
+    font-size: 95%;
     padding: 0 .2em;
   }
 
