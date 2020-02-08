@@ -40,8 +40,8 @@ $$B_{r}(x)=\{y:d(x,y)< r \},\ \ \bar{B} _ {r}(x)=\{y:d(x,y)\le r \}.$$
 (4) 对任意$a\in X$, 都存在$b\in X$使$a+b =0$，$b$称为$a$的负元素，记为$-a$;  
 (5) 对$\Phi$中单位元$1$，有$1a=a$$(a\in X)$;  
 (6) 对任意$\alpha, \beta \in \Phi$, $a\in X$有$(\alpha\beta)a=\alpha(\beta a)$;   
-(7) 对任意$\alpha, \beta \in \Phi$, $a\in X$有$(\alpha+\beta)a=\alpha a +\beta a$; 
-8) 对任意$\alpha\in \Phi$, $a,b\in X$有$\alpha (a+b)=\alpha a+\alpha b$;
+(7) 对任意$\alpha, \beta \in \Phi$, $a\in X$有$(\alpha+\beta)a=\alpha a +\beta a$;   
+(8) 对任意$\alpha\in \Phi$, $a,b\in X$有$\alpha (a+b)=\alpha a+\alpha b$;
 称$X$为向量空间。  
 
 - **子空间**：如果$Y\subset X$, 且$Y$也是向量空间，称$Y$为$X$子空间。
@@ -109,8 +109,8 @@ $$d(x+z,y+z)=d(x,y).$$
 
 ### 分离性质
 - **定理**：假设$K,C$是拓扑向量空间$X$的子集，$K$是紧集，$C$是闭集，且$K\cap C= \varnothing$. 则存在$0$的邻域$V$满足
-$$(K+V)\cap (C+V)=\varnothing.$$
- **注**： 注意$K+V$是所有$x+V$的并集$x\in K$，因此$K+V$是包含$K$的开集。因此，定理意味存在包含$K$和$C$的互不相交的开集。
+$$(K+V)\cap (C+V)=\varnothing.$$  
+ **注**： 注意$K+V$是所有$x+V$的并集$x\in K$，因此$K+V$是包含$K$的开集。因此，定理意味存在包含$K$和$C$的互不相交的开集。  
  **证明**：
 
 ### 线性映射
