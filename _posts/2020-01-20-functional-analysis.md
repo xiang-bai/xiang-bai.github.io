@@ -49,7 +49,6 @@ $$
 
 - **子空间**：如果$Y\subset X$, 且$Y$也是向量空间，称$Y$为$X$子空间。
 - **子空间等价命题**：$Y$为向量空间$X$的子空间等价于任意标量$\alpha,\beta$有
-
 $$\alpha Y +\beta Y\subset Y.$$
 
 
@@ -113,7 +112,6 @@ $$T_a(x) = a+x,\ \ \ M_{\lambda}(x)=\lambda x,\ \ \ (x\in X)$$
 - **向量拓扑是平移不变的**：向量拓扑是平移不变的(简称为不变)：集合$E\subset X$是开集等价于它的每一个平移变换$a+E$是开的。因此$\tau$完全由任意的局部基决定。
 - **局部基**：在拓扑向量空间下，局部基将总是指$0$点的局部基。因此，拓扑向量空间$X$的局部基是$0$的一个邻域族$\mathcal{B}$，每一个邻域为$\mathcal{B}$的一个元素。于是$X$的开集是$\mathcal{B}$中元素的并集。
 - **距离不变性**：向量空间$X$的距离$d$被称为不变的，如果对于任意的$x,y,z\in X$有
-
 $$d(x+z,y+z)=d(x,y).$$
 
 
@@ -121,52 +119,34 @@ $$d(x+z,y+z)=d(x,y).$$
 
 ### 分离性质
 - **定理**：假设$K,C$是拓扑向量空间$X$的子集，$K$是紧集，$C$是闭集，且$K\cap C= \varnothing$. 则存在$0$的邻域$V$满足   
-
- $$(K+V)\cap (C+V)=\varnothing.$$  
-
+ $$(K+V)\cap (C+V)=\varnothing.$$   
  **注**： 注意$K+V$是所有$x+V$的并集$x\in K$，因此$K+V$是包含$K$的开集。因此，定理意味存在包含$K$和$C$的互不相交的开集。  
  **证明**：先介绍如下命题，在$X$中如果$W$是$0$的一个邻域，则存在$0$的对称邻域$U$(即$U=-U$)满足，$U+U\subset W$。 
  先证明上述命题，注意到$0+0=0$，由加法的连续性，存在$0$的邻域$V_1,V_2$满足$V_1+V_2\subset W$. 如果取    
-
- $$U=V_1\cap V_2\cap (-V_1)\cap (-V_2),$$  
-
+ $$U=V_1\cap V_2\cap (-V_1)\cap (-V_2),$$   
  则$U$满足上述命题的要求。
  在上述命题中，$U$可以视作一个$W$，故存在$0$的对称邻域$U$满足   
-
- $$U+U+U+U\subset W.$$  
-
+ $$U+U+U+U\subset W.$$   
  明显可以一直这样做下去。  
  如果$K=\varnothing$，则$K+V=\varnothing$，故定理的结论明显。
  下面考虑$K\neq \varnothing$，一个点$x\in K$。
  由于$C$是闭集，故$C$的补集$X-C$是开集，又$x\notin C$有$x\in X-C$，再由拓扑的平移不变性和上述命题有，存在$0$的对称邻域满足  
-
- $$x+V_x+V_x+V_x\subset X-C,$$  
-
+ $$x+V_x+V_x+V_x\subset X-C,$$   
  即$x+V_x+V_x+V_x$与$C$不相交，再由$V_x$的对称性有  
-
- $$(x+V_x+V_x)\cap (C+V_x)=\varnothing,$$  
-
+ $$(x+V_x+V_x)\cap (C+V_x)=\varnothing,$$   
  由于$K$是紧集，故存在$x_1,x_2,\cdots,x_n \in K$，满足  
-
  $$K\subset (x_1+V_{x_1})\cup \cdots \cup (x_n+V_{x_n}),$$   
-
  取$V=V_{x_1}\cap \cdots \cap V_{x_n}$. 则  
-
  $$K+V \subset \bigcup\limits_{i=1}^{n}(x_i+V_{x_i}+V) \subset x_i+V_{x_i}+V_{x_i},$$  
-
  而又有$C+V \subset C+V_{x_i}$，结合前面的公式有  
  $$(K+V) \cap (C+V) =\varnothing.$$   
  证明完成。$\blacksquare$ 
 
 - **定理**：如果$\mathcal{B}$是拓扑向量空间$X$的局部基，则任意的$S\in \mathcal{B}$，存在$E\in \mathcal{B}$满足，$E$的闭包$\bar{E}$包含于$S$。
  **证明**：由于$S$为开集，故它的补集$S^{c}$为闭集，去$K=\{x\}(x\in S)$，则$S\cap K=\varnothing$. 又$K$为紧集，故存在$0$的邻域$V$满足， 
-
  $$(K+V)\cap (S^c+V)=\varnothing.$$
-
  又因为$S^c+V$是开集，故$K+V=x+V$的闭包也与$S^c+V$不相交。而$x+V$是开集，故存在$\mathcal{B}$中元素$E$包含于$x+V$，明显有  
-
  $$\bar{E}\subset \overline{x+V}\subset S.$$
-
  证明完毕。$\blacksquare$
 
 - **定理**：每一个拓扑向量空间是一个Hausdorff空间。
