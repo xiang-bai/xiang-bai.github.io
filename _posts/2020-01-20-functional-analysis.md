@@ -54,11 +54,14 @@ $$\alpha Y +\beta Y\subset Y.$$
 
 
 - **凸的**：如果向量空间$X$的子集$C\subset X$，满足
-$$tC + (1-t)C\subset C, \ \ \  (0\le t\le 1),$$
+$$
+tC + (1-t)C\subset C, \ \ \  (0\le t\le 1),
+$$
 称$C$为凸的。
 - **均衡的**：如果向量空间$X$的子集$B\subset X$，满足
-
-$$\alpha B\subset B, \ \ \ \forall \alpha \in \Phi(|\alpha |\le 1),$$   
+$$
+\alpha B\subset B, \ \ \ \forall \alpha \in \Phi(|\alpha |\le 1),
+$$   
 称$B$为均衡的。
 - **维数**：如果向量空间$X$有一组基$\{u_1,u_2,\cdots,u_n\}$，则称$X$为$n$维的。
 
