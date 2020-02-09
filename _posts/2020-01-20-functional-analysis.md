@@ -108,10 +108,58 @@ $$d(x+z,y+z)=d(x,y).$$
 #### 拓扑向量空间的类型
 
 ### 分离性质
-- **定理**：假设$K,C$是拓扑向量空间$X$的子集，$K$是紧集，$C$是闭集，且$K\cap C= \varnothing$. 则存在$0$的邻域$V$满足
+- **定理**：假设$K,C$是拓扑向量空间$X$的子集，$K$是紧集，$C$是闭集，且$K\cap C= \varnothing$. 则存在$0$的邻域$V$满足  
 $$(K+V)\cap (C+V)=\varnothing.$$  
  **注**： 注意$K+V$是所有$x+V$的并集$x\in K$，因此$K+V$是包含$K$的开集。因此，定理意味存在包含$K$和$C$的互不相交的开集。  
- **证明**：下介绍一个命题如下：
+ **证明**：先介绍如下命题，在$X$中如果$W$是$0$的一个邻域，则存在$0$的对称邻域$U$(即$U=-U$)满足，$U+U\subset W$。 
+ 先证明上述命题，注意到$0+0=0$，由加法的连续性，存在$0$的邻域$V_1,V_2$满足$V_1+V_2\subset W$. 如果取    
+ $$U=V_1\cap V_2\cap (-V_1)\cap (-V_2),$$  
+ 则$U$满足上述命题的要求。
+
+ 在上述命题中，$U$可以视作一个$W$，故存在$0$的对称邻域$U$满足    
+ $$U+U+U+U\subset W.$$  
+ 明显可以一直这样做下去。  
+ 如果$K=\varnothing$，则$K+V=\varnothing$，故定理的结论明显。
+ 下面考虑$K\neq \varnothing$，一个点$x\in K$。
+ 由于$C$是闭集，故$C$的补集$X-C$是开集，又$x\notin C$有$x\in X-C$，再由拓扑的平移不变性和上述命题有，存在$0$的对称邻域满足  
+ $$x+V_x+V_x+V_x\subset X-C,$$  
+ 即$x+V_x+V_x+V_x$与$C$不相交，再由$V_x$的对称性有  
+ $$(x+V_x+V_x)\cap (C+V_x)=\varnothing,$$  
+ 由于$K$是紧集，故存在$x_1,x_2,\cdots,x_n \in K$，满足  
+ $$K\subset (x_1+V_{x_1})\cup \cdots \cup (x_n+V_{x_n}),$$   
+ 取$V=V_{x_1}\cap \cdots \cap V_{x_n}$. 则  
+ $$K+V \subset \bigcup\limits_{i=1}^{n}(x_i+V_{x_i}+V) \subset x_i+V_{x_i}+V_{x_i},$$  
+ 而又有$C+V \subset C+V_{x_i}$，结合前面的公式有  
+ $$(K+V) \cap (C+V) =\varnothing.$$   
+ 证明完成。$\blacksquare$ 
+
+- **定理**：如果$\mathcal{B}$是拓扑向量空间$X$的局部基，则任意的$S\in \mathcal{B}$，存在$E\in \mathcal{B}$满足，$E$的闭包$\bar{E}$包含于$S$。
+ **证明**：由于$S$为开集，故它的补集$S^{c}$为闭集，去$K=\{x\}(x\in S)$，则$S\cap K=\varnothing$. 又$K$为紧集，故存在$0$的邻域$V$满足，  
+ $$(K+V)\cap (S^c+V)=\varnothing.$$
+ 又因为$S^c+V$是开集，故$K+V=x+V$的闭包也与$S^c+V$不相交。而$x+V$是开集，故存在$\mathcal{B}$中元素$E$包含于$x+V$，明显有  
+ $$\bar{E}\subset \overline{x+V}\subset S.$$
+ 证明完毕。$\blacksquare$
+
+- **定理**：每一个拓扑向量空间是一个Hausdorff空间。
+ **证明**：任意取空间上的两个点明显可视作一个是紧集，一个是闭集，故两个点存在不相交的邻域。$\blacksquare$
+
+- **闭包等价刻画**：对于拓扑空间$X$，$E$是$X$上的子集，则$ p\in \bar{E}$等价于$p$的任意邻域都与$E$相交。  
+ **证明**： 如果$p\in E$明显$p$的任意邻域都与$E$相交，下面考虑$p\notin E$，设$S$为$p$的邻域，则$S$的补集$S^c$为闭集，而$x\notin S^c$故$E\nsubseteq S^c$，故$S\cap E \neq \varnothing$。  
+ 再证反方向，如果$p$的任意邻域都与$E$相交，假设存在闭集$S$满足$E\subset S$，且$p\notin S$，故$p\in S^c$，又$S^c$为开集，故$S^c \cap E \neq \varnothing$，产生矛盾，证明完毕。$\blacksquare$
+
+- **定理**：设$X$是拓扑向量空间，则  
+ (a). 如果$A\subset X$，则$\bar{A}=\bigcap (A+V)$，交集中$V$跑遍所有$0$的邻域。  
+ (b). 如果$A\subset X$且$B\subset X$，则$\bar{A}+\bar{B}\subset \overline{A+B}$。  
+ (c). 如果$Y$是$X$的子空间，则$\bar{Y}$也是。  
+ (d). 如果$C$是$X$上的凸子集，则$\bar{C}$和$C^{\circ}$也是。  
+ (e). 如果$B$是均衡子集，则$\bar{B}$也是，如果额外有$0\in B^{\circ}$，有$B^{\circ}$也是均衡的。  
+ (f). 如果$E$是有界子集，则$\bar{E}$也是。  
+ **证明**：
+ 证明完毕。$\blacksquare$
+
+
+
+
 
 ### 线性映射
 
@@ -129,7 +177,7 @@ $$(K+V)\cap (C+V)=\varnothing.$$
 
 ### 习题
 
-
+<!--  
 
 ## 完备性
 
@@ -200,5 +248,5 @@ $$(K+V)\cap (C+V)=\varnothing.$$
 
 ### 习题
 
-
+-->
 
