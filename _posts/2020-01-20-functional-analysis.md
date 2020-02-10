@@ -77,7 +77,7 @@ $$
 - **内部**：$E$的内部$E^{\circ}$是$E$的所有开子集的并集。
 - **邻域**：点$p\in S$的邻域是任意包含$p$的开集。
 - **Hausdorff空间**：如果$S$上不同的点有不相交的领域，称$(S,\tau)$是Hausdorff空间，$\tau$是Hausdorff拓扑。
-- **紧的**：如果集合$K\subset S$的一个开覆盖都有有限子覆盖，称$K$是紧的。
+- **紧的**：如果集合$K\subset S$的任意一个开覆盖都有有限子覆盖，称$K$是紧的。(注意任意性。)
 - **基**：对于一个族$\tau'\subset \tau$，如果$\tau$上的元素都是$\tau'$中元素的并集，则称$\tau'$为$\tau$的一个基。
 - **局部基**：对于点$p$的邻域族$\gamma$，如果$p$的任意邻域都包含$\gamma$的元素，则称$\gamma$为$p$点的局部基。
 - **拓扑继承**：如果$E\subset S$，并且$\sigma$是所有$E\cap V$($V\in \tau$)组成的族，则$\sigma$是$E$的拓扑，称为$E$继承于$S$的拓扑。
@@ -97,7 +97,7 @@ $$V_1+V_2\subset V.$$
 类似乘法的连续是$\Phi \times X$到$X$的映射：
 $$(\alpha, x)\to \alpha x$$
 是连续的。即，如果$x\in X$，$\alpha$是标量，$V$是$\alpha x$的邻域，则存在某个$r>0$和$x$的某个邻域$W$满足任意的$|\beta-\alpha|< r $有$\beta W\subset V$.
-- **有界**：对于拓扑向量空间$X$的子集$E$, 如果$0$的任意邻域都存在$s>0$满足任意$t>s$有$E\subset tV$.
+- **有界**：对于拓扑向量空间$X$的子集$E$, 如果$0$的任意邻域$V$都存在$s>0$满足任意$t>s$有$E\subset tV$.
 
 #### 不变性
 
@@ -149,12 +149,11 @@ $$d(x+z,y+z)=d(x,y).$$
  $$\bar{E}\subset \overline{x+V}\subset S.$$
  证明完毕。$\blacksquare$
 
-- **定理**：每一个拓扑向量空间是一个Hausdorff空间。
+- **定理**：每一个拓扑向量空间是一个Hausdorff空间。   
  **证明**：任意取空间上的两个点明显可视作一个是紧集，一个是闭集，故两个点存在不相交的邻域。$\blacksquare$
 
 - **闭包等价刻画**：对于拓扑空间$X$，$E$是$X$上的子集，则$ p\in \bar{E}$等价于$p$的任意邻域都与$E$相交。  
- **证明**： 如果$p\in E$明显$p$的任意邻域都与$E$相交，下面考虑$p\notin E$，设$S$为$p$的邻域，则$S$的补集$S^c$为闭集，而$x\notin S^c$故$E\nsubseteq S^c$，故$S\cap E \neq \varnothing$。  
- 再证反方向，如果$p$的任意邻域都与$E$相交，假设存在闭集$S$满足$E\subset S$，且$p\notin S$，故$p\in S^c$，又$S^c$为开集，故$S^c \cap E \neq \varnothing$，产生矛盾，证明完毕。$\blacksquare$
+ **证明**： 如果$p\in E$明显$p$的任意邻域都与$E$相交，下面考虑$p\notin E$，设$S$为$p$的邻域，则$S$的补集$S^c$为闭集，而$x\notin S^c$故$E\nsubseteq S^c$，故$S\cap E \neq \varnothing$。再证反方向，如果$p$的任意邻域都与$E$相交，假设存在闭集$S$满足$E\subset S$，且$p\notin S$，故$p\in S^c$，又$S^c$为开集，故$S^c \cap E \neq \varnothing$，产生矛盾，证明完毕。$\blacksquare$
 
 - **定理**：设$X$是拓扑向量空间，则  
  (a). 如果$A\subset X$，则$\bar{A}=\bigcap (A+V)$，交集中$V$跑遍所有$0$的邻域。  
@@ -163,6 +162,34 @@ $$d(x+z,y+z)=d(x,y).$$
  (d). 如果$C$是$X$上的凸子集，则$\bar{C}$和$C^{\circ}$也是。  
  (e). 如果$B$是均衡子集，则$\bar{B}$也是，如果额外有$0\in B^{\circ}$，有$B^{\circ}$也是均衡的。  
  (f). 如果$E$是有界子集，则$\bar{E}$也是。  
+ **证明**：  
+ (a). $x\in \bar{A}$等价于所有$0$的邻域$V$，$(x+V)\cap A\neq \varnothing $，进而等价于所有$0$的邻域$V$，$x\in (A-V) $.  
+ (b). 任取$a\in A， b\in B$，对于$a+b$的邻域$W$，由连续性存在$a$的邻域$W_1$，$b$的邻域$W_2$，满足$W_1 +W_2 \subset W$，又因为$W_1\cap A\neq \varnothing$, $W_2 \cap B\neq \varnothing$，则$W\cap (A+B)\neq \varnothing$，故$a+b\in \overline{A+B}$.   
+ (c). 假设$\alpha,\beta$是两个标量，则$\alpha \bar{Y}=\overline{\alpha Y}$，故  
+ $$\alpha \bar{Y}+\beta \bar{Y}=\overline{\alpha Y}+\overline{\beta Y}\subset \overline{\alpha Y+\beta Y}\subset \bar{Y}.$$  
+ 对于凸子集的闭包也是凸子集和均衡集的闭包也是均衡集的证明类似，下面省略。
+ (d). 如果$0< t < 1$，有
+ $$tC^{\circ}+(1-t)C^{\circ}\subset C.$$
+ 因为左边的两个集合是开集，故他们的和也是开集。又$C$的每一个开集都是$C^{\circ}$的子集，故$C^{\circ}$是凸的。
+ (e). 如果$0<|\alpha|\le 1$，由于$x \to \alpha x$是同胚映射，有$\alpha B^{\circ} = (\alpha B)^{\circ}$，进而再由均衡性有$\alpha B^{\circ} \subset \alpha B \subset B$。而$\alpha B$是开集，故$\alpha B^{\circ} \subset B^{\circ}$。如果$0\in B^{\circ}$，故$\alpha = 0$时也有$\alpha B^{\circ} \subset B^{\circ}$。因此，$B^{\circ}$是均衡的。
+ (f). 设$V$是$0$的邻域，则存在$0$的邻域$W$满足$\bar{W}\subset V$。又$E$ 有界，故存在$t>0$满足$E\subset tW$，进而$\bar{E}\subset t\bar{W} \subset tV$。
+ 证明完毕。$\blacksquare$
+
+
+- **定理**：再拓扑向量空间$X$中，  
+ (a). $0$的每一个邻域包含一个$0$的均衡邻域；
+ (b). $0$的每一个凸邻域包含一个$0$的均衡凸邻域。
+ **证明**：
+ 证明完毕。$\blacksquare$
+ **推理**：  
+ (a). 每一个拓扑向量空间有一个均衡的局部基。
+ (b). 每一个局部凸空间有一个均衡的凸局部基。
+
+- **定理**：在拓扑向量空间$X$中，设$V$是$0$的邻域，
+ (a). 如果$0< r_1 < r_2 <\cdots $满足当$n\to \infty$，$r_n\to \infty$，则
+ $$X=\bigcup\limits_{n=1}^{\infty}r_n V.$$
+ (b). $X$的每一个紧子集$K$是有界的。
+ (c). 如果$\delta_1>\delta_2>\cdots$满足当$n\to \infty$时$\delta_n\to 0$，且$V$有界，则族$ \{ \delta_n V :n=1,2,\cdots \}$是$X$的局部基。
  **证明**：
  证明完毕。$\blacksquare$
 
