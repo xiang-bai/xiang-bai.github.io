@@ -18,4 +18,19 @@ tags: analysis
  $$a(z\bar{z})+\beta z+\bar{\beta}\bar{z}+d=0,$$
  其中，$\beta=\frac{b-ic}{2}$.
 
+``` mermaid
+graph LR;
+  A-->B
+  B-->C
+  C-->D
+  D-->A
+```
+<div class="firstTest mermaid">
+    graph LR;
+    A--合并-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
+
 ## 第二章 复变函数
