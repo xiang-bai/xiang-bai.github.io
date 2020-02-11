@@ -10,4 +10,4 @@ tags: analysis
 
 ## 简介
 
-文章是<a href="/complex-analysis">复变函数基础</a>中习题的解答。
+文章是<a href="complex-analysis">复变函数基础</a>中习题的解答。
