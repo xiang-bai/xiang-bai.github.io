@@ -23,16 +23,16 @@ tags: analysis
 - **实部和虚部**：对于复数$z=x+yi$，$x,y$分别称为$z$的实部和虚部，记作$x=\Re{z} $和$y=\Im{z}$
 - **复平面**：由于$z=x+yi \to (x,y)$是$\mathbb{C}$到$\mathbb{R}^2$的双射，故称平面$\mathbb{R}^2$为复平面$\mathbb{C}$，每个点$(x,y)$称为$z=x+yi$。
 - **复数向量表示**：复数$z=x+yi$可以视作实轴和虚轴投影为$x$和$y$的任意向量。
-- **复数的模**：把向量$z=x+yi$的长度称为$z$的模，记作$|z|$。显然$|z|=\sqrt{x^2+y^2}=\sqrt{z\bar{z}}$。
+- **复数的模**：把向量$z=x+yi$的长度称为$z$的模，记作$\vert z\vert$。显然$\vert z\vert=\sqrt{x^2+y^2}=\sqrt{z\bar{z}}$。
 - **辐角和主值**：向量$z$与实轴的夹角称为$z$的辐角，记作$\theta$。显然$\theta$有无穷多个值，记作$\text{Arg }{z}=\theta +2k\pi$($k\in \mathbb{Z}$)。$\text{Arg }{z}$中只有一个值$\alpha$满足$-\pi < \alpha \le \pi$，叫做$z$的主值记作$\arg{z}$。
-- **复数三角表示**：复数$z=x+yi$可以通过辐角来表示，即$z=|z|(\cos{\text{Arg }z}+i\sin{\text{Arg } z})$.
+- **复数三角表示**：复数$z=x+yi$可以通过辐角来表示，即$z=\vert z\vert(\cos{\text{Arg }z}+i\sin{\text{Arg } z})$.
 - **共轭**：复数$z=x+iy$的共轭为$x-iy$，记作$\bar{z}$。显然$\text{Arg }z=-\text{Arg }z$.
 - **乘幂**：设复数$z\neq 0$和正整数$n$，有
- $$z^{n}=|z|^n\Big{(}\cos(n\text{Arg }z)+i\sin(n\text{Arg } z)\Big{)}$$
+ $$z^{n}=\vert z\vert^n\Big{(}\cos(n\text{Arg }z)+i\sin(n\text{Arg } z)\Big{)}$$
  显然上式中$n=0$，$z^0=1$也成立。对于负数，$z^{-n}=\frac{1}{z^n}$，故
- $$z^{-n}=|z|^{-n}\Big{(}\cos(-n\text{Arg }z)+i\sin(-n\text{Arg } z)\Big{)}$$
+ $$z^{-n}=\vert z\vert^{-n}\Big{(}\cos(-n\text{Arg }z)+i\sin(-n\text{Arg } z)\Big{)}$$
  在上面做变量替换$z=w^n$，有
- $$z^{\frac{1}{n}}=|z|^{\frac{1}{n}}\Big{(}\cos(\frac{1}{n}\text{Arg }z)+i\sin(\frac{1}{n}\text{Arg } z)\Big{)}$$
+ $$z^{\frac{1}{n}}=\vert z\vert^{\frac{1}{n}}\Big{(}\cos(\frac{1}{n}\text{Arg }z)+i\sin(\frac{1}{n}\text{Arg } z)\Big{)}$$
 - **De Moivre(棣莫弗)公式**：
  $$(\cos \theta +i\sin \theta)^n=\cos n\theta+i\sin n\theta.$$
 - **球极**：在三维空间，把$xOy$平面看作$z=z+iy$平面，考虑球面$S$
@@ -46,7 +46,7 @@ tags: analysis
  (a). $D$为开集；
  (b). $D$满足连通性，即$D$中任意两个有限点，可以用有限个连接的线段构成的折线连接起来，并且折线上的点全部属于$D$；
  则称$D$为区域。如果$z(a)=z(b)$，称为约当闭曲线。
-- **约当曲线**：设$z=z(t)(a\le t\le b)$的实部和虚部在$[a,b]$上都关于$t$连续，则集合$\{z(t)|t\in[a,b]\}$称为一条连续曲线。此外，如果不同两点$t_1,t_2\in[a,b]\big{(}(t_1,t_2)\neq (a,b)\big{)}$满足$z(t_1)\neq z(t_2)$，那么称$z=z(t)(a\le t\le b)$为简单连续曲线，或者约当曲线。
+- **约当曲线**：设$z=z(t)(a\le t\le b)$的实部和虚部在$[a,b]$上都关于$t$连续，则集合$\{z(t)\vert t\in[a,b]\}$称为一条连续曲线。此外，如果不同两点$t_1,t_2\in[a,b]\big{(}(t_1,t_2)\neq (a,b)\big{)}$满足$z(t_1)\neq z(t_2)$，那么称$z=z(t)(a\le t\le b)$为简单连续曲线，或者约当曲线。
 - **内区域与外区域**：任何一条约当闭曲线将整个平面分成两个区域，有界的一个称为内区域，无界的称为外区域。
 - **光滑（逐段光滑）曲线**：对于连续曲线$z=z(t)(a\le t\le b)$，如果它的实部和虚部有连续导数，并且$z'(t)\neq 0$，则称为光滑曲线。通过有限条光滑曲线连接成的曲线称为逐段光滑曲线。
 - **单连通区域和多连通区域**：设$D$为复平面$\mathbb{C}$上的区域，如果$D$内任何简单闭曲线的内区域中每一点都属于$D$，那么$D$称为单连通区域。不是单连通的区域称为多连通区域。对于$\mathbb{C}_ {\infty}$，单连通区域要求简单闭曲线的内区域或外区域的每个点都属于$D$.
@@ -66,11 +66,12 @@ tags: analysis
 
 - **习题1.4**：做复平面$\mathbb{C}$上不同两点$a,b$的直线和不同不共线三点$a,b,c$的圆的表达式。
 - **习题1.5**：求$\sqrt[4]{1+i}$的所有值。
-- **习题1.6**：集合$\{z|(1-i)z+(1+i)\bar{z}>0\}$是一半平面，是一个单连通无界区域，边界为直线$(1-i)z+(1+i)\bar{z}=0$，即$x+y=0$。
-- **习题1.7**：集合$\{z|2<\Re{z}<3\}$为一垂直带形，它是单连通无界区域，其边界为直线$\Re{z}=2$和$\Re{z}=3$。
-- **习题1.8**：集合$\{z|2<\arg{z-i}<3\}$为一角形，它是单连通无界区域，其边界为半射线$\arg{z-i}=2$和$\arg{z-i}=3$。
-- **习题1.9**：集合$\{z|2<|{z-i}|<3\}$为一角形，它是多连通有界区域，其边界为圆$|{z-i}|=2$和$|{z-i}|=3$。
-- **习题1.10**：在$\mathbb{C}_ {\infty}$，集合$\{ z|2 < |z| \le + \infty \}$和$\{ z|2< |z|< +\infty \}$分别是单连通和多连通的无界区域，边界分别是$\{z||z|=2\}$和$\{z||z|=2\}\cup \{\infty\}$。
+- **习题1.6**：集合$\{z\mid (1-i)z+(1+i)\bar{z}>0\}$是一半平面，是一个单连通无界区域，边界为直线$(1-i)z+(1+i)\bar{z}=0$，即$x+y=0$。
+- **习题1.7**：集合$\{z\mid 2<\Re{z}<3\}$为一垂直带形，它是单连通无界区域，其边界为直线$\Re{z}=2$和$\Re{z}=3$。
+- **习题1.8**：集合$\{z\mid 2<\arg{z-i}<3\}$为一角形，它是单连通无界区域，其边界为半射线$\arg{z-i}=2$和$\arg{z-i}=3$。
+- **习题1.9**：集合$\{z\mid 2<\vert{z-i}\vert<3\}$为一角形，它是多连通有界区域，其边界为圆$\vert{z-i}\vert=2$和$\vert{z-i}\vert=3$。
+- **习题1.10**：在$\mathbb{C}_ {\infty}$，集合$\{ z\mid 2 < \vert z\vert \le + \infty \}$和$\{ z\mid 2< \vert z\vert< +\infty \}$分别是单连通和多连通的无界区域，边界分别是$\{z\mid \vert z\vert=2\}$和$\{z\mid \vert z\vert=2\}\cup \{\infty\}$。
+
 
 
 
