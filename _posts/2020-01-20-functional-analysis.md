@@ -166,30 +166,30 @@ $$d(x+z,y+z)=d(x,y).$$
  (a). $x\in \bar{A}$等价于所有$0$的邻域$V$，$(x+V)\cap A\neq \varnothing $，进而等价于所有$0$的邻域$V$，$x\in (A-V) $.  
  (b). 任取$a\in A， b\in B$，对于$a+b$的邻域$W$，由连续性存在$a$的邻域$W_1$，$b$的邻域$W_2$，满足$W_1 +W_2 \subset W$，又因为$W_1\cap A\neq \varnothing$, $W_2 \cap B\neq \varnothing$，则$W\cap (A+B)\neq \varnothing$，故$a+b\in \overline{A+B}$.   
  (c). 假设$\alpha,\beta$是两个标量，则$\alpha \bar{Y}=\overline{\alpha Y}$，故  
- $$\alpha \bar{Y}+\beta \bar{Y}=\overline{\alpha Y}+\overline{\beta Y}\subset \overline{\alpha Y+\beta Y}\subset \bar{Y}.$$  
- 对于凸子集的闭包也是凸子集和均衡集的闭包也是均衡集的证明类似，下面省略。
+ $$\alpha \bar{Y}+\beta \bar{Y}=\overline{\alpha Y}+\overline{\beta Y}\subset \overline{\alpha Y+\beta Y}\subset \bar{Y}.$$     
+ 对于凸子集的闭包也是凸子集和均衡集的闭包也是均衡集的证明类似，下面省略。  
  (d). 如果$0< t < 1$，有
  $$tC^{\circ}+(1-t)C^{\circ}\subset C.$$
- 因为左边的两个集合是开集，故他们的和也是开集。又$C$的每一个开集都是$C^{\circ}$的子集，故$C^{\circ}$是凸的。
- (e). 如果$0<|\alpha|\le 1$，由于$x \to \alpha x$是同胚映射，有$\alpha B^{\circ} = (\alpha B)^{\circ}$，进而再由均衡性有$\alpha B^{\circ} \subset \alpha B \subset B$。而$\alpha B$是开集，故$\alpha B^{\circ} \subset B^{\circ}$。如果$0\in B^{\circ}$，故$\alpha = 0$时也有$\alpha B^{\circ} \subset B^{\circ}$。因此，$B^{\circ}$是均衡的。
+ 因为左边的两个集合是开集，故他们的和也是开集。又$C$的每一个开集都是$C^{\circ}$的子集，故$C^{\circ}$是凸的。  
+ (e). 如果$0<|\alpha|\le 1$，由于$x \to \alpha x$是同胚映射，有$\alpha B^{\circ} = (\alpha B)^{\circ}$，进而再由均衡性有$\alpha B^{\circ} \subset \alpha B \subset B$。而$\alpha B$是开集，故$\alpha B^{\circ} \subset B^{\circ}$。如果$0\in B^{\circ}$，故$\alpha = 0$时也有$\alpha B^{\circ} \subset B^{\circ}$。因此，$B^{\circ}$是均衡的。  
  (f). 设$V$是$0$的邻域，则存在$0$的邻域$W$满足$\bar{W}\subset V$。又$E$ 有界，故存在$t>0$满足$E\subset tW$，进而$\bar{E}\subset t\bar{W} \subset tV$。
  证明完毕。$\blacksquare$
 
 
 - **定理**：再拓扑向量空间$X$中，  
- (a). $0$的每一个邻域包含一个$0$的均衡邻域；
+ (a). $0$的每一个邻域包含一个$0$的均衡邻域；  
  (b). $0$的每一个凸邻域包含一个$0$的均衡凸邻域。
  **证明**：
- 证明完毕。$\blacksquare$
+ 证明完毕。$\blacksquare$  
  **推理**：  
- (a). 每一个拓扑向量空间有一个均衡的局部基。
+ (a). 每一个拓扑向量空间有一个均衡的局部基。  
  (b). 每一个局部凸空间有一个均衡的凸局部基。
 
-- **定理**：在拓扑向量空间$X$中，设$V$是$0$的邻域，
+- **定理**：在拓扑向量空间$X$中，设$V$是$0$的邻域，  
  (a). 如果$0< r_1 < r_2 <\cdots $满足当$n\to \infty$，$r_n\to \infty$，则
- $$X=\bigcup\limits_{n=1}^{\infty}r_n V.$$
- (b). $X$的每一个紧子集$K$是有界的。
- (c). 如果$\delta_1>\delta_2>\cdots$满足当$n\to \infty$时$\delta_n\to 0$，且$V$有界，则族$ \{ \delta_n V :n=1,2,\cdots \}$是$X$的局部基。
+ $$X=\bigcup\limits_{n=1}^{\infty}r_n V.$$  
+ (b). $X$的每一个紧子集$K$是有界的。  
+ (c). 如果$\delta_1>\delta_2>\cdots$满足当$n\to \infty$时$\delta_n\to 0$，且$V$有界，则族$ \{ \delta_n V :n=1,2,\cdots \}$是$X$的局部基。  
  **证明**：
  证明完毕。$\blacksquare$
 
