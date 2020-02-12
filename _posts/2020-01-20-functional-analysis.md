@@ -180,6 +180,8 @@ $$d(x+z,y+z)=d(x,y).$$
  (a). $0$的每一个邻域包含一个$0$的均衡邻域；  
  (b). $0$的每一个凸邻域包含一个$0$的均衡凸邻域。   
  **证明**：
+ (a). 设$U$是$0$的邻域，则由数乘的连续性，存在实数$\delta>0$和$0$的邻域$V$满足任意的$\vert \alpha \vert<\delta$有$\alpha V\subset U$。取$W=\bigcup\limits_{\vert \alpha\vert <\delta}\alpha V$，则对于任意的$\vert \beta\vert<1$有，$\beta W=\bigcup\limits_{\vert \alpha\vert <\delta}(\alpha \beta)V=\bigcup\limits_{\vert \alpha\vert <\delta\beta}\alpha V\subset W$，而又明显$W$是$0$的邻域，因此$W$均衡的。   
+ (b). 
  证明完毕。$\blacksquare$  
  **推理**：  
  (a). 每一个拓扑向量空间有一个均衡的局部基。  
