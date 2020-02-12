@@ -185,7 +185,7 @@ $$d(x+z,y+z)=d(x,y).$$
  $$r\beta A=\bigcap\limits_{\vert \alpha \vert=1}r\beta\alpha U= \bigcap\limits_{\vert \alpha \vert=1}r\alpha U.$$
  由于$\alpha U$是一个包含$0$的凸集，故$r\alpha U\subset \alpha U$，因此$r\beta A\subset A$，即$A$是均衡集，进而$A^{\circ}$是均衡集。
  证明完毕。$\blacksquare$  
- **均衡局部基和凸局部基**：如果局部基的每一个元素都是均衡集，称其是均衡局部基，如果局部基的每一个元素都是凸集，则称其是凸局部基。
+ **均衡局部基和凸局部基**：如果局部基的每一个元素都是均衡集，称其是均衡局部基，如果局部基的每一个元素都是凸集，则称其是凸局部基。   
  **推理**：  
  (a). 每一个拓扑向量空间有一个均衡的局部基。  
  (b). 每一个局部凸空间有一个均衡的凸局部基。
