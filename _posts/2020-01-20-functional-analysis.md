@@ -181,8 +181,11 @@ $$d(x+z,y+z)=d(x,y).$$
  (b). $0$的每一个凸邻域包含一个$0$的均衡凸邻域。   
  **证明**：
  (a). 设$U$是$0$的邻域，则由数乘的连续性，存在实数$\delta>0$和$0$的邻域$V$满足任意的$\vert \alpha \vert<\delta$有$\alpha V\subset U$。取$W=\bigcup\limits_{\vert \alpha\vert <\delta}\alpha V$，则对于任意的$\vert \beta\vert<1$有，$\beta W=\bigcup\limits_{\vert \alpha\vert <\delta}(\alpha \beta)V=\bigcup\limits_{\vert \alpha\vert <\delta\beta}\alpha V\subset W$，而又明显$W$是$0$的邻域，因此$W$均衡的。   
- (b). 
+ (b). 假设$U$是$0$在$X$的凸邻域，取$A=\bigcap\limits_{\vert \alpha \vert=1}\alpha U$，如(a)中选取集合$W$，由于$W$是均衡的，故对于$\vert \alpha\vert=1$有$\alpha^{-1}W=W$，因此$W\subset \alpha U$。进而有$W\subset A$，故$A$的内部$A^{\circ}$是$0$的一个邻域。由于$U$是凸集，故$A$是凸集的交集，故$A$也是凸集，因此$A^{\circ}$是凸集。对于任意的$0\le r\le 1$和$\vert \beta \vert=1$有
+ $$r\beta A=\bigcap\limits_{\vert \alpha \vert=1}r\beta\alpha U= \bigcap\limits_{\vert \alpha \vert=1}r\alpha U.$$
+ 由于$\alpha U$是一个包含$0$的凸集，故$r\alpha U\subset \alpha U$，因此$r\beta A\subset A$，即$A$是均衡集，进而$A^{\circ}$是均衡集。
  证明完毕。$\blacksquare$  
+ **均衡局部基和凸局部基**：如果局部基的每一个元素都是均衡集，称其是均衡局部基，如果局部基的每一个元素都是凸集，则称其是凸局部基。
  **推理**：  
  (a). 每一个拓扑向量空间有一个均衡的局部基。  
  (b). 每一个局部凸空间有一个均衡的凸局部基。
