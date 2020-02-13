@@ -90,13 +90,9 @@ $$
 (1) $X$的每一个点是闭集；   
 (2) 向量空间的运算关于$\tau$连续；  
 则称$\tau$是$X$的向量拓扑，$X$是一个拓扑向量空间。  
-注：(连续的意义)关于加法连续是指从$X\times X$到$X$的映射：
-$$(x,y)\to x+y$$
-是连续的，即如果$x_1,x_2\in X$, $V$是$x_1+x_2$的邻域，则存在$x_1$和$x_2$的邻域$V_1$和$V_2$满足
-$$V_1+V_2\subset V.$$
-类似乘法的连续是$\Phi \times X$到$X$的映射：
-$$(\alpha, x)\to \alpha x$$
-是连续的。即，如果$x\in X$，$\alpha$是标量，$V$是$\alpha x$的邻域，则存在某个$r>0$和$x$的某个邻域$W$满足任意的$|\beta-\alpha|< r $有$\beta W\subset V$.
+ **注**：(连续的意义)关于加法连续是指从$X\times X$到$X$的映射：$(x,y)\to x+y$是连续的，即如果$x_1,x_2\in X$, $V$是$x_1+x_2$的邻域，则存在$x_1$和$x_2$的邻域$V_1$和$V_2$满足
+ $$V_1+V_2\subset V.$$
+ 类似乘法的连续是$\Phi \times X$到$X$的映射：$(\alpha, x)\to \alpha x$是连续的。即，如果$x\in X$，$\alpha$是标量，$V$是$\alpha x$的邻域，则存在某个$r>0$和$x$的某个邻域$W$满足任意的$|\beta-\alpha|< r $有$\beta W\subset V$.
 - **有界**：对于拓扑向量空间$X$的子集$E$, 如果$0$的任意邻域$V$都存在$s>0$满足任意$t>s$有$E\subset tV$.
 
 #### 不变性
@@ -110,7 +106,7 @@ $$T_a(x) = a+x,\ \ \ M_{\lambda}(x)=\lambda x,\ \ \ (x\in X)$$
 则$T_a$和$M_{\lambda}$为同胚映射。   
 证明：验证3条。
 - **向量拓扑是平移不变的**：向量拓扑是平移不变的(简称为不变)：集合$E\subset X$是开集等价于它的每一个平移变换$a+E$是开的。因此$\tau$完全由任意的局部基决定。
-- **局部基**：在拓扑向量空间下，局部基将总是指$0$点的局部基。因此，拓扑向量空间$X$的局部基是$0$的一个邻域族$\mathcal{B}$，每一个邻域为$\mathcal{B}$的一个元素。于是$X$的开集是$\mathcal{B}$中元素的并集。
+- **局部基**：在拓扑向量空间下，局部基将总是指$0$点的局部基。因此，拓扑向量空间$X$的局部基是$0$的一个邻域族$\mathcal{B}$，每一个邻域为$\mathcal{B}$的一个元素。于是$X$的开集是$\mathcal{B}$中一些元素的并集。
 - **距离不变性**：向量空间$X$的距离$d$被称为不变的，如果对于任意的$x,y,z\in X$有
 $$d(x+z,y+z)=d(x,y).$$
 
@@ -195,7 +191,10 @@ $$d(x+z,y+z)=d(x,y).$$
  $$X=\bigcup\limits_{n=1}^{\infty}r_n V.$$  
  (b). $X$的每一个紧子集$K$是有界的。  
  (c). 如果$\delta_1>\delta_2>\cdots$满足当$n\to \infty$时$\delta_n\to 0$，且$V$有界，则族$ \{ \delta_n V :n=1,2,\cdots \}$是$X$的局部基。  
- **证明**：
+ **证明**：   
+ (a). 对于任意$x\in X$，由于映射$0x$连续，对于$0x$的邻域$V$，存在$\delta>0$和$x$的某个邻域$W$，满足当$\vert \alpha-0\vert\le \delta$时，$\alpha W\subset V$。又$r_n\to \infty$故，充分大的$n$时有$\vert 1/r_n\vert\le \delta$，因此$1/r_n x\in 1/r_n W\subset V$，即$x\in r_n V$。   
+ (b). 对于任意$0$的邻域$V$，存在$0$的均衡邻域$W$满足$W\subset V$。在通过(a)有$W\subset \bigcup\limits_{n=1}^{\infty}nW$。再由紧性，存在有限个正整数$n_1< n_2< \cdots< n_s$满足$K\subset n_1W\cup\cdots\cup n_s W\subset n_s W$，其中最后一个包含用到了均衡性。因此，如果$t>n_s$，则有$k\subset t W\subset tV$。  
+ (c). 设$U$是$X$上$0$的一个邻域，由于$V$有界，则存在$s>0$，当$t>s$有$V\subset tU$，又$\delta_n\to 0$，有充分大的$n$时$1/\delta_n>s$，因此$V\subset 1/\delta_n U$，即$\delta_n V\subset U$。
  证明完毕。$\blacksquare$
 
 
