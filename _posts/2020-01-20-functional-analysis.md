@@ -142,7 +142,7 @@ $$d(x+z,y+z)=d(x,y).$$
  $$(K+V) \cap (C+V) =\varnothing.$$   
  证明完成。$\blacksquare$ 
 
-- **定理**：如果$\mathcal{B}$是拓扑向量空间$X$的局部基，则任意的$S\in \mathcal{B}$，存在$E\in \mathcal{B}$满足，$E$的闭包$\bar{E}$包含于$S$。
+- **定理**：如果$\mathcal{B}$是拓扑向量空间$X$的局部基，则任意的$S\in \mathcal{B}$，存在$E\in \mathcal{B}$满足，$E$的闭包$\bar{E}$包含于$S$。   
  **证明**：由于$S$为开集，故它的补集$S^{c}$为闭集，去$K=\{x\}(x\in S)$，则$S\cap K=\varnothing$. 又$K$为紧集，故存在$0$的邻域$V$满足， 
  $$(K+V)\cap (S^c+V)=\varnothing.$$
  又因为$S^c+V$是开集，故$K+V=x+V$的闭包也与$S^c+V$不相交。而$x+V$是开集，故存在$\mathcal{B}$中元素$E$包含于$x+V$，明显有  
