@@ -72,3 +72,37 @@ tags: analysis
   其中对数是$\mathrm{Ln}(z-\alpha)$在$D$内的一个解析分枝在$z,z_0$的值。
 
 2. 在圆环$D:R_1<\vert z\vert<R_2(0<R_1<R_2<+\infty)$内，$f(z)=\frac{1}{z}$解析。取两点$z_0,z_1\in D$，做两条连接$z_0,z_1$的曲线$C_1$和$C_2$如图![Alt text](./pic3.17.png)。取定$\mathrm{Arg }z$在$z_0$处的值是$\arg {z_0}$，当$z$沿$C_1$从$z_0$连续运动到$z_1$时，$z$的辐角从$\arg{z_0}$变化到$\arg{z_1}$，当$z$沿$C_2$从$z_0$连续运动到$z_1$时，$z$的辐角从$\arg{z_0}$变化到$\arg{z_1}-2\pi$。求$\frac{1}{\zeta}$沿$C_1$的积分。
+
+## 第四章 级数
+
+1. 当$\vert \alpha \vert <1$时，$1+\alpha+\alpha^2+\cdots +\alpha^n+\cdots$绝对收敛，并且
+$$1+\alpha+\alpha^2+\cdots +\alpha^n+\cdots=\frac{1}{1-\alpha}.$$
+
+1. 在复平面上解析，在实轴上等于$\sin{x}$的函数只可能是$\sin{z}$。
+2. 是否存在在原点解析的函数满足下列条件：
+ 1. $f(\frac{1}{2n-1})=0,\ \ f(\frac{1}{2n})=\frac{1}{2n}$.
+ 2. $f(\frac{1}{n})=\frac{n}{n+1}$.
+
+1. 求函数$\frac{1}{(z-1)(z-2)}$分别在圆环$1<\vert z\vert <2$和$2<\vert z\vert +\infty$内的Laurent展式。
+
+2. $\frac{\sin{z}}{z^2}$和$\frac{\sin{z}}{z}$在$0<\vert z\vert <+\infty$内的Laurent展式。
+
+3. $\mathrm{e}^{\frac{1}{z}}$在$0<\vert z\vert <+\infty$内的Laurent展式。
+
+## 第五章 留数 <div id="section5"></div>
+
+1. 计算$f(z)=\frac{\mathrm{e}^{iz}}{1+z^2}$在$z=\pm i$的留数。
+
+2. 计算函数$f(z)=\frac{\sec{z}}{z^3}$在$z=0$处的留数。(正割函数$\sec{x}=\frac{1}{\cos{x}}$。)
+3. 计算函数$f(z)=\frac{\mathrm{e}^{iz}}{z(z^2+1)^2}$在$z=i$处的留数。
+
+1. 计算积分$I=\int_{0}^{2\pi}\frac{\mathrm{d}t}{a+\sin{t}}$，其中$a>1$。
+2. 计算积分$I=\int_{0}^{+\infty}\frac{\mathrm{d}x}{(1+x^2)^2}$.
+3. 计算积分$I=\int_{0}^{+\infty}\frac{\cos {z}}{1+x^2}\mathrm{d}x$.
+4. 计算积分$I=\int_{0}^{+\infty}\frac{\sin{x}}{x}\mathrm{d}x$.
+
+1. 计算积分$I=\int_{0}^{+\infty}\frac{\mathrm{d}x}{(1+x)x^{\alpha}}$，其中$0<\alpha<1$。
+2. 计算积分$I=\int_{0}^{+\infty}\frac{\ln{x}}{(1+x)^3}\mathrm{d}x$。
+
+1. 求方程$z^8-5z^5-2z+1=0$在$\vert z\vert<1$内根的个数。
+2. 如果$a>\mathrm{e}$，求证方程$\mathrm{e}^{z}=az^n$在单位圆盘内有$n$个根。
