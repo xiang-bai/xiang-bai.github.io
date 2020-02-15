@@ -191,8 +191,7 @@ $$d(x+z,y+z)=d(x,y).$$
  $$X=\bigcup\limits_{n=1}^{\infty}r_n V.$$  
  (b). $X$的每一个紧子集$K$是有界的。  
  (c). 如果$\delta_1>\delta_2>\cdots$满足当$n\to \infty$时$\delta_n\to 0$，且$V$有界，则族$ \{ \delta_n V :n=1,2,\cdots \}$是$X$的局部基。  
- **证明**：   
- (a). 对于任意$x\in X$，由于映射$0x$连续，对于$0x$的邻域$V$，存在$\delta>0$和$x$的某个邻域$W$，满足当$\vert \alpha-0\vert\le \delta$时，$\alpha W\subset V$。又$r_n\to \infty$故，充分大的$n$时有$\vert 1/r_n\vert\le \delta$，因此$1/r_n x\in 1/r_n W\subset V$，即$x\in r_n V$。   
+ **证明**：(a). 对于任意$x\in X$，由于映射$0x$连续，对于$0x$的邻域$V$，存在$\delta>0$和$x$的某个邻域$W$，满足当$\vert \alpha-0\vert\le \delta$时，$\alpha W\subset V$。又$r_n\to \infty$故，充分大的$n$时有$\vert 1/r_n\vert\le \delta$，因此$1/r_n x\in 1/r_n W\subset V$，即$x\in r_n V$。   
  (b). 对于任意$0$的邻域$V$，存在$0$的均衡邻域$W$满足$W\subset V$。在通过(a)有$W\subset \bigcup\limits_{n=1}^{\infty}nW$。再由紧性，存在有限个正整数$n_1< n_2< \cdots< n_s$满足$K\subset n_1W\cup\cdots\cup n_s W\subset n_s W$，其中最后一个包含用到了均衡性。因此，如果$t>n_s$，则有$k\subset t W\subset tV$。  
  (c). 设$U$是$X$上$0$的一个邻域，由于$V$有界，则存在$s>0$，当$t>s$有$V\subset tU$，又$\delta_n\to 0$，有充分大的$n$时$1/\delta_n>s$，因此$V\subset 1/\delta_n U$，即$\delta_n V\subset U$。
  证明完毕。$\blacksquare$
