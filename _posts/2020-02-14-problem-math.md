@@ -15,3 +15,4 @@ tags: problem
 \begin{equation}
 \frac{2^{n-2}}{n}(f(b_0)+(-1)^nf(b_n))+\frac{2^{n-1}}{n}\sum\limits_{k=1}^{n-1}(-1)^kf(b_k)=1
 \end{equation}
+ **证明**:
