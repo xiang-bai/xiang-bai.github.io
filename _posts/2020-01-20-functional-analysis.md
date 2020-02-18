@@ -26,9 +26,9 @@ tags: analysis
 
 - **赋范空间$\to$距离空间**：每一个赋范向量空间可以诱导一个距离空间($d(x,y)=\|x-y\|$)。
 - **开球和闭球**：球心为$x$半径为$r$的开球和闭球分别是
-$$
+\begin{equation}
 B_{r}(x)=\{y:d(x,y)< r \},\ \ \bar{B} _ {r}(x)=\{y:d(x,y)\le r \}.
-$$
+\end{equation}
 
 - **开集**：距离空间上的子集是开集当且仅当它是一些开球的并，进而可以所有这样的子集构成一个拓扑。如果距离是赋范空间诱导得到，那么在这个拓扑上，向量的加法和数乘连续。
 
@@ -49,18 +49,20 @@ $$
 
 - **子空间**：如果$Y\subset X$, 且$Y$也是向量空间，称$Y$为$X$子空间。
 - **子空间等价命题**：$Y$为向量空间$X$的子空间等价于任意标量$\alpha,\beta$有
-$$\alpha Y +\beta Y\subset Y.$$
+\begin{equation}
+\alpha Y +\beta Y\subset Y.
+\end{equation}
 
 
 - **凸的**：如果向量空间$X$的子集$C\subset X$，满足
-$$
+\begin{equation}
 tC + (1-t)C\subset C, \ \ \  (0\le t\le 1),
-$$
+\end{equation}
 称$C$为凸的。
 - **均衡的**：如果向量空间$X$的子集$B\subset X$，满足
-$$
+\begin{equation}
 \alpha B\subset B, \ \ \ \forall \alpha \in \Phi(|\alpha |\le 1),
-$$   
+\end{equation}
 称$B$为均衡的。
 - **维数**：如果向量空间$X$有一组基$\{u_1,u_2,\cdots,u_n\}$，则称$X$为$n$维的。
 
@@ -91,7 +93,9 @@ $$
 (2) 向量空间的运算关于$\tau$连续；  
 则称$\tau$是$X$的向量拓扑，$X$是一个拓扑向量空间。  
  **注**：(连续的意义)关于加法连续是指从$X\times X$到$X$的映射：$(x,y)\to x+y$是连续的，即如果$x_1,x_2\in X$, $V$是$x_1+x_2$的邻域，则存在$x_1$和$x_2$的邻域$V_1$和$V_2$满足
- $$V_1+V_2\subset V.$$
+ \begin{equation}
+ V_1+V_2\subset V.
+ \end{equation}
  类似乘法的连续是$\Phi \times X$到$X$的映射：$(\alpha, x)\to \alpha x$是连续的。即，如果$x\in X$，$\alpha$是标量，$V$是$\alpha x$的邻域，则存在某个$r>0$和$x$的某个邻域$W$满足任意的$|\beta-\alpha|< r $有$\beta W\subset V$.
 - **有界**：对于拓扑向量空间$X$的子集$E$, 如果$0$的任意邻域$V$都存在$s>0$满足任意$t>s$有$E\subset tV$.
 
@@ -108,41 +112,63 @@ $$T_a(x) = a+x,\ \ \ M_{\lambda}(x)=\lambda x,\ \ \ (x\in X)$$
 - **向量拓扑是平移不变的**：向量拓扑是平移不变的(简称为不变)：集合$E\subset X$是开集等价于它的每一个平移变换$a+E$是开的。因此$\tau$完全由任意的局部基决定。
 - **局部基**：在拓扑向量空间下，局部基将总是指$0$点的局部基。因此，拓扑向量空间$X$的局部基是$0$的一个邻域族$\mathcal{B}$，每一个邻域为$\mathcal{B}$的一个元素。于是$X$的开集是$\mathcal{B}$中一些元素的并集。
 - **距离不变性**：向量空间$X$的距离$d$被称为不变的，如果对于任意的$x,y,z\in X$有
-$$d(x+z,y+z)=d(x,y).$$
+\begin{equation}
+d(x+z,y+z)=d(x,y).
+\end{equation}
 
 
 #### 拓扑向量空间的类型
 
 ### 分离性质
 - **定理**：假设$K,C$是拓扑向量空间$X$的子集，$K$是紧集，$C$是闭集，且$K\cap C= \varnothing$. 则存在$0$的邻域$V$满足   
- $$(K+V)\cap (C+V)=\varnothing.$$   
+ \begin{equation}
+ (K+V)\cap (C+V)=\varnothing.
+ \end{equation}
  **注**： 注意$K+V$是所有$x+V$的并集$x\in K$，因此$K+V$是包含$K$的开集。因此，定理意味存在包含$K$和$C$的互不相交的开集。  
  **证明**：先介绍如下命题，在$X$中如果$W$是$0$的一个邻域，则存在$0$的对称邻域$U$(即$U=-U$)满足，$U+U\subset W$。 
  先证明上述命题，注意到$0+0=0$，由加法的连续性，存在$0$的邻域$V_1,V_2$满足$V_1+V_2\subset W$. 如果取    
- $$U=V_1\cap V_2\cap (-V_1)\cap (-V_2),$$   
+ \begin{equation}
+ U=V_1\cap V_2\cap (-V_1)\cap (-V_2),
+ \end{equation}
  则$U$满足上述命题的要求。
  在上述命题中，$U$可以视作一个$W$，故存在$0$的对称邻域$U$满足   
- $$U+U+U+U\subset W.$$   
+ \begin{equation}
+ U+U+U+U\subset W.
+ \end{equation}
  明显可以一直这样做下去。  
  如果$K=\varnothing$，则$K+V=\varnothing$，故定理的结论明显。
  下面考虑$K\neq \varnothing$，一个点$x\in K$。
  由于$C$是闭集，故$C$的补集$X-C$是开集，又$x\notin C$有$x\in X-C$，再由拓扑的平移不变性和上述命题有，存在$0$的对称邻域满足  
- $$x+V_x+V_x+V_x\subset X-C,$$   
+ \begin{equation}
+ x+V_x+V_x+V_x\subset X-C,
+ \end{equation}
  即$x+V_x+V_x+V_x$与$C$不相交，再由$V_x$的对称性有  
- $$(x+V_x+V_x)\cap (C+V_x)=\varnothing,$$   
+ \begin{equation}
+ (x+V_x+V_x)\cap (C+V_x)=\varnothing,
+ \end{equation}
  由于$K$是紧集，故存在$x_1,x_2,\cdots,x_n \in K$，满足  
- $$K\subset (x_1+V_{x_1})\cup \cdots \cup (x_n+V_{x_n}),$$   
+ \begin{equation}
+ K\subset (x_1+V_{x_1})\cup \cdots \cup (x_n+V_{x_n}),
+ \end{equation}
  取$V=V_{x_1}\cap \cdots \cap V_{x_n}$. 则  
- $$K+V \subset \bigcup\limits_{i=1}^{n}(x_i+V_{x_i}+V) \subset x_i+V_{x_i}+V_{x_i},$$  
+ \begin{equation}
+ K+V \subset \bigcup\limits_{i=1}^{n}(x_i+V_{x_i}+V) \subset x_i+V_{x_i}+V_{x_i},
+ \end{equation}
  而又有$C+V \subset C+V_{x_i}$，结合前面的公式有  
- $$(K+V) \cap (C+V) =\varnothing.$$   
+ \begin{equation}
+ (K+V) \cap (C+V) =\varnothing.
+ \end{equation}
  证明完成。$\blacksquare$ 
 
 - **定理**：如果$\mathcal{B}$是拓扑向量空间$X$的局部基，则任意的$S\in \mathcal{B}$，存在$E\in \mathcal{B}$满足，$E$的闭包$\bar{E}$包含于$S$。   
  **证明**：由于$S$为开集，故它的补集$S^{c}$为闭集，去$K=\{x\}(x\in S)$，则$S\cap K=\varnothing$. 又$K$为紧集，故存在$0$的邻域$V$满足， 
- $$(K+V)\cap (S^c+V)=\varnothing.$$
+ \begin{equation}
+ (K+V)\cap (S^c+V)=\varnothing.
+ \end{equation}
  又因为$S^c+V$是开集，故$K+V=x+V$的闭包也与$S^c+V$不相交。而$x+V$是开集，故存在$\mathcal{B}$中元素$E$包含于$x+V$，明显有  
- $$\bar{E}\subset \overline{x+V}\subset S.$$
+ \begin{equation}
+ \bar{E}\subset \overline{x+V}\subset S.
+ \end{equation}
  证明完毕。$\blacksquare$
 
 - **定理**：每一个拓扑向量空间是一个Hausdorff空间。   
@@ -178,7 +204,9 @@ $$d(x+z,y+z)=d(x,y).$$
  **证明**：
  (a). 设$U$是$0$的邻域，则由数乘的连续性，存在实数$\delta>0$和$0$的邻域$V$满足任意的$\vert \alpha \vert<\delta$有$\alpha V\subset U$。取$W=\bigcup\limits_{\vert \alpha\vert <\delta}\alpha V$，则对于任意的$\vert \beta\vert<1$有，$\beta W=\bigcup\limits_{\vert \alpha\vert <\delta}(\alpha \beta)V=\bigcup\limits_{\vert \alpha\vert <\delta\beta}\alpha V\subset W$，而又明显$W$是$0$的邻域，因此$W$均衡的。   
  (b). 假设$U$是$0$在$X$的凸邻域，取$A=\bigcap\limits_{\vert \alpha \vert=1}\alpha U$，如(a)中选取集合$W$，由于$W$是均衡的，故对于$\vert \alpha\vert=1$有$\alpha^{-1}W=W$，因此$W\subset \alpha U$。进而有$W\subset A$，故$A$的内部$A^{\circ}$是$0$的一个邻域。由于$U$是凸集，故$A$是凸集的交集，故$A$也是凸集，因此$A^{\circ}$是凸集。对于任意的$0\le r\le 1$和$\vert \beta \vert=1$有
- $$r\beta A=\bigcap\limits_{\vert \alpha \vert=1}r\beta\alpha U= \bigcap\limits_{\vert \alpha \vert=1}r\alpha U.$$
+ \begin{equation}
+ r\beta A=\bigcap\limits_{\vert \alpha \vert=1}r\beta\alpha U= \bigcap\limits_{\vert \alpha \vert=1}r\alpha U.
+ \end{equation}
  由于$\alpha U$是一个包含$0$的凸集，故$r\alpha U\subset \alpha U$，因此$r\beta A\subset A$，即$A$是均衡集，进而$A^{\circ}$是均衡集。
  证明完毕。$\blacksquare$  
  **均衡局部基和凸局部基**：如果局部基的每一个元素都是均衡集，称其是均衡局部基，如果局部基的每一个元素都是凸集，则称其是凸局部基。   
