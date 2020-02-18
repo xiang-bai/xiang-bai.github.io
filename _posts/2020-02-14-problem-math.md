@@ -25,5 +25,5 @@ tags: problem
  \begin{equation}
  f(x)=x^n+a_{n-1}x^{n-1}+\cdots+a_1x^1+a_0
  \end{equation}
- 中,找出函数$G(a_0,a_1,\cdots,a_{n-1})=\max\limits_{-1\le x\le 1}\vert f(x)\vert$的最小值,并且求出这个这个最小值的最小值点.
+ 中,找出函数$G(a_0,a_1,\cdots,a_{n-1})=\max\limits_{-1\le x\le 1}\vert f(x)\vert$的最小值,并且求出这个这个最小值的最小值点.   
  **解**:
