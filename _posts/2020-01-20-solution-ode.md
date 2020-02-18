@@ -15,24 +15,39 @@ tags: analysis
 ## 一. 初等积分法
 
 1. 求解方程
- $$2xy^3dx+3x^2y^2dy=0.$$
+ \begin{equation}
+ 2xy^3dx+3x^2y^2dy=0.
+ \end{equation}
 
 2. 求解微分方程
- $$(2x\sin{y}+3x^2y)dx+(x^3+y^2\cos{y}+y^2)dy=0.$$
+ \begin{equation}
+ (2x\sin{y}+3x^2y)dx+(x^3+y^2\cos{y}+y^2)dy=0.
+ \end{equation}
 
 3. 求解方程
- $$(x^2+1)(y^2-1)dx+xydy=0.$$
+ \begin{equation}
+ (x^2+1)(y^2-1)dx+xydy=0.
+ \end{equation}
 
 4. 求解方程
- $$\frac{dy}{dx}+\frac{1}{x}y=x^3,\ \ (x\neq 0).$$
+ \begin{equation}
+ \frac{dy}{dx}+\frac{1}{x}y=x^3,\ \ (x\neq 0).
+ \end{equation}
 5. 求解方程
- $$\frac{dy}{dx}=\frac{x+y}{x-y}.$$
+ \begin{equation}
+ \frac{dy}{dx}=\frac{x+y}{x-y}.
+ \end{equation}
 
 
 6. 求解方程
-$$\frac{dy}{dx}=f(\frac{ax+by+c}{mx+ny+l}).$$
+ \begin{equation}
+ \frac{dy}{dx}=f(\frac{ax+by+c}{mx+ny+l}).
+ \end{equation}
 
 7. 求解方程
+ \begin{equation}
+ \frac{dy}{dx}=
+ \end{equation}
 
 
 
