@@ -14,6 +14,8 @@ tags: analysis
 
 ## 一. 初等积分法
 
+### 1. 一阶方程
+
 1. 求解方程
  \begin{equation}
  2xy^3dx+3x^2y^2dy=0.
@@ -49,8 +51,45 @@ tags: analysis
  \frac{dy}{dx}=
  \end{equation}
 
+### 2. 高阶方程
 
+### 3. 微分方程模型
 
 ## 二. 线性方程和线性方程组
 
+### 1.一般理论
+
+1. 求方程组
+ \begin{equation}
+ \frac{d}{dx} 
+ \begin{pmatrix}y_1\\y_2\end{pmatrix}=
+ \begin{pmatrix}
+ 1 & 1\\
+ 0 & 1/x
+ \end{pmatrix}
+ \begin{pmatrix}y_1\\y_2\end{pmatrix}
+ \end{equation}
+ 的通解,其中求值区间$x\neq 0$.
+
+### 2.常系数线性微分方程(组) 
+
+
+
+
+### 3. 定性分析
+
+### 4. 幂级数解法和Laplace方法
+
+
+### 5. 振动现象
+
+
+### 6. 奇点和类型
+
+
 ## 三. 基本定理
+
+### 1.初值问题 
+
+
+### 2. 存在唯一性定理的证明
