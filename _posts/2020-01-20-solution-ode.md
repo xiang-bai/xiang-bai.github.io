@@ -60,6 +60,7 @@ tags: analysis
 ### 1.一般理论
 
 1. 求方程组
+`
  \begin{equation}
  \frac{d}{dx} 
  \begin{pmatrix}y_1\\y_2\end{pmatrix}=
@@ -68,7 +69,7 @@ tags: analysis
  0 & 1/x
  \end{pmatrix}
  \begin{pmatrix}y_1\\y_2\end{pmatrix}
- \end{equation}
+ \end{equation}`
  的通解,其中求值区间$x\neq 0$.
 
 ### 2.常系数线性微分方程(组) 
