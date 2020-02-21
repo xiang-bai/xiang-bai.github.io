@@ -60,7 +60,6 @@ tags: analysis
 ### 1.一般理论
 
 1. 求方程组
-`
  \begin{equation}
  \frac{d}{dx} 
  \begin{pmatrix}y_1\\y_2\end{pmatrix}=
@@ -69,12 +68,64 @@ tags: analysis
  0 & 1/x
  \end{pmatrix}
  \begin{pmatrix}y_1\\y_2\end{pmatrix}
- \end{equation}`
+ \end{equation}
  的通解,其中求值区间$x\neq 0$.
 
 ### 2.常系数线性微分方程(组) 
 
+1. 求微分方程
+ \begin{equation}
+ \frac{dy}{dx}=
+ \begin{pmatrix}
+ 5 & -28 & -18 \\
+ -1 & 5 & 3\\
+ 3 & -16 & -10
+ \end{pmatrix}y
+ \end{equation}
+ 的通解。
 
+2. 求微分方程
+ \begin{equation}
+ \frac{dy}{dx}=
+ \begin{pmatrix}
+ 1 & 1  \\
+ -1 & 1 
+ \end{pmatrix}y
+ \end{equation}
+ 的通解。
+
+3. 求微分方程
+  \begin{equation}
+ \frac{dy}{dx}=
+ \begin{pmatrix}
+ 3 & 1 & 0\\
+ -4 & -1 & 0\\
+ 4 & -8 & -2
+ \end{pmatrix}y
+ \end{equation}
+ 的通解。
+
+4. 求微分方程
+  \begin{equation}
+ \frac{dy}{dx}=
+ \begin{pmatrix}
+ -5 & -10 & -20\\
+ 5 & 5 & 10\\
+ 2 & 4 & 9
+ \end{pmatrix}y
+ \end{equation}
+ 的通解。
+
+5. 求微分方程
+  \begin{equation}
+ \frac{dy}{dx}=
+ \begin{pmatrix}
+ 2 & 2 & 0\\
+ 0 & -1 & 1\\
+ 0 & 0 & 2
+ \end{pmatrix}y
+ \end{equation}
+ 的通解。
 
 
 ### 3. 定性分析
