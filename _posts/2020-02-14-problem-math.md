@@ -27,3 +27,12 @@ tags: problem
  \end{equation}
  中,找出函数$G(a_0,a_1,\cdots,a_{n-1})=\max\limits_{-1\le x\le 1}\vert f(x)\vert$的最小值,并且求出这个这个最小值的最小值点.   
  **解**:
+
+4. (**难度系数：$\star$**)(1)计算
+  \begin{equation}
+  \lim_{n\to \infty}\big{(}\sqrt[n]{n}-1\big{)}^{\frac{1}{(\ln{n})^{\alpha}}}(\alpha>0).
+  \end{equation}
+  (2)证明
+  \begin{equation}
+  \lim_{n\to \infty}\frac{\big{(}2\sqrt[n]{n}-1\big{)}^n}{n^2}=1.
+  \end{equation}
