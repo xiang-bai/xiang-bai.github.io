@@ -182,7 +182,7 @@ tags: probability
  \begin{equation}
  F(x)=\frac{1}{\sqrt{2\pi}\sigma}\int_{-\infty}^{x}e^{\frac{(y-\mu)^2}{2\sigma^2}}dy,\ \ -\infty< x< +\infty,
  \end{equation}
- 其中，$\mu,\sigma$($\sigma>0$)是两个常数。
+ 其中，$\mu,\sigma$($\sigma>0$)是两个常数。  
  **注**：$\mu=0,\sigma=1$的正态分布称为标准正态分布。
 
 - **$n$维随机变量**：设$\xi_1(\omega),\xi_2(\omega),\cdots,\xi_n(\omega)$是定义在同一个样本空间$\Omega$上的随机变量，则$n$维向量空间$(\xi_1(\omega),\xi_{2}(\omega),\cdots,\xi_{n}(\omega))$称为是样本空间$\Omega$上的$n$维随机变量。并称$n$元函数
@@ -247,8 +247,8 @@ tags: probability
  Eg(\xi,\eta)=\sum_{i=1}^{+\infty}\sum_{j=1}^{+\infty} g(a_i,b_j)p_{ij}.
  \end{equation}
 
-- **离散方差**：设$\xi$是一个离散型随机变量，数学期望$E\xi$存在，如果$E(\xi-E\xi)^2$存在，则称$E(\xi-E\xi)^2$为随机变量$\xi$的方差，并且记作$D\xi$或者$\mathrm{Var}\xi$。方程的平方根$\sqrt{D\xi}$称为标准差，记作$\sigma$。
- **方程与期望的关系**：设离散随机变量$\xi$的期望是$E\xi$方差是$D\xi$，则有
+- **离散方差**：设$\xi$是一个离散型随机变量，数学期望$E\xi$存在，如果$E(\xi-E\xi)^2$存在，则称$E(\xi-E\xi)^2$为随机变量$\xi$的方差，并且记作$D\xi$或者$\mathrm{Var}\xi$。方程的平方根$\sqrt{D\xi}$称为标准差，记作$\sigma$。  
+ **方差与期望的关系**：设离散随机变量$\xi$的期望是$E\xi$方差是$D\xi$，则有
  \begin{equation}
  D\xi=E(\xi-E\xi)^2=E\big{(}\xi^2+(E\xi)^2-2\xi E\xi\big{)}=E\xi^2-(E\xi)^2.
  \end{equation}
@@ -281,7 +281,7 @@ tags: probability
 - **Cauchy分布**：Cauchy分布的密度函数是
  \begin{equation}
  p(x)=\frac{1}{\pi}\frac{1}{1+x^2}.
- \end{equation}
+ \end{equation}  
  **注**：期望不存在。
 
 - **定理**：设$\xi$是连续型随机变量，密度函数是$p(x)$，如果$f(x)$是实变量$x$的函数，并且
@@ -382,7 +382,7 @@ tags: probability
 
 - **$t$分布**：自由度是$n$的$t$分布的密度函数是
  \begin{equation}
- p(x)=\frac{\Gamma(\frac{n+1}{2})}{\sqrt{n\pi}\Gamma(\frac{n}{2})}(1+\frac{y^2}{n})^{{-\frac{n+1}{2}}}.
+ p(x)=\frac{\Gamma(\frac{n+1}{2})}{\sqrt{n\pi}\Gamma(\frac{n}{2})}(1+\frac{y^2}{n})^{-\frac{n+1}{2}}.
  \end{equation}
 
 - **协方差**：设$(\xi,\eta)$是二维随机变量，且
@@ -392,7 +392,7 @@ tags: probability
  则称$E(\xi-E\xi)(\eta-E\eta)$为$\xi$和$\eta$的协方差，记作$Cov{(\xi,\eta)}$，即
  \begin{equation}
  Cov(\xi,\eta)=E(\xi-E\xi)(\eta-E\eta).
- \end{equation}
+ \end{equation}  
  **注**：协方差$Cov(\xi,\eta)$关于$\xi,\eta$是双线性函数。
 
 - **相关系数**：设$(\xi,\eta)$是二维随机变量，且
