@@ -9,7 +9,7 @@ layout: default
 {{ content }}
 </div>
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <div id="gitalk-container"></div>
 <script>
@@ -24,10 +24,10 @@ var gitalk = new Gitalk({
 })
 
 gitalk.render('gitalk-container')
-</script>
+</script> -->
 
 <div id="related">
-  <h2>Related Posts</h2>
+  <h2>最近更新</h2>
   <ul class="posts">
     {% for post in site.related_posts limit:3 %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
