@@ -8,11 +8,17 @@ tags: analysis
 
 # 泛函分析基础
 
-## 介绍
+## 0 介绍
 
 - 本文围绕Rudin的教材来学习泛函分析。
 
-## 拓扑向量空间
+### 0.1 重要名词
+
+- **紧**：给定拓扑空间$S$，如果集合$K\subset S$的任意一个开覆盖都有有限子覆盖，则称$K$是紧的。(注意任意性。)
+- **稠密**：给定拓扑空间$S$及其子集$E$，对于$S$中任一点$x$，如果$x$的任一邻域与$E$的交集非空，则称$E$在$S$中稠密。
+- **有界**：
+
+## 1 拓扑向量空间
 
 ### 简介
 
@@ -244,13 +250,77 @@ d(x+z,y+z)=d(x,y).
 
 ### 习题
 
-<!--  
+  
 
-## 完备性
+## 2 完备性
 
-### Baire纲
+### 2.1 Baire纲
 
-### Banach-Steinhaus定理
+- **纲**：设$S$是一个拓扑向量空间，如果集合$E\subset S$满足闭包$\bar{E}$的内部是空集，则称$E$无处稠密。无处稠密集的可数并集称为$S$的第一纲集，如果$S$的子集不是第一纲集，则称为第二纲集。
+
+- **Baire定理**：如果$S$是完备度量空间或者局部紧的Hausdorff空间，则$S$的任意一个可数稠密开集族的交集在$S$中也稠密。     
+ **注**：之所以称为纲性定理，因为$S$是第二纲的。事实上，$\{S_t\}$是$S$的无处稠密的可数族，$V_t$是$\bar{E_t}$的补集，则$V_t$是稠密的，从Baire定理可知$\bigcap V_t\neq \varnothing$，所以$S\neq \bigcup E_i$，即$S$是第二纲的。    
+ **证明**：
+
+### 2.2 Banach-Steinhaus定理
+
+- **等度连续**：设$X$和$Y$是两个拓扑向量空间，$\Gamma$是从$X$到$Y$的线性映射族，如果对于$Y$上$0$点的任意邻域$W$，存在$X$上$0$的邻域$V$满足：任意$\Lambda\in \Gamma$有，$\Lambda(V)\subset W$。则称$\Gamma$等度连续。
+
+- **定理**：设$X$和$Y$是两个拓扑向量空间，$\Gamma$是从$X$到$Y$的等度连续线性映射族，则对于$X$的任意有界子集$E$，存在$Y$的有界子集$F$，使得任意$\Lambda\in \Gamma$有，$\Lambda(E)\subset F$。    
+ **证明**：按定义易得，略。
+
+- **一致有界原理(Banach-Steinhaus定理)**：设$X$和$Y$是两个拓扑向量空间，$\Gamma$是从$X$到$Y$的等度连续线性映射族，如果子集
+ \begin{equation}
+ B=\{x\in X: \text{轨迹}\Gamma(x)=\{\Lambda x: \Lambda \in \Gamma,x\in B\}\text{在$Y$中有界}\}
+ \end{equation}
+ 在$X$上是第二纲集，则$B=X$且$\Gamma$等度连续。
+<!--  $B$是$X$的子集满足轨迹
+ \begin{equation}
+ \Gamma(x)=\{\Lambda x: \Lambda \in \Gamma,x\in B\}
+ \end{equation}
+ 在$Y$中有界。如果$B$在$X$上是第二纲集，则$B=X$且$\Gamma$等度连续。 -->     
+ **证明**：
+
+- **定理**：如果$\Gamma$是$F$空间$X$到拓扑向量空间$Y$的连续线性映射族，并且对于任意$x\in X$，集合
+ \begin{equation}
+ \Gamma(x)=\{\Lambda x:\Lambda \in \Gamma\}
+ \end{equation}
+ 在$Y$中有界，则$\Gamma$是等度连续的。    
+ **证明**
+
+- **定理**：假设$X$和$Y$是拓扑向量空间，$\{\Lambda_n\}$是$X$到$Y$的连续线性映射序列。
+ 1. 如果子集
+ \begin{equation}
+ C=\{x\in X:\{\Lambda_n x\}\text{为$Y$中的Cauchy列}\}
+ \end{equation}
+ 在$X$中是第二纲的，则$C=X$。
+ 2. 如果子集
+ \begin{equation}
+ L=\{x\in X: \Lambda x =\lim_{n\to \infty}\Lambda_n x\}
+ \end{equation}
+ 是$X$中的第二纲集，$Y$是$F$空间，则$L=X$并且$\Lambda:X\to Y$是连续的。    
+ **证明**
+
+- **定理**：设$\{\Lambda_n\}$是从$F$空间$X$到拓扑向量空间$Y$中的连续线性映射序列，并且对于任意$x\in X$，有
+ \begin{equation}
+ \Lambda x=\lim_{n\to \infty}\Lambda_n x
+ \end{equation}
+ 存在，则$\Lambda$是连续的。    
+ **证明**
+
+- **定理**：假设$X$和$Y$是拓扑向量空间，$K$是$X$中的凸紧集，$\Gamma$是$X$到$Y$中的连续线性映射族并且对于每个$x\in K$，轨道
+ \begin{equation}
+ \Gamma(x)=\{\Lambda x:\Lambda \in \Gamma\}
+ \end{equation}
+ 在$Y$上有界，则存在有界集$B\subset Y$满足任意$\Lambda \in \Gamma$有$\Lambda(K)\subset B$.    
+ **证明**
+
+
+
+
+\begin{equation}
+ \end{equation}
+
 
 ### 开映射定理
 
@@ -263,7 +333,7 @@ d(x+z,y+z)=d(x,y).
 
 
 
-## 凸性
+<!-- ## 凸性
 
 ### Hahn-Banach 定理
 
@@ -313,7 +383,7 @@ d(x+z,y+z)=d(x,y).
 
 ### 另两个不动点定理
 
-### 习题
+### 习题 -->
 
--->
+
 
