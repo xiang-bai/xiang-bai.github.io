@@ -341,7 +341,20 @@ d(x+z,y+z)=d(x,y).
 
 - **开映射**：设映射$f$从拓扑空间$S$到拓扑空间$T$。对于点$p\in S$，如果$p$的任意邻域$V$存在$f(p)$的一个邻域包含于$f(V)$，则称$f$在$p$点是开的。如果$S$上的任意开集$U$有$f(U)$是$T$上的开集，则称$f$是$S$上的开映射。
 
+- **开映射定理**：设$X$是$F$空间，$Y$是拓扑向量空间，$\Lambda:X\to Y$是连续线性映射，且$\Lambda(X)$是$Y$中的第二纲集。则
+ 1. $\Lambda(X)=Y$;
+ 2. $\Lambda$是一个开映射；
+ 3. $Y$是$F$空间。    
+ **证明**：
 
+- **推论**：
+ 1. 如果$\Lambda$是从$F$空间$X$到$F$空间$Y$的连续线性满射，则$\Lambda$是开的。
+ 2. 如果上一条的$\Lambda$还满足一一映射，在$\Lambda^{-1}:Y\to X$是连续的。
+ 3. 设$X$和$Y$是Banach空间，如果$\Lambda:X\to Y$是连续线性双射，则存在实数$a,b>0$满足任意的$x\in X$有
+ \begin{equation}
+ a\Vert x\Vert \le \Vert \Lambda x\Vert \le b\Vert x\Vert.
+ \end{equation}
+ 4. 设$\tau_1\subset \tau_2$是线性空间$X$上的线性拓扑，如果$(X,\tau_1)$和$(X,\tau_2)$是$F$空间，则$\tau_1=\tau_2$.
 
 \begin{equation}
  \end{equation}
