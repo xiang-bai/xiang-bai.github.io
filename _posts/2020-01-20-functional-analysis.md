@@ -18,6 +18,9 @@ tags: analysis
 - **稠密**：给定拓扑空间$S$及其子集$E$，对于$S$中任一点$x$，如果$x$的任一邻域与$E$的交集非空，则称$E$在$S$中稠密。
 - **有界**：
 
+- **F空间**：如果拓扑空间的拓扑由一个完备不变距离诱导得到，称其为拓扑空间。
+- **Hausdorff空间**：对于拓扑空间$(S,\tau)$，如果$S$上不同的点有不相交的领域，称$(S,\tau)$是Hausdorff空间，$\tau$是Hausdorff拓扑。
+
 ## 1 拓扑向量空间
 
 ### 简介
@@ -273,13 +276,25 @@ d(x+z,y+z)=d(x,y).
  \begin{equation}
  B=\{x\in X: \text{轨迹}\Gamma(x)=\{\Lambda x: \Lambda \in \Gamma,x\in B\}\text{在$Y$中有界}\}
  \end{equation}
- 在$X$上是第二纲集，则$B=X$且$\Gamma$等度连续。
-<!--  $B$是$X$的子集满足轨迹
+ 在$X$上是第二纲集，则$B=X$且$\Gamma$等度连续。    
+ **证明**：由于$\Gamma(x)$有界，则任意的$0$的邻域$U$，存在$n\in \mathbb{Z}^{+}$使得
  \begin{equation}
- \Gamma(x)=\{\Lambda x: \Lambda \in \Gamma,x\in B\}
+ \Gamma(x)\subset n U,
  \end{equation}
- 在$Y$中有界。如果$B$在$X$上是第二纲集，则$B=X$且$\Gamma$等度连续。 -->     
- **证明**：
+ 因此，$x\in n\bigcap_{\Lambda\in\Gamma}\Lambda^{-1}\bar{U}\overset{\bigtriangleup}{=}nE$。
+ 进而有
+ \begin{equation}
+ B\subset \bigcup_{n=1}^{\infty}nE,
+ \end{equation}
+ 又因为$B$为第二纲集，故$\bigcup_{n=1}^{\infty}nE$为第二纲集，因此存在$n\in\mathbb{Z}^{+}$满足$nE$为第二纲集。再由于$x\to nx$是同胚映射，故$E$是第二纲集。而任意$\Lambda$连续，故$E$为闭集。因此存在$E$的内点$y$，故存在$0$的邻域$V\subset y-E$，有
+ \begin{equation}
+ \Lambda(V)\subset \Lambda(y)-\Lambda(E)\subset \bar{U}-\bar{U}.
+ \end{equation}
+ 特别对于任意$Y$上$0$的邻域$W$，存在均衡邻域$U$，满足$\bar{U}+\bar{U}\subset W$，进而存在$V$满足对于任意$\Lambda\in\Gamma$
+ \begin{equation}
+ \Lambda (V)\subset \bar{U}+\bar{U}\subset W.
+ \end{equation}
+ 即$\Gamma$是等度连续的。而由等度连续可得一致有界，特别任意$x\in X$，有$\Gamma(x)$有界，故$X=B$。
 
 - **定理**：如果$\Gamma$是$F$空间$X$到拓扑向量空间$Y$的连续线性映射族，并且对于任意$x\in X$，集合
  \begin{equation}
@@ -323,6 +338,13 @@ d(x+z,y+z)=d(x,y).
 
 
 ### 2.3 开映射定理
+
+- **开映射**：设映射$f$从拓扑空间$S$到拓扑空间$T$。对于点$p\in S$，如果$p$的任意邻域$V$存在$f(p)$的一个邻域包含于$f(V)$，则称$f$在$p$点是开的。如果$S$上的任意开集$U$有$f(U)$是$T$上的开集，则称$f$是$S$上的开映射。
+
+
+
+\begin{equation}
+ \end{equation}
 
 ### 2.4 闭图像定理
 
