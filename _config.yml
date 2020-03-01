@@ -28,6 +28,7 @@ github_username:  13ai
 markdown: kramdown
 # markdown: Redcarpet
 theme: minima
+mathjax: true
 plugins:
   - jekyll-feed
 
