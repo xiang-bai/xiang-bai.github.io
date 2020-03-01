@@ -14,22 +14,22 @@ tags: top
 
 ## Annals of Mathematics
 
-- **地址**： 
+- **地址**：    
 <a href="https://about.jstor.org/etoc-alerts-signup/?c=annamath">https://about.jstor.org/etoc-alerts-signup/?c=annamath</a>
 
 ## Acta Mathematica
 
-- **地址**： 
+- **地址**：    
 <a href="https://visitor.r20.constantcontact.com/manage/optin?v=001ddtd_5QlTtl0zVypHyoN6N5bjKo9Php-AOOg3Wu5SQCOukLPWoSsBg%3D%3D">https://visitor.r20.constantcontact.com/manage/optin?v=001ddtd_5QlTtl0zVypHyoN6N5bjKo9Php-AOOg3Wu5SQCOukLPWoSsBg%3D%3D</a>
 
 ## Journal Of The American Mathematical Society
 
-- **地址**： 
+- **地址**：    
 <a href="https://www.ams.org/publications/journals/jemail">https://www.ams.org/publications/journals/jemail</a>
 
 ## Inventiones Mathematicae
 
-- **地址**： 
+- **地址**：    
 <a href="https://www.springer.com/gp/stay-informed-with-springer-alerts/54290">https://www.springer.com/gp/stay-informed-with-springer-alerts/54290</a>
 
 ## 尾声
