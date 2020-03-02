@@ -17,15 +17,16 @@ tags: analysis
 - **紧**：给定拓扑空间$S$，如果集合$K\subset S$的任意一个开覆盖都有有限子覆盖，则称$K$是紧的。(注意任意性。)
 - **稠密**：给定拓扑空间$S$及其子集$E$，对于$S$中任一点$x$，如果$x$的任一邻域与$E$的交集非空，则称$E$在$S$中稠密。
 - **有界**：
+- **Heine-Borel性质**：如果$X$的每一个有界闭子集都是紧集，则称其满足Heine-Borel性质。
 
 - **F空间**：如果拓扑空间的拓扑由一个完备不变距离诱导得到，称其为拓扑空间。
 - **Hausdorff空间**：对于拓扑空间$(S,\tau)$，如果$S$上不同的点有不相交的领域，称$(S,\tau)$是Hausdorff空间，$\tau$是Hausdorff拓扑。
 
 ## 1 拓扑向量空间
 
-### 简介
+### 1.1 简介
 
-#### 赋范空间
+#### 1.1.1 赋范空间
 
 - **赋范空间**：如果在向量空间$X$上对于任意$x\in X$存在非负实数$\|x\|$，满足  
 (1) $\|x+y\| \le \|x\| +\|y\|$, $\forall x,y \in X$;  
@@ -43,7 +44,7 @@ B_{r}(x)=\{y:d(x,y)< r \},\ \ \bar{B} _ {r}(x)=\{y:d(x,y)\le r \}.
 
 - **Banach空间**：完备的赋范空间（在诱导的距离上，Cauchy列收敛）。
 
-#### 向量空间
+#### 1.1.2 向量空间
 
 - **向量空间**：数域$\Phi$上的集合$X$，定义加法和数乘满足：  
 (1) $a+b=b+a$, 对任意$a,b\in X$;  
@@ -76,7 +77,7 @@ tC + (1-t)C\subset C, \ \ \  (0\le t\le 1),
 - **维数**：如果向量空间$X$有一组基$\{u_1,u_2,\cdots,u_n\}$，则称$X$为$n$维的。
 
 
-#### 拓扑空间
+#### 1.1.3 拓扑空间
 
 - **拓扑空间**：对于集合$S$, 设$\tau$为$S$的子集族(每个元素叫做一个开集)满足，  
 (1) $S$是开集，$\varnothing$是开集；  
@@ -95,7 +96,7 @@ tC + (1-t)C\subset C, \ \ \  (0\le t\le 1),
 - **相容**：如果拓扑$\tau$由距离$d$诱导得到，则称$\tau$与$d$相容。
 - **收敛**：对于Hausdorff空间上的序列$\{x_n\}$, 如果点$x\in X$的每一个邻域都包含序列中除了有限个$x_n$外的所有，则称$x_n$收敛到$x$(记作$\lim \limits_ {n\to \infty} x_n = x$).
 
-#### 拓扑向量空间
+#### 1.1.4 拓扑向量空间
 
 - **拓扑向量空间**：假设$\tau$是向量空间$X$上的拓扑，满足  
 (1) $X$的每一个点是闭集；   
@@ -108,7 +109,7 @@ tC + (1-t)C\subset C, \ \ \  (0\le t\le 1),
  类似乘法的连续是$\Phi \times X$到$X$的映射：$(\alpha, x)\to \alpha x$是连续的。即，如果$x\in X$，$\alpha$是标量，$V$是$\alpha x$的邻域，则存在某个$r>0$和$x$的某个邻域$W$满足任意的$|\beta-\alpha|< r $有$\beta W\subset V$.
 - **有界**：对于拓扑向量空间$X$的子集$E$, 如果$0$的任意邻域$V$都存在$s>0$满足任意$t>s$有$E\subset tV$.
 
-#### 不变性
+#### 1.1.5 不变性
 
 - **同胚**：两个拓扑空间$(X,\tau_X)$和$(Y,\tau_Y)$之间的映射$f:X\to Y$称为同胚，如果它具有下列性质：  
 (1) $f$是双射（既是单射又是满射）；  
@@ -126,9 +127,9 @@ d(x+z,y+z)=d(x,y).
 \end{equation}
 
 
-#### 拓扑向量空间的类型
+#### 1.1.6 拓扑向量空间的类型
 
-### 分离性质
+### 1.2 分离性质
 - **定理**：假设$K,C$是拓扑向量空间$X$的子集，$K$是紧集，$C$是闭集，且$K\cap C= \varnothing$. 则存在$0$的邻域$V$满足   
  \begin{equation}
  (K+V)\cap (C+V)=\varnothing.
@@ -234,20 +235,80 @@ d(x+z,y+z)=d(x,y).
  证明完毕。$\blacksquare$
 
 
+### 1.3 线性映射
 
+- **像和原像**：设$f$是点集$X$到$Y$的映射，如果$A\subset X$，$B\subset Y$,则$A$的像$f(A)$和$B$的原像或者逆像$f^{-1}(B)$是
+ \begin{equation}
+ f(A)=\{f(x):x\in A\},\ \ f^{-1}(B)=\{x:f(x)\in B\}.
+ \end{equation}
 
+- **线性**：设$X$和$Y$是同一标量域上的向量空间，如果对于任意$x,y\in X$和任意标量$\alpha,\beta$，映射$\Lambda: X\to Y$满足
+ \begin{equation}
+ \Lambda(\alpha x+\beta y)=\alpha \Lambda x+\beta \Lambda y.
+ \end{equation}
+ **线性泛函**：由$X$到标量域的线性映射称为线性泛函。
 
-### 线性映射
+- **定理**：设$X$和$Y$是拓扑向量空间，如果$\Lambda:X\to Y$是线性的且在$0$点连续，则$\Lambda$连续。事实上，在下述意义$\Lambda$一致连续：对于$Y$中每个$0$的邻域$W$，存在$X$上的$0$点邻域$V$满足任意$x,y\in X$,
+ \begin{equation}
+ y-x\in V \Rightarrow \Lambda y-\Lambda x\in W.
+ \end{equation}
 
-### 有限维空间
+- **定理**：设$\Lambda$是拓扑向量空间$X$上的线性泛函，如果存在$x\in X$满足$\Lambda x\neq 0$，则如下四个命题等价：
+ 1. $\Lambda$是连续的。
+ 2. 空间的核$\mathcal{N}(\Lambda)$是闭的。
+ 3. $\mathcal{N}(\Lambda)$在$X$中不稠密。
+ 4. 存在$0$的邻域满足$\Lambda$有界。
 
-### 度量化
+### 1.4 有限维空间
 
-### 有界和连续
+- **引理**：如果$X$是复的拓扑向量空间，且$f:\mathbb{C}^{n}\to X$是线性的，则$f$连续。
+- **定理**：如果$n\in \mathbb{Z}^{+}$且$Y$是复拓扑向量空间$X$的$n$维子空间，则任意$\mathbb{C}^{n}$到$Y$的同构映射是同胚的并且$Y$是闭的。
+- **定理**：所有局部凸拓扑向量空间都是有限维的。
+- **定理**：如果局部有界拓扑向量空间满足Heine-Borel性质，则$X$是有限维的。
+\begin{equation}
+ \end{equation}
 
-### 半范数和局部凸性
+### 1.5 度量化
 
-### 商空间
+- **可度量的**：对于集合$X$上的拓扑$\tau$，如果存在度量$d$与$\tau$相容，则称$\tau$为可度量的。
+
+- **定理**：如果拓扑向量空间$X$具有可数局部基，则$X$上存在度量$d$满足
+ 1. $d$与$X$的拓扑相容。
+ 2. 中心在$0$的开球是均衡的。
+ 3. $d$是不变的，即任意$x,y,x\in X$有，
+ \begin{equation}
+ d(x+z,y+z)=d(x,y).
+ \end{equation}
+ 此外，如果$X$是局部凸的，则还有
+ 4. 所有开球是凸的。
+- **Cauchy列**：设$\tau$是拓扑向量空间$X$的拓扑，$\mathcal{B}$是$\tau$的一个局部基，对于$X$上的点列$\{x_n\}$，如果任意$V\in \mathcal{B}$，存在$N$使得$m,n>N$有$x_m-x_n\in V$，则称$\{x_n\}$为Cauchy列。
+
+- **膨胀原理**：设$(X,d_1)$，$(Y,d_2)$是度量空间，其中$(X,d_1)$是完备的。如果$E$是$X$中的闭集，$f:E\to Y$连续，并且任意$x',x''\in E$有
+ \begin{equation}
+ d_2\big{(}f(x'),f(x'')\big{)}\ge d_1(x',x''),
+ \end{equation}
+ 则$f(E)$是闭的。
+
+- **定理**：设$Y$是拓扑向量空间$X$的子空间，且$Y$是($X$诱导的拓扑下的)F空间($X$诱导的拓扑)。则$Y$是$X$的闭子空间。
+
+- **定理**：
+ 1. 如果$d$是向量空间$X$上的平移不变度量，则对于任意的$x\in X$和$n=1,2,3,\cdots$有
+ \begin{equation}
+ d(nx,0)\le nd(x,0).
+ \end{equation}
+ 2. 设$\{x_n\}$是可度量拓扑向量空间$X$的点列，如果$x_n\to 0(n\to \infty)$，则存在正标量$\gamma_n$满足$\gamma_n\to \infty$且$\gamma_nx_n\to 0$。
+
+\begin{equation}
+ \end{equation}
+
+### 1.6 有界和连续
+
+\begin{equation}
+ \end{equation}
+
+### 1.7 半范数和局部凸性
+
+### 1.8 商空间
 
 ### 例子
 
@@ -361,30 +422,107 @@ d(x+z,y+z)=d(x,y).
 
 ### 2.4 闭图像定理
 
+- **图像**：设$f$是集合$X$到$Y$的映射，则Cartesian积$X\times Y$的子集
+ \begin{equation}
+ \{(x,f(x)):x\in X\}
+ \end{equation}
+ 称为$f$的图像。
+- **命题**：如果$X$是拓扑空间，$Y$是Hausdorff空间，且$f:X\to Y$连续，则$f$的图像是闭的。
+
+- **闭图像定理**：设$X$和$Y$是F空间，$\Lambda:X\to Y$是线性的，$G=\{(x,\Lambda x: x\in X)\}$在$X\times Y$上是闭的，则$\Lambda$连续。
+
+
 ### 2.5 双线性映射
+
+- **双线性映射**：设$X,Y,Z$是向量空间，$B$是$X\times Y$到$Z$的映射。对于任意的$x\in X$或$y\in Y$，定义映射
+ \begin{equation}
+ B_x(y)=B(x,y)=B^{y}(x),
+ \end{equation}
+ 如果所有$B_x(y)$和$B^{y}(x)$都是线性映射，则称$B$是双线性的。
+
+- **分别连续**：如果$X,Y,Z$是拓扑向量空间，并且所有$B_x$和$B^y$是连续的，则称$B$是分别连续的。
+
+- **定理**：假设$B:X\times Y\to Z$是双线性并且分别连续，$X$是F空间，$Y$和$Z$是拓扑向量空间。则任意$X$中$x_n\to x_0$和$Y$中$y_n\to y_0$有$Z$中
+ \begin{equation}
+ B(x_n,y_n)\to B(x_0,y_0).
+ \end{equation}
+ 如果$Y$可度量化，则$B$连续。
 
 ### 2.6 习题
 
 
 
 
-<!-- ## 凸性
+## 3 凸性
 
-### Hahn-Banach 定理
+### 3.1 Hahn-Banach 定理
 
-### 弱拓扑
+- **对偶空间**：拓扑向量空间$X$的对偶空间$X^{* }$是$X$上的所有连续线性泛函组成的空间。其中加法和数乘的定义为
+ \begin{equation}
+ (\Lambda_1+\Lambda)x=\Lambda_1 x+\Lambda_2 x,\ \ (\alpha \Lambda)x=\alpha\cdot \Lambda x.
+ \end{equation}
 
-### 紧凸集
+- **控制延拓定理1**：假设$M$是实向量空间$X$的子空间，$p:X\to R$
+ 满足任意的$x,y\in X$和$t\ge 0$有
+ \begin{equation}
+ p(x+y)\le p(x)+p(y),\ \ p(tx)=p(x),
+ \end{equation}
+ $f:M\to R$是线性的且在$M$上有$f(x)\le p(x)$。则存在线性映射$\Lambda:X\to R$满足
+ \begin{equation}
+ \Lambda x=f(x)\ \ (x\in M),
+ \end{equation}
+ 且
+ \begin{equation}
+ -p(-x)\le \Lambda x\le p(x), (x\in X).
+ \end{equation}
 
-### 向量值积分
+- **控制延拓定理2**：设$M$是向量空间$X$的子空间，$p$是$X$的半范数，且$f$是$M$上的线性泛函满足
+ \begin{equation}
+ \vert f(x)\vert \le p(x)\ \ (x\in M).
+ \end{equation}
+ 则$f$可延拓为$X$上的线性泛函$\Lambda$且满足
+ \begin{equation}
+ \vert \Lambda x\vert \le p(x)\ \ (x\in X).
+ \end{equation}
+ **推论**：如果$X$是赋范空间且$x_0\in X$，则存在$\Lambda \in X^* $满足任意$x\in X$有
+ \begin{equation}
+ \Lambda x_0=\Vert x_0\Vert,\ \ \vert \Lambda x\vert \le \Vert x\Vert.
+ \end{equation}
 
-### 全纯函数
 
-### 习题
+- **分离定理**：假设$A$和$B$是拓扑向量空间$X$上的互不相交的非空凸集，
+ 1. 如果$A$是开集则存在$\Lambda \in X^{* }$和$\gamma\in \mathbb{R}$满足对于任意$x\in A$和$y\in B$有
+ \begin{equation}
+ Re \Lambda x< \gamma <Re \Lambda y.
+ \end{equation}
+ 2. 如果$A$是紧集，$B$是闭集，$X$局部凸，则存在$\Lambda \in X^{* }$,$\gamma_1,\gamma_2\in\mathbb{R}$满足任意$x\in A$和$y\in B$有
+ \begin{equation}
+ Re \Lambda x< \gamma_1 <\gamma_2 <Re \Lambda y.
+ \end{equation}
+ **推论**：如果$X$是局部凸开集，则$X^ * $在$X$上有分离性。    
+ **定理**：设$M$是局部凸开集$X$的子空间，且$x_0\in X$。如果$x_0$不属于$M$的闭包，则存在$\Lambda \in X^{* }$满足$\Lambda x_0=1$，但是任意$x\in M$有$\Lambda x=0$。    
+ **定理**：设$B$是局部凸空间$X$上的均衡闭凸集，$x_0\in X$但$x_0 \notin B$。则存在$\Lambda\in X^{* }$满足任意$x\in B$，$\vert x\vert \le 1$，但$\Lambda x_0 > 1$。
 
+- **连续延拓定理**：设$M$是局部凸空间$X$的子空间，如果$f$是$M$上的连续映射，则存在$\Lambda\in X^{* }$满足在$M$上$\Lambda=f$。
 
+### 3.2 弱拓扑
 
-## Banach空间的对偶
+- **拓扑的强弱**：设$\tau_1$和$\tau_2$是集合$X$上两个拓扑，如果$\tau_1\subset \tau_2$，则$\tau_1$的开集也是$\tau_2$的开集，故称$\tau_1$比$\tau_2$弱或者$\tau_2$比$\tau_1$强。     
+ **注1**：上面的包含关系不排除等号。    
+ **注2**：恒等映射是$(X,\tau_2)$到$(X,\tau_1)$的连续映射，是$(X,\tau_1)$到$(X,\tau_2)$的开映射。
+
+### 3.3 紧凸集
+
+### 3.4 向量值积分
+
+### 3.5 全纯函数
+
+### 3.6 习题
+
+\begin{equation}
+ \end{equation}
+
+<!-- ## Banach空间的对偶
 
 ### 赋范空间的赋范对偶
 
@@ -392,11 +530,11 @@ d(x+z,y+z)=d(x,y).
 
 ### 紧算子
 
-### 习题
+### 习题 -->
 
 
 
-## 一些应用
+<!-- ## 一些应用
 
 ### 一个连续定理
 
