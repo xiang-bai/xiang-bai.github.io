@@ -303,16 +303,109 @@ d(x+z,y+z)=d(x,y).
 
 ### 1.6 有界和连续
 
+- **有界等价刻画**：设$E$是拓扑向量空间的子集，则如下两个命题等价：
+ 1. $E$有界；
+ 2. 对于$E$上的点列$\{x_n\}$和标量点列$\{\alpha_n\}$，如果$\alpha_n\to 0$($n\to\infty$)，则$\alpha_n x_n\to 0$($n\to \infty$)。
+- **有界线性变换**：设$X$和$Y$是拓扑向量空间，映射$\Lambda:X\to Y$是线性的，如果$\Lambda$把有界集映射为有界集，即任意有界集$E\subset X$，$\Lambda(E)$是$Y$中的有界集，则称$\Lambda$是有界线性变换。
+- **定理**：设$X$和$Y$是拓扑，映射$\Lambda:X\to Y$是线性的，则如下四个命题有关系$(a)\Rightarrow (b)\Rightarrow (c)$。如果$X$是可度量的，则四个命题等价即有$(c)\Rightarrow (d)\Rightarrow (a)$。     
+ (a) $\Lambda$是连续的；   
+ (b) $\Lambda$是有界的；   
+ (c) 如果$x_n\to 0$，则$\{\Lambda x_n:n=1,2,3,\cdots\}$有界；   
+ (d) 如果$x_n\to 0$，则$\Lambda x_n\to 0$。
+
 \begin{equation}
  \end{equation}
 
 ### 1.7 半范数和局部凸性
 
+- **半范数**：定义向量空间$X$上的实值函数$p$满足任意$x,y\in X$和标量$\alpha$有
+ 1. $p(x+y)\le p(x)+p(y)$,
+ 2. $p(\alpha x)=\vert \alpha \vert p(x)$,
+
+ 则称$p$是$X$的半范数。
+
+ **可分的**：对于$X$上的半范数族$\mathcal{P}$，如果任意$x\neq 0$存在$p\in \mathcal{P}$满足$p(x)\neq 0$，则称$\mathcal{P}$是可分的。
+
+- **吸收集**：对于拓扑向量空间$X$的凸集$E$，如果任意的$x\in X$，存在$t>0$满足$x\in t E$，则称$E$是吸收集。
+
+ **Minkowski泛函**：集合$E$的Minkowski泛函是
+ \begin{equation}
+ \mu_{E}(x)=\inf \{t>0: x\in t E\}\  (x\in X).
+ \end{equation}
+
+- **定理**：设$p$是向量空间$X$的半范数则
+ 1. $p(0)=0$.
+ 2. $\vert p(x)-p(y)\vert \le p(x-y)$.
+ 3. $p(x)\ge 0$.
+ 4. $\{x:p(x)=0\}$是$X$的子空间。
+ 5. $B=\{x:p(x)<1\}$是均衡凸吸收集，且$p=\mu_{B}$.
+
+- **定理**：设$A$是向量空间$X$上的凸吸收集，则
+ 1. $\mu_{A}(x+y)\le \mu_{A}(x)+\mu_{A}(y)$.
+ 2. 如果$t\ge 0$，则$\mu_{A}(tx)=t\mu_{A}(x)$.
+ 3. 如果$A$是均衡的，则$\mu_{A}$是半范数。
+ 4. 如果$B=\{x:\mu_{A}(x)<1\}$和$C=\{x:\mu_{A}(x)\le 1\}$，则$B\subset A\subset C$且$\mu_{A}=\mu_{B}=\mu_{C}$.
+
+- **定理**：设$\mathcal{B}$是拓扑向量空间$X$的凸均衡局部基，任意$V\in \mathcal{B}$对应Minkowski泛函$\mu_{V}$，则
+ 1. 任意$V\in \mathcal{B}$，$V=\{x\in X:\mu_{V}(x)<1\}$.
+ 2. $\{\mu_{V}:V\in \mathcal{B}\}$是$X$上可分的连续半范数族。
+
+- **定理**：假设$\mathcal{P}$是向量空间$X$上的可分半范族，任意$p\in \mathcal{P}$和$n\in\mathbb{Z}^{+ }$对应集合
+ \begin{equation}
+ V(p,n)=\{x:p(x)<\frac{1}{n}\}.
+ \end{equation}
+ 设$\mathcal{B}$是由所有集合$V(p,n)$的有限交构成的集族。则$\mathcal{B}$是$X$的某个拓扑$\tau$构成的均衡凸局部基，在$\tau$下$X$是局部凸空间且
+ 1. 任意$p\in\mathcal{P}$是连续的。
+ 2. 集合$E\subset X$有界当且仅当所有$p\in\mathcal{P}$在$E$上有界。
+
+- **定理**：
+- **定理**：拓扑向量空间$X$是可赋范化的当且仅当在原点处有有界凸邻域。
+\begin{equation}
+ \end{equation}
+
+
 ### 1.8 商空间
+
+- **商空间**：设$N$是向量空间$X$的子空间，对于任意$x\in X$，设$\pi(x)$是$N$的一个(包含$x$的)陪集：
+ \begin{equation}
+ \pi(x)=x+N.
+ \end{equation}
+ 所有$N$的陪集构成线性空间称为$X$除以$N$的商空间$X/N$，对应的加法和数乘是
+ \begin{equation}
+ \pi(x)+\pi(y)=\pi(x+y),\ \ \alpha\pi(x)=\pi(\alpha x).
+ \end{equation}
+ **商映射**：$\pi$是$X$到$X/N$的线性映射，称为商映射，核为$N$。    
+ **商拓扑**：设$\tau$是$X$上的向量拓扑，$N$是$X$的闭子空间。定义
+ \begin{equation}
+ \tau_{N}=\{E\subset X/N: \pi^{-1}(E)\in \tau\}.
+ \end{equation}
+ 则$\tau_{N}$是$X/N$的拓扑，称为商拓扑。
+
+- **定理**：设$N$是拓扑向量空间$X$的闭子空间，$\tau$是$X$的拓扑，$\tau_N$是如上定义的商拓扑。则
+ 1. $\tau_{N}$是$X/N$的向量拓扑，商映射$\pi:X\to X/N$是连续线性开映射。
+ 2. 如果$\mathcal{B}$是$\tau$的局部基，则集合族$\{\pi(V):V\in\mathcal{B}\}$是$\tau_{N}$的局部基。
+ 3. $X/N$继承了$X$的如下性质：局部凸、局部有界、可度量、可赋范。
+ 4. 如果$X$是F空间，或者Fréchet空间，或者Banach空间，则$X/N$也是。
+- **应用**：设$N$和$F$是拓扑向量空间$X$的子空间，$N$是闭的，$F$是有限维的，则$N+F$是闭的。
+
+- **半范数与商空间**：设$p$是向量空间$X$上的半范数且$N=\{x:p(x)=0\}$，$\pi$是$X$到$X/N$的商映射，定义
+ \begin{equation}
+ \tilde{p}(\pi(x))=p(x).
+ \end{equation}
+ 则$\tilde{p}$是$X/N$的范数。
+
+
+\begin{equation}
+ \end{equation}
+
 
 ### 例子
 
-### 习题
+- **$C(\Omega)$空间**：
+
+- **$H(\Omega)$空间**：
+- **$C^{\infty}$和$D_{k}$空间**：
+- **$L^{p}$空间($0< p < 1$)**：
 
   
 
