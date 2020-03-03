@@ -8,6 +8,8 @@ tags: algebra
 
 # 抽象代数基础
 
+* any list
+{:toc}
 
 ## 一. 基本概念
 
