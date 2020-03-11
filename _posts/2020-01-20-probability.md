@@ -93,7 +93,7 @@ tags: probability
  \begin{equation}
  P(B_k)=
  \begin{pmatrix}
- n\\
+ n\newline
  k
  \end{pmatrix}
  p^{k}q^{n-k},\ \ (0\le k\le n).
@@ -116,7 +116,7 @@ tags: probability
  \begin{equation}
  b(k;n,p)=
  \begin{pmatrix}
- n\\
+ n\newline
  k
  \end{pmatrix}
  p^{k}q^{n-k}.
@@ -165,7 +165,7 @@ tags: probability
  \begin{equation}
  F(t)=P(\eta\le t)=
  \begin{cases}
- 1-e^{-\lambda t},\ \ &t\ge 0,\\
+ 1-e^{-\lambda t},\ \ &t\ge 0,\newline
  0,&t<0.
  \end{cases}
  \end{equation}
@@ -204,7 +204,7 @@ tags: probability
  \begin{equation}
  \varphi(y)=
  \begin{cases}
- p[h(y)]\cdot \vert h'(y)\vert,\ \ &\alpha< y< \beta\\
+ p[h(y)]\cdot \vert h'(y)\vert,\ \ &\alpha< y< \beta\newline
  0,&\text{其他}
  \end{cases}
  \end{equation}
@@ -318,7 +318,7 @@ tags: probability
  \begin{equation}
  p(x)=
  \begin{cases}
- \frac{1}{2^{n/2}\Gamma(n/2)}x^{\frac{n}{2}-1}e^{-\frac{x}{2}},\ \ & x\ge 0 \\
+ \frac{1}{2^{n/2}\Gamma(n/2)}x^{\frac{n}{2}-1}e^{-\frac{x}{2}},\ \ & x\ge 0 \newline
  0, & x<0.
  \end{cases}
  \end{equation}
@@ -327,7 +327,7 @@ tags: probability
  \begin{equation}
  p(x)=
  \begin{cases}
- \frac{\lambda^{\alpha}}{\Gamma(\alpha)}x^{\alpha -1}e^{-\lambda x},\ \ & x\ge 0\\
+ \frac{\lambda^{\alpha}}{\Gamma(\alpha)}x^{\alpha -1}e^{-\lambda x},\ \ & x\ge 0\newline
  0, &x<0
  \end{cases}
  \end{equation}
@@ -342,7 +342,7 @@ tags: probability
  \begin{equation}
  p(x)=
  \begin{cases}
- \frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}x^{a-1}(1-x)^{b-1},\ \ &0< x< 1\\
+ \frac{\Gamma(a+b)}{\Gamma(a)\Gamma(b)}x^{a-1}(1-x)^{b-1},\ \ &0< x< 1\newline
  0,& \text{其他}
  \end{cases}
  \end{equation}
@@ -351,14 +351,14 @@ tags: probability
 - **变量变换原理**：设$(\xi,\eta)$的联合密度函数是$p(x,y)$，如果函数
  \begin{equation}
  \begin{cases}
- \mu =g_1(x,y)\\
+ \mu =g_1(x,y)\newline
  \nu =g_2(x,y)
  \end{cases}
  \end{equation}
  有连续偏导数，且存在唯一的反函数
  \begin{equation}
  \begin{cases}
- x=x(\mu,\nu)\\
+ x=x(\mu,\nu)\newline
  y=y(\mu,\nu)
  \end{cases},
  \end{equation}
@@ -366,7 +366,7 @@ tags: probability
  \begin{equation}
  J=\frac{\partial(x,y)}{\partial (\mu,\nu)}=
  \begin{vmatrix}
- \frac{\partial x}{\partial \mu} & \frac{\partial x}{\partial \nu}\\
+ \frac{\partial x}{\partial \mu} & \frac{\partial x}{\partial \nu}\newline
  \frac{\partial y}{\partial \mu} & \frac{\partial y}{\partial \nu}
  \end{vmatrix}
  \neq 0
@@ -374,7 +374,7 @@ tags: probability
  若
  \begin{equation}
  \begin{cases}
- U=g_1(\xi,\eta)\\
+ U=g_1(\xi,\eta)\newline
  V=g_2(\xi,\eta)
  \end{cases}
  \end{equation}
