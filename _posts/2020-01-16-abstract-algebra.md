@@ -83,10 +83,14 @@ ii)$a^k$的阶为$d$ $\Leftrightarrow$ $(d,k)=1$;
 *内容：*
 
 - **同态**：设$G,G'$为两个群，如果有$G$到$G'$的映射$\sigma$满足：任意$a,b\in G$，有
-$$\sigma (ab) = \sigma (a) \sigma (b),$$
+\begin{equation}
+\sigma (ab) = \sigma (a) \sigma (b),
+\end{equation}
 则称$\sigma$为$G$到$G'$的一个同态映射，简称同态(homomorphism).
 - **同构**：设$G,G'$为两个群，如果有$G$到$G'$的双射(既是单射又是满射)$\sigma$满足：任意$a,b\in G$，有
-$$\sigma (ab) = \sigma (a) \sigma (b),$$
+ \begin{equation}
+ \sigma (ab) = \sigma (a) \sigma (b),
+ \end{equation}
 则称$\sigma$为$G$到$G'$的一个同构映射，简称同构(isomorphism)，$G$和$G'$同构记作$G\cong G'$.
 - **自同构**：群$G$到自身的一个同构映射成为$G$的自同构。(所有自同构映射组成的集合，对于映射乘法构成群。)
 - **群同态的性质**：设$\sigma$是群$G$到群$G'$的一个同态，则  
@@ -138,7 +142,9 @@ $$\sigma (ab) = \sigma (a) \sigma (b),$$
 - **子群**：群$G$的非空子集$H$如果对于$G$的运算也成一个群，则称$H$是$G$的子群(subgroup).
 - **等价条件**：设$H$是群$G$的非空子集，则$H$是$G$的子群等价于任意$a,b\in H$, 有$ab^{-1}\in H$.
 - **由$S$生成的子群**：设$S$为群$G$的非空子集，则所有包含$S$的子群的交仍是群，称为由$S$生成的子群，记作$\langle S \rangle$. 其实，
-$$\langle S \rangle=\{ x_1^{m_1}x_2^{m_2}\cdots x_k^{m_k} | x_i\in S, m_i\in \mathbb{Z}, 1\le i \le k, k\in \mathbb{Z}^{+}\}.$$
+ \begin{equation}
+ \langle S \rangle=\{ x_1^{m_1}x_2^{m_2}\cdots x_k^{m_k} | x_i\in S, m_i\in \mathbb{Z}, 1\le i \le k, k\in \mathbb{Z}^{+}\}.
+ \end{equation}
 
 ### 7. 陪群
 
@@ -152,7 +158,9 @@ $$\langle S \rangle=\{ x_1^{m_1}x_2^{m_2}\cdots x_k^{m_k} | x_i\in S, m_i\in \ma
 - 子群$H$的任意两个左陪集要么相等要么不相交。
 - **有限群性质**：  
 (1)有限群$G$的任一子群$H$的阶为$G$的阶的因子，准确说：
-$$|G|=|H|[G:H].$$  
+ \begin{equation}
+ |G|=|H|[G:H].
+ \end{equation}  
 (2)有限群$G$每个元素的阶是$G$的阶的因子。
 - **素数阶群**：素数阶群一定为循环群。
 
@@ -164,20 +172,28 @@ $$|G|=|H|[G:H].$$
 *内容：*
 
 - **正规子群**：群$G$的子群$N$满足：任意$g\in G$，
-$$gNg^{-1}=N,$$
+ \begin{equation}
+ gNg^{-1}=N,
+ \end{equation}
 称$N$是$G$的一个正规子群，记作$N\lhd G$.
 - **共轭子群**：设$H$为群$G$的子群，对任意$g\in G$，$gHg^{-1}$也是$G$的子群，称$gHg^{-1}$为$H$的共轭子群。
 - **等价条件**：群$G$的子群$H$是$G$的正规子群，等价于任意$a\in G$有$aH=Ha$.
 - **群同态基本定理**：设$\sigma$为群$G$到$G'$的一个同态，则同态像同构于商群$G/Ker\sigma$,即
-$$G/Ker \sigma \cong Im\sigma.$$
+ \begin{equation}
+ G/Ker \sigma \cong Im\sigma.
+ \end{equation}
 - **第一同构定理**：设$G$是群，$H$是$G$的子群，$N$是$G$的正规子群，则：  
 (1)$HN$是$G$的子群；  
 (2)$H\cap N$是$H$的正规子群，且$H/H\cap N\cong HN/N$.
 - **第二同构定理**：设$G$为群，$H$和$N$都是$G$上正规子群，且$N\subset H$，则$H/N$为$G/N$的正规子群，且
-$$(G/N)/(H/N)\cong G/H.$$
+ \begin{equation}
+ (G/N)/(H/N)\cong G/H.
+ \end{equation}
 - **单群**：如果群$G$只有平凡的正规子群，则称$G$为单群。
 - **换位子群(导群)**：称$xyx^{-1}y^{-1}$为$x$与$y$的换位子，记作$[x,y]$.群$G$的所有换位子生成的群称为$G$的换位子群，记作$[G,G]$,即
-$$[G,G]=\langle\{xyx^{-1}y^{-1}|x,y\in G\}\rangle.$$
+ \begin{equation}
+ [G,G]=\langle\{xyx^{-1}y^{-1}|x,y\in G\}\rangle.
+ \end{equation}
 - **换位子群性质**：设$G'$是$G$的换位子群，则  
 (1)$G'$是$G$的正规子群；  
 (2)$G/G'$是Abel群，且若$N$是$G$的正规子群，有$G/N$为正规子群当且仅当$G'\subset N$.
@@ -194,7 +210,9 @@ $$[G,G]=\langle\{xyx^{-1}y^{-1}|x,y\in G\}\rangle.$$
 (1)对于$1\le k \le l$,$G$的任意一个$p^{k}$阶子群一定包含在$G$的某一个Sylow $p$-子群中；  
 (2)$G$的任意两个Sylow $p$-子群在$G$中共轭。
 - **sylow第三定理**：设群$G$的阶为$n=p^lm$，其中$p$为素数，$(m,p)=1$,$l>0$,则$G$的Sylow $P$-子群的个数$r$模$p$同余$1$，并且$r$是$m$的因子。即
-$$r \equiv 1 \pmod{p},\ \ \text{且} r|m.$$
+ \begin{equation}
+ r \equiv 1 \pmod{p},\ \ \text{且} r|m.
+ \end{equation}
 
 
 ## 三. 环与域
@@ -205,8 +223,10 @@ $$r \equiv 1 \pmod{p},\ \ \text{且} r|m.$$
 
 *内容：*
 - **环**：设$R$是一个非空集合，如果在$R$中有两种二元运算，对于其中一种运算(加法)成为交换群，对于另一种运算(乘法)成为半群，且满足分配律：
-$$a(b+c)=ab+ac,\ (a+b)c=ac+bc,\ \ \forall a,b,c \in R,$$
-则称$R$为一个环。
+ \begin{equation}
+ a(b+c)=ab+ac,\ (a+b)c=ac+bc,\ \ \forall a,b,c \in R,
+ \end{equation}
+ 则称$R$为一个环。
 - **交换环**：如果对于环$R$的乘法还满足交换律，称$R$为交换环。
 - **幺环**：如果对于环$R$的乘法存在单位元(记作$1$)，称$R$为幺环。
 - **零因子**：设$a,b$是环$R$上的元素，且$a\neq 0,\ \ b\neq 0$，若$ab=0$，则称$a$($b$)为环$R$的一个左(右)零因子。
@@ -214,7 +234,9 @@ $$a(b+c)=ab+ac,\ (a+b)c=ac+bc,\ \ \forall a,b,c \in R,$$
 - **消去律与零因子**：一个环$R$没有零因子，当且仅当$R$满足左右消去律。
 - **无零因子环与阶**：设环$R\neq \{0\}$,且为无零因子环，则$R$中所有的非零元对于$R$的加法具有相同阶，且当这个共同阶为有限时，必为素数。
 - **特征性质**：设无零因子交换环$R$的特征为$p$，$p$为素数，则
-$$(a+b)^p=a^p+b^p,\ (a-b)^p=a^p-b^p,\ \ \forall a,b\in R.$$
+ \begin{equation}
+ (a+b)^p=a^p+b^p,\ (a-b)^p=a^p-b^p,\ \ \forall a,b\in R.
+ \end{equation}
 
 ### 2. 除环
 
@@ -238,30 +260,46 @@ $$(a+b)^p=a^p+b^p,\ (a-b)^p=a^p-b^p,\ \ \forall a,b\in R.$$
 
 *内容：*
 - **理想**：设环$R$的子环$I$满足
-$$ar\in I,\ ra\in I,\ \ \forall a\in I,\forall r\in R.$$
+ \begin{equation}
+ ar\in I,\ ra\in I,\ \ \forall a\in I,\forall r\in R.
+ \end{equation}
 则称$I$是$R$的一个理想。
 - **由$S$生成的理想**：设$S$是环$R$的非空子集，环$R$包含$S$的所有理想的交集称为由$S$生成的理想。
 - **零理想**：
 - **单位理想**：
 - **主理想**：环$R$由一个元素$a$生成的理想称为主理想，记作$(a)$，其实
-$$(a)=\{r_1a+ar_2+ma+\sum_{i=1}^{n}x_iay_i|r_1,r_2,x_i,y_i\in R,m\in\mathbb{Z},n\in\mathbb{Z}^{+}\}.$$
+ \begin{equation}
+ (a)=\{r_1a+ar_2+ma+\sum_{i=1}^{n}x_iay_i|r_1,r_2,x_i,y_i\in R,m\in\mathbb{Z},n\in\mathbb{Z}^{+}\}.
+ \end{equation}
 - **互素**：设$R$是幺环，$I,J$是$R$的理想，如果$I+J=R$，则称$I$与$J$互素。
 - **理想充要条件**：设$R_1$为环$R$的非空子集，则$R_1$为$R$的理想的充要条件是对于任意$a,b\in R_1$，$x,y\in R$，有$a-b\in R_1$，$xa,ay\in R_1$.
 - **商环**：设$I$是环$R$的理想，$I$的所有陪集组成一个环，称为$R$对于$I$的商环，记作$R/I$.
 - **环的同态**：设$\sigma$为环$R$到环$R'$的映射，且满足任意$a,b\in R$有
-$$\sigma (a+b)= \sigma(a)+\sigma(b),$$
-$$\sigma(ab)= \sigma(a)\sigma(b),$$
-称$\sigma$是$R$到$R'$的同态。
+ \begin{equation}
+ \sigma (a+b)= \sigma(a)+\sigma(b),
+ \end{equation}
+ \begin{equation}
+ \sigma(ab)= \sigma(a)\sigma(b),
+ \end{equation}
+ 称$\sigma$是$R$到$R'$的同态。
 - **环的同构**：设$\sigma$为环$R$到环$R'$的双射，且满足任意$a,b\in R$有
-$$\sigma (a+b)= \sigma(a)+\sigma(b),$$
-$$\sigma(ab)= \sigma(a)\sigma(b),$$
-称$\sigma$是$R$到$R'$的同构。
+ \begin{equation}
+ \sigma (a+b)= \sigma(a)+\sigma(b),
+ \end{equation}
+ \begin{equation}
+ \sigma(ab)= \sigma(a)\sigma(b),
+ \end{equation}
+ 称$\sigma$是$R$到$R'$的同构。
 - **环同态基本定理**：设$\sigma$为环$R$到环$R'$的同态，则同态像$Im \sigma$同构于商环$R/Ker \sigma$，即
-$$R/Ker\sigma \cong Im \sigma.$$
+ \begin{equation}
+ R/Ker\sigma \cong Im \sigma.
+ \end{equation}
 - **素理想**：设$I$为环$R$的理想，如果由$ab\in I$，可推出$a\in I$或$b\in I$，则称$I$为$R$的一个素理想。
 - **极大理想**：设$R$是交换幺环，$M$是$R$的理想，若$M\neq R$，且不存在$R$的真理想使得
-$$M\subset N, M\neq N,$$
-则称$M$为$R$的极大理想。
+ \begin{equation}
+ M\subset N, M\neq N,
+ \end{equation}
+ 则称$M$为$R$的极大理想。
 
 ### 5. 无零因子的交换环
 
@@ -276,12 +314,18 @@ $$M\subset N, M\neq N,$$
 - **素元素**：设$R$为整环，$p\in R^{* }-U$，且$p\mid ab$可推出$p\mid a$或$p\mid b$，则称$p$为素元素。(素元素一定是不可约元素。)
 - **唯一分解环**：如果整环$R$满足：  
 (1)有限分解条件：任意$a\in R^{* }-U$，$a$可分解为有限个不可约元素乘积，即存在不可约元素$p_i(1\le i\le r)$使得
-$$a=p_1p_2\cdots p_r;$$  
+ \begin{equation}
+ a=p_1p_2\cdots p_r;
+ \end{equation}  
 (2)相伴意义下分解唯一：若$a\in R^{* }-U$有两种不可约元素乘积的分解：
-$$a=p_1p_2\cdots p_s=q_1q_2\cdots q_r,$$
-则有$r=s$，并且适当交换顺序可使得
-$$p_i\sim q_i(1\le i\le r);$$
-称$R$为唯一分解环。
+ \begin{equation}
+ a=p_1p_2\cdots p_s=q_1q_2\cdots q_r,
+ \end{equation}
+ 则有$r=s$，并且适当交换顺序可使得
+ \begin{equation}
+ p_i\sim q_i(1\le i\le r);
+ \end{equation}
+ 称$R$为唯一分解环。
 - **公因子**：设$R$为整环，$a_1,a_2,\cdots, a_n\in R$，若$c$同时能够整除$a_1,a_2,\cdots,a_n$，则称$c$为$a_1,a_2,\cdots,a_n$的公因子，若$a_1,a_2,\cdots,a_n$的公因子$d$能够被$a_1,a_2,\cdots,a_n$的任何一个公因子整除，则称$d$为$a_1,a_2,\cdots,a_n$的一个最大公因子。
 
 - **没有零因子的交换环一定是一个域的子环**
@@ -297,8 +341,10 @@ $$p_i\sim q_i(1\le i\le r);$$
 
 *内容：*
 - **欧氏环**：设$R$为一个整环，若存在从$R^{* }$到$\mathbb{N}\cup \{0\}$的映射$\delta$，使得任意$a,b\in R,\ b\neq 0$，存在$q,r\in R$，满足
-$$a=qb+r,$$
-其中$r=0$，或$\delta(r)<\delta(b)$.称$R$为欧氏环(Euclid环)。
+ \begin{equation}
+ a=qb+r,
+ \end{equation}
+ 其中$r=0$，或$\delta(r)<\delta(b)$.称$R$为欧氏环(Euclid环)。
 - **欧氏环是主理想环**：
 - **欧氏环是唯一分解环**：
 - **整数环是主理想环**：
