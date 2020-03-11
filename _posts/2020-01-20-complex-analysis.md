@@ -31,15 +31,25 @@ tags: analysis
 - **复数三角表示**：复数$z=x+yi$可以通过辐角来表示，即$z=\vert z\vert(\cos{\text{Arg }z}+i\sin{\text{Arg } z})$.
 - **共轭**：复数$z=x+iy$的共轭为$x-iy$，记作$\bar{z}$。显然$\text{Arg }z=-\text{Arg }z$.
 - **乘幂**：设复数$z\neq 0$和正整数$n$，有
- $$z^{n}=\vert z\vert^n\Big{(}\cos(n\text{Arg }z)+i\sin(n\text{Arg } z)\Big{)}$$
+ \begin{equation}
+ z^{n}=\vert z\vert^n\Big{(}\cos(n\text{Arg }z)+i\sin(n\text{Arg } z)\Big{)}
+ \end{equation}
  显然上式中$n=0$，$z^0=1$也成立。对于负数，$z^{-n}=\frac{1}{z^n}$，故
- $$z^{-n}=\vert z\vert^{-n}\Big{(}\cos(-n\text{Arg }z)+i\sin(-n\text{Arg } z)\Big{)}$$
+ \begin{equation}
+ z^{-n}=\vert z\vert^{-n}\Big{(}\cos(-n\text{Arg }z)+i\sin(-n\text{Arg } z)\Big{)}
+ \end{equation}
  在上面做变量替换$z=w^n$，有
- $$z^{\frac{1}{n}}=\vert z\vert^{\frac{1}{n}}\Big{(}\cos(\frac{1}{n}\text{Arg }z)+i\sin(\frac{1}{n}\text{Arg } z)\Big{)}$$
+ \begin{equation}
+ z^{\frac{1}{n}}=\vert z\vert^{\frac{1}{n}}\Big{(}\cos(\frac{1}{n}\text{Arg }z)+i\sin(\frac{1}{n}\text{Arg } z)\Big{)}
+ \end{equation}
 - **De Moivre(棣莫弗)公式**：
- $$(\cos \theta +i\sin \theta)^n=\cos n\theta+i\sin n\theta.$$
+ \begin{equation}
+ (\cos \theta +i\sin \theta)^n=\cos n\theta+i\sin n\theta.
+ \end{equation}
 - **球极**：在三维空间，把$xOy$平面看作$z=z+iy$平面，考虑球面$S$
- $$x^2+y^2+u^2=1,$$
+ \begin{equation}
+ x^2+y^2+u^2=1,
+ \end{equation}
  取定点$N(0,0,1)$称为球极。
 - **球极映射**：对于$xOy$平面上一点$A(x,y,0)$，连接球极$N$与$A$的直线与球面的交点为$A'(x',y',u')$，称$A'$为$A$的球极映射。
 - **无穷远点**：约定复平面上有一个理想点，它的球极映射为$N$，称为无穷远点，记作$\infty$，它的模约定为$+\infty$.
@@ -64,36 +74,54 @@ tags: analysis
 *内容：*
 - **复变函数**：设复平面$\mathbb{C}$上给定点集$E$，如果又一个法则$f$，使得任意$z=x+iy\in E$，存在$w=u+iv\in \mathbb{C}$与之对应，则称$f$为$E$上的复变函数，记作$w=f(z)$。
 - **极限**：假设$w=f(z)$定义在$E$上，$z_0$为$E$上的聚点，$\alpha$是复常数。如果对于任意的$\epsilon >0$，存在一个正整数$\delta >0$，满足当$z\in E$且$0<\vert z\vert <\delta$时有
- $$\vert f(z)-\alpha\vert <\epsilon,$$
+ \begin{equation}
+ \vert f(z)-\alpha\vert <\epsilon,
+ \end{equation}
  则称$\alpha$是$f(z)$在$z\to z_0$处的极限。
 - **连续**：设函数$f(z)$定义在$E$上，并且$z_0\in E$，如果
- $$\lim\limits_{z\to z_0,z\in E}f(z)=f(z_0),$$
+ \begin{equation}
+ \lim\limits_{z\to z_0,z\in E}f(z)=f(z_0),
+ \end{equation}
  则称$f(z)$在$z_0$处连续。如果$f(z)$在$E$上每一点都连续，则称$f(z)$在$E$上连续。
 - **导数**：对于任意的$\epsilon>0$，存在$\delta >0$，满足当$z\in E$且$0<\vert z\vert <\delta$时有，
- $$\Big{\vert} \frac{f(z)-f(z_0)}{z-z_0}-\alpha \Big{\vert}<\epsilon,$$
+ \begin{equation}
+ \Big{\vert} \frac{f(z)-f(z_0)}{z-z_0}-\alpha \Big{\vert}<\epsilon,
+ \end{equation}
  则称$f(z)$在$z_0$处可导，或者有导数$\alpha$，记作$f'(z_0)=\alpha$。
 - **解析函数**：如果函数$f(z)$在区域$D$内每一点都可微，则称$f(z)$在区域$D$内解析。如果$f(z)$在$z_0$一个邻域内解析，则称$f(z)$在$z_0$点解析。
 - **Cauchy-Riemann条件**：设$f(z)=u(x,y)+iv(x,y)$定义在区域$D$内，条件
- $$\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\ \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}$$
+ \begin{equation}
+ \frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\ \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}
+ \end{equation}
  称为Cauchy-Riemann条件。
  - **定理**：设$f(z)=u(x,y)+iv(x,y)$定义在区域$D$上，那么$f(z)$在$z=x+iy\in D$处可微的充分必要条件是在$z=x+iy$处，$u(x,y)$和$v(x,y)$都可微，并且满足Cauchy-Riemann条件。
  - **定理**：设$f(z)=u(x,y)+iv(x,y)$定义在区域$D$上，那么$f(z)$在$D$内可微的充分必要条件是在$D$内，$u(x,y)$和$v(x,y)$都可微，并且满足Cauchy-Riemann条件。
  - **推论**：当$f(z)$有导数的情况下，有
-  $$f'(z)=\frac{\partial u}{\partial x}+i\frac{\partial v}{\partial x}=\frac{\partial v}{\partial y}-i\frac{\partial u}{\partial y}.$$
+  \begin{equation}
+  f'(z)=\frac{\partial u}{\partial x}+i\frac{\partial v}{\partial x}=\frac{\partial v}{\partial y}-i\frac{\partial u}{\partial y}.
+  \end{equation}
 - **指数函数**：$\mathrm{e}^z=\mathrm{e}^x(\cos{y}+i\sin{y}).$
 - **对数函数**：给定复数$z$，满足$z=\mathrm{e}^w$的复数$w$称为$z$的对数，记作$\mathrm{Ln}{z}$。其实，
- $$\mathrm{Ln}{z}=\ln{\vert z\vert}+i\mathrm{Arg}{z}.$$
+ \begin{equation}
+ \mathrm{Ln}{z}=\ln{\vert z\vert}+i\mathrm{Arg}{z}.
+ \end{equation}
  把$\ln{\vert z\vert}+i\arg{z}$定义为$\mathrm{Ln}{z}$的主值，记作$\ln z$。
 - **幂函数**：设$\alpha$是复数，则复数$z$的$\alpha$次幂定义为
- $$z^{\alpha}=\mathrm{e}^{\alpha\mathrm{Ln}{z}}.$$
+ \begin{equation}
+ z^{\alpha}=\mathrm{e}^{\alpha\mathrm{Ln}{z}}.
+ \end{equation}
 - **幂函数枝点**：
  - 对于有理数$\alpha=\frac{m}{n}$(既约分数)，称$0$和无穷远点$\infty$为$z^{\alpha}$的$n-1$阶枝点。
  - $\alpha$不是有理数时，原点和无穷远点是$z^{\alpha}$的无穷阶枝点。
 
 - **三角函数**：正弦函数和余弦函数，
- $$\cos{z}=\frac{\mathrm{e}^{iz}+\mathrm{e}^{-iz}}{2},\ \ \sin{z}=\frac{\mathrm{e}^{iz}-\mathrm{e}^{-iz}}{2i}.$$
+ \begin{equation}
+ \cos{z}=\frac{\mathrm{e}^{iz}+\mathrm{e}^{-iz}}{2},\ \ \sin{z}=\frac{\mathrm{e}^{iz}-\mathrm{e}^{-iz}}{2i}.
+ \end{equation}
  反三角函数，
- $$\mathrm{Arc}\tan{z}=\frac{1}{2i}\big{(}\mathrm{Ln}(z-i)-\mathrm{Ln}(z+i)+i\pi\big{)}.$$
+ \begin{equation}
+ \mathrm{Arc}\tan{z}=\frac{1}{2i}\big{(}\mathrm{Ln}(z-i)-\mathrm{Ln}(z+i)+i\pi\big{)}.
+ \end{equation}
 
 
 ## 第三章 复变函数的积分 
@@ -103,40 +131,59 @@ tags: analysis
 
 *内容：*
 - **复积分**：设$C$是简单(简单光滑或者简单分段光滑)曲线，复函数$f(z)$沿曲线$C$的积分$\int_{C}f(z)\mathrm{d}z$为
- $$\int_{C}f(z)\mathrm{d}z=\int_{C}u(x,y)\mathrm{d}x-\int_{C}v(x,y)\mathrm{d}y+i\Big{(}\int_{C}v(x,y)\mathrm{d}x+\int_{C}u(x,y)\mathrm{d}y\Big{)}.$$
+ \begin{equation}
+ \int_{C}f(z)\mathrm{d}z=\int_{C}u(x,y)\mathrm{d}x-\int_{C}v(x,y)\mathrm{d}y+i\Big{(}\int_{C}v(x,y)\mathrm{d}x+\int_{C}u(x,y)\mathrm{d}y\Big{)}.
+ \end{equation}
  - 如果$C$是简单光滑曲线$z(t)(t_0\le t\le T)$，则有
- $$\int_{C}f(z)\mathrm{d}z=\int_{t_0}^{T}f(z(t))z'(t)\mathrm{d}t.$$
+ \begin{equation}
+ \int_{C}f(z)\mathrm{d}z=\int_{t_0}^{T}f(z(t))z'(t)\mathrm{d}t.
+ \end{equation}
  - 如果在$C$上，$\vert f(z)\vert \le M$，且$C$的长度是$L$则$\big{\vert} \int_{C}f(z)\mathrm{d}z\big{\vert}\le ML$。
 
 - **引理1**：设$f(z)$是单连通区域$D$内的解析函数，$C$是$D$内多边形的边界，则沿$C$的逆时针积分有
- $$\int_{C}f(z)\mathrm{d}z=0.$$   
+ \begin{equation}
+ \int_{C}f(z)\mathrm{d}z=0.
+ \end{equation}   
  **证明**：先证三角形类似闭区间套定理构造嵌套三角形利用可微性使得积分值可以任意小，再把多边形分割为三角形。$\blacksquare$
 - **不定积分**：设函数$f(z)$和$\Phi(z)$定义在区域$D$内，$\Phi(z)$是$D$上解析函数，并且有$\Phi'(z)=f(z)$，则称$\Phi(z)$为$f(z)$在$D$上的不定积分或者原函数。
 - **凸区域**：对于区域$D$，如果任意$a,b\in D$，满足对于任意$0\le t\le 1$有$(1-t)a+tb\in D$，则称$D$是凸区域。
 - **引理2**：设$f(z)$在凸区域$D$内解析，那么$f(z)$在$D$内有原函数。   
  **证明**：$\blacksquare$
 - **引理3**：设$f(z)$在区域$D$内连续且有原函数$F(z)$，如果$a,b\in D$且$C$是连接$a$和$b$的曲线，那么
- $$\int_{C}f(z)\mathrm{d}z=F(b)-F(a).$$   
+ \begin{equation}
+ \int_{C}f(z)\mathrm{d}z=F(b)-F(a).
+ \end{equation}   
  **证明**：$\blacksquare$
 - **Cauchy积分定理**：是$f(z)$是单连通区域$D$内的解析函数，则  
  (1). 设$C$是$D$内任一条简单闭曲线，那么
- $$\int_{C}f(z)\mathrm{d}z=0.$$
+ \begin{equation}
+ \int_{C}f(z)\mathrm{d}z=0.
+ \end{equation}
  其中，积分沿$C$的逆时针（或者顺时针）方向。
  (2). 设$C$是$D$内连接$z_0$和$z$的任一条简单曲线，那么沿$C$从$z_0$到$z$的积分只由$z_0$和$z$确定，与$C$无关，故积分记作$\int_{z_0}^{z}f(\zeta)\mathrm{d}\zeta$。   
  **(1)的等价刻画**：设$C$是一条简单闭曲线，函数$f(z)$在以$C$为边界的有界闭区域上解析，那么
- $$\int_{C}f(z)\mathrm{d}z=0.$$   
+ \begin{equation}
+ \int_{C}f(z)\mathrm{d}z=0.
+ \end{equation}   
  **引理2推广**：设$f(z)$是单连通区域$D$内的解析函数，那么$f(z)$在$D$内有原函数。
 - **Cauchy积分公式**：设区域$D$是以有限条简单闭曲线$C$为边界的有界区域。$f(z)$在$D$及$C$组成的闭区域$\bar{D}$上解析，那么在$D$内任一点$z$，
- $$f(z)=\frac{1}{2\pi i}\int_{C}\frac{f(\zeta)}{\zeta-z}\mathrm{d}z,$$
+ \begin{equation}
+ f(z)=\frac{1}{2\pi i}\int_{C}\frac{f(\zeta)}{\zeta-z}\mathrm{d}z,
+ \end{equation}
  上式称为Cauchy积分公式。
 - **高阶导数公式**：设区域$D$是以有限条简单闭曲线$C$为边界的有界区域。$f(z)$在$D$及$C$组成的闭区域$\bar{D}$上解析，$f(z)$在$D$内有任意阶导数，则
- $$f^{(n)}(z)=\frac{n!}{2\pi i}\int_{C}\frac{f(\zeta)}{(\zeta-z)^{n+1}}\mathrm{d}\zeta,\ (n=1,2,\cdots).$$   
+ \begin{equation}
+ f^{(n)}(z)=\frac{n!}{2\pi i}\int_{C}\frac{f(\zeta)}{(\zeta-z)^{n+1}}\mathrm{d}\zeta,\ (n=1,2,\cdots).
+ \end{equation}  
  **引理**：设$\gamma$是一曲线，并且设$\phi(\zeta)$是定义在$\zeta$的连续函数，那么
-  $$ F_{n}(z)=\int_{C}\frac{\phi(\zeta)}{(\zeta-z)^{n}}\mathrm{d}\zeta\ (n=1,2,\cdots),$$
+  \begin{equation} F_{n}(z)=\int_{C}\frac{\phi(\zeta)}{(\zeta-z)^{n}}\mathrm{d}\zeta\ (n=1,2,\cdots),
+  \end{equation}
   在$\mathbb{C}-\gamma$上解析，并且$F'_ {n}(z)=nF_{n+1}(z).$
 - **解析函数的无穷可微性**：设$f(z)$在$D$内解析，那么$f(z)$在$D$内有任意阶导数($0<\rho \le \rho_0$)。
 - **Cauchy不等式**：设$f(z)$在以$C:\vert z-z_0\vert =\rho_0(0<\rho<+\infty)$为边界的闭圆盘上解析，那么
- $$\frac{\vert f^{(n)}(z_0)\vert}{n!}\le \frac{M(\rho)}{\rho^n}(n=0,1,2,\cdots),$$
+ \begin{equation}
+ \frac{\vert f^{(n)}(z_0)\vert}{n!}\le \frac{M(\rho)}{\rho^n}(n=0,1,2,\cdots),
+ \end{equation}
  其中，$M(\rho)=\max\limits_{\vert z-z_0\vert=\rho}\vert f(z)\vert$和$(0<\rho \le \rho_0$)。   
  **证明**：利用高阶导数公式表示$f^{(n)}$，利用基本计算可得结论。$\blacksquare$
 - **整函数**：如果函数$f(z)$在$\mathbb{C}$上解析，那么称它是一个整函数。
@@ -144,7 +191,9 @@ tags: analysis
 - **Liouville定理**：有界整函数一定恒等于常数。   
  **证明**：由Cauchy不等式，在任意的一个圆$C$内$\vert f'(z_0)\vert \le \max\limits_{\vert z-z_0\vert=\rho}\vert f(z)\vert /\rho$，而$f(z)$有界，记$\vert f(z)\vert\le M$，则$\vert f'(z_0)\vert \le m/\rho$，由于$\rho$的任意性，取$\rho\to \infty$有$\vert f'(z_0)=0$，故$f(z)$为常数。证明完毕。$\blacksquare$
 - **摩勒拉定理**：如果函数$f(z)$在单连通区域$D$内连续，并且对于$D$内的任一简单曲线$C$有
- $$\int_{C}f(z)\mathrm{d}z=0,$$
+ \begin{equation}
+ \int_{C}f(z)\mathrm{d}z=0,
+ \end{equation}
  则$f(z)$在$D$内解析。
 
 ## 第四章 级数 
@@ -154,20 +203,30 @@ tags: analysis
 
 *内容：*
 - **定理**：设幂级数有收敛圆盘$\vert z-z_0\vert <R$，那么在$\vert z-z_0\vert <R$内，和函数
- $$f(z)=\alpha_0+\alpha_1 (z-z_0)+\alpha_2(z-z_0)^2+\cdots+\alpha_n(z-z_0)^n+\cdots$$
+ \begin{equation}
+ f(z)=\alpha_0+\alpha_1 (z-z_0)+\alpha_2(z-z_0)^2+\cdots+\alpha_n(z-z_0)^n+\cdots
+ \end{equation}
  解析，并且
- $$f^{(n)}(z)=n!\alpha_n+\frac{(n+1)!}{1!}\alpha_{n+1}(z-z_0)+\cdots\ \ (n=1,2,3,\cdots)$$
+ \begin{equation}
+ f^{(n)}(z)=n!\alpha_n+\frac{(n+1)!}{1!}\alpha_{n+1}(z-z_0)+\cdots\ \ (n=1,2,3,\cdots)
+ \end{equation}
 - **定理**：设函数$f(z)$在圆盘$U:\vert z-z_0\vert R$内解析，那么在$U$内可展成Taylor展式如下，
- $$f(z)=f(z_0)+\frac{f'(z_0)}{1!}(z-z_0)+\frac{f^{(2)}(z_0)}{2!}(z-z_0)^2+\cdots+\frac{f^{(n)}(z_0)}{n!}(z-z_0)^n+\cdots.$$
+ \begin{equation}
+ f(z)=f(z_0)+\frac{f'(z_0)}{1!}(z-z_0)+\frac{f^{(2)}(z_0)}{2!}(z-z_0)^2+\cdots+\frac{f^{(n)}(z_0)}{n!}(z-z_0)^n+\cdots.
+ \end{equation}
 - **定理**：函数$f(z)$在点$z_0$解析的充分必要条件是它在$z_0$的某一个邻域内有幂级数展式，
- $$f(z)=\alpha_0+\alpha_1 (z-z_0)+\alpha_2(z-z_0)^2+\cdots+\alpha_n(z-z_0)^n+\cdots.$$
+ \begin{equation}
+ f(z)=\alpha_0+\alpha_1 (z-z_0)+\alpha_2(z-z_0)^2+\cdots+\alpha_n(z-z_0)^n+\cdots.
+ \end{equation}
 - **常用函数Taylor展开**：  
  1. $\mathrm{e}^{z}=1+z+\frac{z^2}{2!}+\cdots+\frac{z^n}{n!}+\cdots.$
  2. $\cos{z}=1-\frac{z^2}{2!}+\frac{z^4}{4!}-\cdots+(-1)^{k}\frac{z^{2k}}{(2k)!}+\cdots.$
  3. $\sin{z}=\frac{z}{1!}-\frac{z^3}{3!}+\frac{z^5}{5!}-\cdots+(-1)^{k-1}\frac{z^{2k-1}}{(2k-1)!}+\cdots.$
  4. $\ln{1+z}=z-\frac{z^2}{2}+\frac{z^3}{3}-\frac{z^4}{4}+\cdots+(-1)^{n-1}\frac{z^n}{n}+\cdots.$
 - **零点**：设函数$f(z)$在$z_0$邻域$U$内解析，并且$f(z_0)=0$，那么$z_0$称为$f(z)$的零点。设$f(z)$在$U$内的Taylor展开是
- $$f(z)=\alpha_1(z-z_0)+\alpha_2(z-z_0)^2+\cdots+\alpha_n(z-z_0)^n+\cdots.$$
+ \begin{equation}
+ f(z)=\alpha_1(z-z_0)+\alpha_2(z-z_0)^2+\cdots+\alpha_n(z-z_0)^n+\cdots.
+ \end{equation}
  零点可分为如下两种情况：
  1. 对于$n=1,2,\cdots$，都满足$\alpha_n=0$，那么在$U$内$f(z)$恒等于$0$.
  2. 如果$\alpha_1,\alpha_2,\cdots$不全为$0$，并且对于$m\in \mathbb{Z}^{+}$满足$\alpha_{m}\neq 0$，而$\alpha_n=0(n< m)$，则称$z_0$是$f(z)$的$m$阶零点。显然在$z_0$的邻域内$f(z)=(z-z_0)^{n}\phi (z)$，其中$\phi(z_0)\neq 0$且$\phi(z)$在$U$内解析。
@@ -176,17 +235,25 @@ tags: analysis
 - **定理**：如果$f(z)$在区域$D$内解析，并且不恒等于$0$，则$f(z)$的每一个零点$z_0$存在一个邻域$U$满足$z_0$是$U$的唯一零点。
 - **定理**：设函数$f(z)$和$g(z)$在区域$D$内解析，设$z_k(k=1,2,3,\cdots)$是$D$内互不同的点，并且点列$\{z_k\}$在$D$内有极限点，如果$f(z_k)=g(z_k)(k=1,2,\cdots)$，则在$D$内$f(z)=g(z)$。
 - **Laurent级数**：函数$f(z)$的Laurent展开是
- $$f(z)=\sum\limits_{n=-\infty}^{+\infty}\beta_n(z-z_0)^n.$$
+ \begin{equation}
+ f(z)=\sum\limits_{n=-\infty}^{+\infty}\beta_n(z-z_0)^n.
+ \end{equation}
 - **定理**：设函数$f(z)$在圆环$D:R_1<\vert z-z_0\vert<R_2(0\le R_1<R_2\le +\infty)$内解析，那么在$D$内
- $$f(z)=\sum\limits_{n=-\infty}^{+\infty}\alpha_{n}(z-z_0)^n,$$
- 其中，$\alpha_n=\frac{1}{2\pi i}\int_{\gamma}\frac{f(z)}{(z-z_0)^{n+1}}\mathrm{d}z(n=0,\pm 1,\pm 2,\cdots)$，$\gamma$是圆$\vert z-z_0\vert=\rho$，$\rho$是满足$R_1<\rho <R_2$的任何数。
- **注1**：在上面的Laurent展开中，$\sum\limits_{n=0}^{+\infty}\beta_n(z-z_0)^n$被称为级数的解析部分，$\sum\limits_{n=-1}^{-\infty}\beta_n(z-z_0)^n$被称为级数的主要部分。
+ \begin{equation}
+ f(z)=\sum\limits_{n=-\infty}^{+\infty}\alpha_{n}(z-z_0)^n,
+ \end{equation}
+ 其中，$\alpha_n=\frac{1}{2\pi i}\int_{\gamma}\frac{f(z)}{(z-z_0)^{n+1}}\mathrm{d}z(n=0,\pm 1,\pm 2,\cdots)$，$\gamma$是圆$\vert z-z_0\vert=\rho$，$\rho$是满足$R_1<\rho <R_2$的任何数。    
+ **注1**：在上面的Laurent展开中，$\sum\limits_{n=0}^{+\infty}\beta_n(z-z_0)^n$被称为级数的解析部分，$\sum\limits_{n=-1}^{-\infty}\beta_n(z-z_0)^n$被称为级数的主要部分。    
  **定理**:设级数$\sum\limits_{n=-\infty}^{+\infty}\beta_n(z-z_0)^n$在圆环$D:R_1<\vert z-z_0\vert<R_2(0\le R_1<R_2\le +\infty)$内闭一致收敛于和函数$g(z)$，则$g(z)$的Laurent展式是：
- $$g(z)=\sum\limits_{n=-\infty}^{+\infty}\beta_n(z-z_0)^n.$$
+ \begin{equation}
+ g(z)=\sum\limits_{n=-\infty}^{+\infty}\beta_n(z-z_0)^n.
+ \end{equation}
  **注2**：定理的假设下，$f(z)$的Laurent展式是唯一的。
 - **孤立奇点**：设函数$f(z)$在去掉圆心的圆盘$D:0<\vert z-z_0\vert<R(0< R\le +\infty)$内解析，那么称$z_0$是$f(z)$的孤立奇点。
 - **孤立奇点分类**：在孤立奇点定义的假设下，在$D$内，$f(z)$有Laurent展式
- $$f(z)=\sum\limits_{n=-\infty}^{+\infty}\alpha_n(z-z_0)^n,$$
+ \begin{equation}
+ f(z)=\sum\limits_{n=-\infty}^{+\infty}\alpha_n(z-z_0)^n,
+ \end{equation}
  其中，$\alpha_n=\frac{1}{2\pi i}\int_{C_{\rho}}\frac{f(z)}{(z-z_0)^{n+1}}\mathrm{d}z(n=0,\pm 1,\pm 2,\cdots)$，$C_{\rho}$是圆$\vert z-z_0\vert =\rho(0<\rho <R)$。根据级数包含负数幂的情况可以分类：  
  1. **可去奇点**：如果$\alpha_n=0(n=0,\pm 1,\pm 2,\cdots)$，称为可去奇点。令$f(z_0)=\alpha_0$，则$f(z)$在圆盘内解析。  
  2. **$m$阶极点**：如果仅仅有限个$n<0$使得$\alpha_n=0$，那么说$z_0$是$f(z)$的极点。设$\alpha_{-m}\neq 0(m\in \mathbb{Z}^{+})$，而$\alpha_{n}=0(n<-m)$，则称$z_0$是$f(z)$的$m$阶极点。  
@@ -201,7 +268,9 @@ tags: analysis
 - **本性奇点等价命题3**：设函数$f(z)$在$0<\vert z-z_0\vert<R(0<R\le +\infty)$内解析，那么$z_0$是$f(z)$的本性奇点的等价条件对于任意的复数$\gamma\neq \infty$，至多可能有一个反例，在$0<\vert z-z_0\vert<R$内存在收敛于$z_0$的点列$\{z_n\}$满足$f(z_n)=\gamma(n=1,2,\cdots)$。
 - **无穷远点孤立奇点**：设函数$f(z)$在区域$D:R<\vert z\vert<+\infty(R\ge 0)$内解析，那么称无穷远点是$f(z)$的孤立奇点。
 - **无穷远点孤立奇点分类**：在无穷远点孤立奇点定义的假设下，在区域内，$f(z)$有Laurent展式
- $$f(z)=\sum\limits_{n=-\infty}^{+\infty}\alpha_n(z)^n,$$
+ \begin{equation}
+ f(z)=\sum\limits_{n=-\infty}^{+\infty}\alpha_n(z)^n,
+ \end{equation}
  其中，$\alpha_n=\frac{1}{2\pi i}\int_{C_{\rho}}\frac{f(z)}{(z)^{n+1}}\mathrm{d}z(n=0,\pm 1,\pm 2,\cdots)$，$C_{\rho}$是圆$\vert z\vert =\rho(0<\rho <R)$。根据级数包含正数幂的情况可以分类：  
   1. 如果$\alpha_n=0(n=1,2,3,\cdots)$，则$\infty$是$f(z)$的可去奇点。  
   2. 如果只有有限个$n>0$使得$\alpha_n=0$，则$\infty$是$f(z)$的极点。设$\alpha_{m}\neq 0(m\in \mathbb{Z}^{+})$，而$\alpha_{n}=0(n> m)$，则称$\infty$是$f(z)$的$m$阶极点。  
@@ -214,7 +283,9 @@ tags: analysis
 
 - **亚纯函数**：如果函数$f(z)$在有限复平面内除去有极点外到处解析，那么它就是亚纯函数。
 - **定理**：如果无穷远点$\infty$是亚纯函数$f(z)$的可去奇点或极点，那么$f(z)$是一个有理函数，即
- $$f(z)=\frac{\alpha_0+\alpha_1 z+\alpha_2 z^2+\cdots+\alpha_n z^n}{\beta_0+\beta_1 z+\beta_2 z^2+\cdots+\beta_m z^m},\ (\alpha_n,\beta_m\neq 0).$$
+ \begin{equation}
+ f(z)=\frac{\alpha_0+\alpha_1 z+\alpha_2 z^2+\cdots+\alpha_n z^n}{\beta_0+\beta_1 z+\beta_2 z^2+\cdots+\beta_m z^m},\ (\alpha_n,\beta_m\neq 0).
+ \end{equation}
 
 
 ## 第五章 留数 
@@ -224,23 +295,35 @@ tags: analysis
 
 *内容：*
 - **留数**：设函数$f(z)$在区域$0<\vert z-z_0\vert <R$解析，选取$0< r <R$作圆$C:\vert z-z_0\vert =r$，如果$z_0$是$f(z)$的孤立奇点，则定义$f(z)$在孤立奇点$z_0$的留数是
- $$\frac{1}{2\pi i}\int_{C}f(z)\mathrm{d}z.$$
+ \begin{equation}
+ \frac{1}{2\pi i}\int_{C}f(z)\mathrm{d}z.
+ \end{equation}
  记作$\mathrm{Res }{(f,z_0)}$，其中$C$是沿逆时针方向。
  **注**：如果奇点是可去奇点，则留数的值是$0$.
 - **定理**：设$D$是复平面的有界区域，其边界$C$由有限条简单闭曲线组成。如果$f(z)$在$D$内除去孤立奇点$z_1,z_2,\cdots z_n$外每一点都解析，并且在$C$上每一点也解析，那么有
- $$\int_{C}f(z)\mathrm{d}z=2\pi i\sum\limits_{k=1}^{n}\mathrm{Res}(f,z_k),$$
+ \begin{equation}
+ \int_{C}f(z)\mathrm{d}z=2\pi i\sum\limits_{k=1}^{n}\mathrm{Res}(f,z_k),
+ \end{equation}
  其中$C$的积分沿$D$的正方向。
 - **一阶极点的留数计算**：设$z_0$是$f(z)$在圆盘内的一阶极点，则留数是
- $$\mathrm{Res}(f,z_0)=\lim\limits_{z\to z_0}(z-z_0)f(z).$$
+ \begin{equation}
+ \mathrm{Res}(f,z_0)=\lim\limits_{z\to z_0}(z-z_0)f(z).
+ \end{equation}
  - 如果在$z_0$的去心圆盘内$f(z)=P(z)/Q(z)$，其中$P(z),Q(z)$在圆盘内解析，并且$P(z_0)\neq 0$，$z_0$是$Q(z)$的一阶零点，$Q(z)$在圆盘内没有其他零点，则有
- $$\mathrm{Res}(f,z_0)=\lim\limits_{z\to z_0}(z-z_0)f(z)=\lim\limits_{z\to z_0}(z-z_0)\frac{P(z)}{Q(z)-Q(z_0)}=\frac{P(z_0)}{Q'(z_0)}.$$
+ \begin{equation}
+ \mathrm{Res}(f,z_0)=\lim\limits_{z\to z_0}(z-z_0)f(z)=\lim\limits_{z\to z_0}(z-z_0)\frac{P(z)}{Q(z)-Q(z_0)}=\frac{P(z_0)}{Q'(z_0)}.
+ \end{equation}
 - **高阶极点的留数计算**：设$z_0$是$f(z)$在圆盘内的$k$阶极点，则留数是
- $$\mathrm{Res}(f,z_0)=\frac{1}{(k-1)!}\lim\limits_{z\to z_0}\frac{\mathrm{d}^{k-1}}{\mathrm{d}z^{k-1}}\big{(}(z-z_0)^{k}f(z)\big{)}.$$
+ \begin{equation}
+ \mathrm{Res}(f,z_0)=\frac{1}{(k-1)!}\lim\limits_{z\to z_0}\frac{\mathrm{d}^{k-1}}{\mathrm{d}z^{k-1}}\big{(}(z-z_0)^{k}f(z)\big{)}.
+ \end{equation}
 
 - **留数应用 1**：计算$I=\int_{0}^{2\pi}R(\sin{t},\cos{t})\mathrm{d}t$，其中$R(x,y)$是有理分式，并且在单位圆上分母不为$0$。方法是做$z=\mathrm{e}^{it}$带入方程，然后用留数定理求对应的积分。
 - **留数应用 2**：计算$I=\int_{-\infty}^{+\infty}R(x)\mathrm{d}x$，其中$R(x)$是有理分式，并且分母在实轴上不为$0$，分母的次数比分子的次数至少高$2$次。方法是。
 - **引理**：设$f(z)$在闭区间$\theta_1\le \mathrm{Arg }z\le \theta_2$，$r_0\le \vert z\vert <+\infty$，($r_0\ge 0,0\le \theta_1< \theta_2 \le \pi$)上连续的复变函数，并且设$\Gamma_{r}$是以$O$为圆心，$r$为半径的圆弧在这个闭区间上的一段($r\ge r_0$)，如果$z$在闭区间上$\lim\limits_{x\to \infty} f(z)=0$，那么有
- $$\lim\limits_{r\to +\infty}\int_{\Gamma_{r}}f(z)\mathrm{e}^{iz}\mathrm{d}z=0$$
+ \begin{equation}
+ \lim\limits_{r\to +\infty}\int_{\Gamma_{r}}f(z)\mathrm{e}^{iz}\mathrm{d}z=0
+ \end{equation}
 - **留数应用 3**：计算$I=\int_{-\infty}^{+\infty}f(x)\mathrm{e}^{ix}\mathrm{d}x$，其中$f(z)$在$\Im{z}\ge 0$上可能有有限个奇点外，在其他每一点解析，且当$z$在$\Im{z}\ge 0$上时，$\lim\limits_{z\to \infty}f(z)=0$。
 
 - **留数应用 4**：计算积分$I=\int_{0}^{+\infty}\frac{R(x)}{x^{\alpha}}\mathrm{d}x$，其中$0<\alpha<1$，$R(x)$是有理分式，分母的次数比分子高。
@@ -251,10 +334,14 @@ tags: analysis
 
 - **引理**：设$f(z)$是有界区域$D$上的亚纯函数，$f(z)$在$D$的边界$C$上的每一点解析，且在$C$上没有零点，那么$f(z)$在$D$内至多有有限个零点和极点。
 - **定理**：设$D$为复平面有界区域，边界$C$是有限条闭曲线组成。$f(z)$是$D$上的亚纯函数，在$C$上的每一点解析，且在$C$上没有零点，那么
- $$\frac{1}{2\pi i}\int_{C}\frac{f'(z)}{f(z)}\mathrm{d}z=N-P,$$
- 其中，$N$和$P$是$f(z)$在$D$内零点和极点的总数，并且每个$k$阶零点或者极点算作$k$个零点和极点。
+ \begin{equation}
+ \frac{1}{2\pi i}\int_{C}\frac{f'(z)}{f(z)}\mathrm{d}z=N-P,
+ \end{equation}
+ 其中，$N$和$P$是$f(z)$在$D$内零点和极点的总数，并且每个$k$阶零点或者极点算作$k$个零点和极点。    
  **定理**：在上述定理的假设下，有
- $$N-P=\frac{1}{2\pi }\Delta_{C}\arg{f(z)}=\frac{1}{2\pi }\sum\limits_{j=1}^{n}\Delta_{C_j}\arg{f(z)}$$
+ \begin{equation}
+ N-P=\frac{1}{2\pi }\Delta_{C}\arg{f(z)}=\frac{1}{2\pi }\sum\limits_{j=1}^{n}\Delta_{C_j}\arg{f(z)}
+ \end{equation}
  其中，$C_1,C_2,\cdots,C_n$表示构成$C$的所有闭曲线，方向关于$D$的正方向，$\Delta_{C}\arg{f(z)}$表示$z$沿着$C$正向绕一周时，$\arg{f(z)}$连续变动的增量。
 
 - **Rouche定理**：设$D$是复平面的一个有界区域，边界$C$是有限条简单闭曲线，函数$f(z)$和$g(z)$在$D$和$C$组成的闭区域上解析，并且在$C$上，$\vert g(z)\vert <\vert f(z)\vert$，那么在$D$上，$f(z)$和$f(z)+g(z)$的零点个数相同。
