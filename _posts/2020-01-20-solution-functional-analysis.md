@@ -10,7 +10,7 @@ tags: analysis
 
 ## 简介
 
-文章是<a href="functional-analysis">泛函分析基础</a>中的练习题和解答。
+文章是<a href="functional-analysis">泛函分析基础</a>中的习题和解答。
 
 ## 1. 拓扑向量空间
 
