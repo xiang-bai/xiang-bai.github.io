@@ -23,7 +23,7 @@ title: 13AI
 
   <h1>相关推荐</h1>
   <ul class="posts">
-    <li><span>29 Mar 2019</span> &raquo; <a href="http://www.markdown.cn/"> Markdown 语法说明</a></li> 
+    <!-- <li><span>29 Mar 2019</span> &raquo; <a href="http://www.markdown.cn/"> Markdown 语法说明</a></li>  -->
     <li><span>01 May 2019</span> &raquo; <a href="https://inkscape.org/zh/learn/tutorials/"> Inkscape 教程</a></li> 
     <li><span>01 May 2019</span> &raquo; <a href="https://jekyllrb.com/tutorials/navigation/#scenario-8-retrieving-items-based-on-front-matter-properties"> jekyll 教程</a></li> 
     <li><span>01 May 2020</span> &raquo; <a href="http://www.texample.net/tikz/"> tikz 官网</a></li> 
