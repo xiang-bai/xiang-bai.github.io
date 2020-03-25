@@ -25,6 +25,8 @@ tags: analysis
 - **F空间**：如果拓扑空间的拓扑由一个完备不变距离诱导得到，称其为拓扑空间。
 - **Hausdorff空间**：对于拓扑空间$(S,\tau)$，如果$S$上不同的点有不相交的领域，称$(S,\tau)$是Hausdorff空间，$\tau$是Hausdorff拓扑。
 
+- **局部凸**：如果$X$存在局部基它的每一个元素是凸的，则称$X$局部凸。
+
 ## 1 拓扑向量空间
 
 ### 1.1 简介
@@ -131,6 +133,16 @@ d(x+z,y+z)=d(x,y).
 
 
 #### 1.1.6 拓扑向量空间的类型
+
+$X$拓扑向量空间，对应拓扑是$\tau$，
+- **局部凸**：如果$X$存在局部基，并且局部基的每一元都是凸的。
+- **局部有界**：如果$0$存在有界邻域。
+- **局部紧**：如果$0$有个邻域，其闭包是紧的。
+- **可度量化**：如果$\tau$与某个度量$d$相容。
+- **F-空间**：如果$\tau$由一个完备不变度量诱导得到。
+- **Fréchet空间**：如果$X$是局部凸的F-空间。
+- **可赋范的**：如果在$X上存在范数满足诱导的度量与拓扑$\tau$相容。
+- **Heine-Borel性质**：如果$X$的每一有界闭子集是紧的。
 
 ### 1.2 分离性质
 - **定理**：假设$K,C$是拓扑向量空间$X$的子集，$K$是紧集，$C$是闭集，且$K\cap C= \varnothing$. 则存在$0$的邻域$V$满足   
@@ -606,27 +618,260 @@ d(x+z,y+z)=d(x,y).
 - **拓扑的强弱**：设$\tau_1$和$\tau_2$是集合$X$上两个拓扑，如果$\tau_1\subset \tau_2$，则$\tau_1$的开集也是$\tau_2$的开集，故称$\tau_1$比$\tau_2$弱或者$\tau_2$比$\tau_1$强。     
  **注1**：上面的包含关系不排除等号。    
  **注2**：恒等映射是$(X,\tau_2)$到$(X,\tau_1)$的连续映射，是$(X,\tau_1)$到$(X,\tau_2)$的开映射。
+- **弱拓扑**：设$X$是集合，$\mathcal{F}$是由映射$f:X\to Y_{f}$($Y_{f}$是拓扑空间)组成的非空映射族。使得任意$f\in \mathcal{F}$都连续的最弱拓扑称为$X$由$\mathcal{F}$诱导的弱拓扑，也称为$X$的$\mathcal{F}$-拓扑。其实是集合
+ \begin{equation}
+ \{f^{-1}(V) : f \in \mathcal{F}, V\text{是}Y_{f}\text{中的开集}\}
+ \end{equation}
+ 通过有限交和无线并生成的集合。
+
+- **引理**：设$\Lambda_1,\Lambda_2,\cdots,\Lambda_n$和$\Lambda$是向量空间$X$上的线性泛函。设
+ \begin{equation}
+ N=\{x:\Lambda_1 x=\cdots =\Lambda_n x=0\},
+ \end{equation}
+ 则如下三个性质等价：
+ 1. 存在标量$\alpha_1,\cdots,\alpha_n$满足
+  \begin{equation}
+  \Lambda = \alpha_1 \Lambda+\cdots +\alpha_n\Lambda_n.
+  \end{equation}
+ 2. 存在$\gamma<\infty$满足
+  \begin{equation}
+  \vert \Lambda \vert\le \gamma\max_{1\le i\le n}\vert \Lambda_{i}x\vert,\ \ (x\in X).
+  \end{equation}
+ 3. 对于任意$x\in N$，有$\Lambda x=0$。
+- **定理**：设$X$是向量空间，$X'$是$X$上的线性泛函组成的可分向量空间，则$X$在$X'$-拓扑构成局部凸空间，且对偶是$X'$。
+- **拓扑向量空间的弱拓扑**：设$X$是拓扑向量空间，它的对偶空间$X^{* }$在$X$上可分，则$X$的$X^{* }$-拓扑称为$X$的弱拓扑。
+- **定理**：设$E$是局部凸空间$X$的凸子集，则$E$的弱闭包等于闭包。     
+ **推论**：对于局部凸空间的闭子集，闭等价于弱闭，稠密等价于弱稠密。
+- **定理**：设$X$是可度量的局部凸空间，如果$X$中的序列$\{x_n\}$弱收敛于某个$x\in X$，则存在$X$中的序列$y_{n}$满足
+ 1. 每个$y_i$是有限个$x_n$的凸组合。
+ 2. $y_i$收敛于$x$。
+- **弱$* $拓扑**：设$X$是拓扑向量空间，对偶空间为$X^{* }$，则$X^{* }$的$X$拓扑称为$X^{* }$的弱$* $拓扑。
 
 ### 3.3 紧凸集
 
-### 3.4 向量值积分
+- **Banach-Alaoglu定理**：设$V$是拓扑向量空间$X$中$0$的邻域，如果
+ \begin{equation}
+ K=\{\Lambda \in X^{* }:\vert \Lambda \vert\le 1, x\in V\},
+ \end{equation}
+ 则$K$是弱$* $紧的。
+- **定理**：设$X$是可分拓扑向量空间，如果$K\subset X^{* }$，且$K$是弱$* $紧的，则$K$在弱$* $拓扑下可度量化。
+- **定理**：设$V$是可分拓扑向量空间$X$中$0$的邻域，如果$X^{* }$中的序列$\{\Lambda_n\}$满足
+ \begin{equation}
+ \vert \Lambda_n x\vert \le 1,\ \ (x\in X,\ n=1,2,\cdots)
+ \end{equation}
+ 则存在子列$\{\Lambda_{n_i}\}$和$\Lambda \in X^{* }$使得
+ \begin{equation}
+ \lim_{i\to \infty}\Lambda_{n_i}x=\Lambda x,\ \ (x\in X)
+ \end{equation}
+- **定理**：局部凸空间$X$中，弱有界等价于有界。
+- **推论**：如果$X$是赋范空间，$E\subset X$且
+ \begin{equation}
+ \sup_{x\in E}\vert \Lambda x\vert < \infty \ \ (\Lambda \in X^{* }).
+ \end{equation}
+ 则存在$\gamma<\infty$满足
+ \begin{equation}
+ \Vert x\Vert < \gamma \ \ (x\in E).
+ \end{equation}
+- **定义**：(a)设$X$是向量空间且$E\subset X$，定义$E$的凸包是$X$中所有包含$E$的凸子集的交集，记作$co(E)$。等价的有
+ \begin{equation}
+ co(E) = \left\{ \sum_{j=1}^n t_j x_j\, : x_j \in E,\, \sum_{j=1}^n t_j = 1,\, t_j \in \lbrack 0, 1 \rbrack \, \right\}
+ \end{equation}
+ (b)设$X$是向量空间且$E\subset X$，定义$E$的闭凸包是$co(E)$的闭包，记作$\overline{co}(E)$。    
+ (c)设$X$是距离空间且$E\subset X$，如果任意$\varepsilon >0$，$E$包含于有限个半径为$\varepsilon$的开球的并集中，则称$E$完全有界。   
+ (d)设$X$是拓扑向量空间且$E\subset X$，如果$X$中任意$0$的邻域$V$，存在有限集$F$满足$E\subset F+V$，则称$E$完全有界。
+- **定理**：(a)如果$A_1,A_2,\cdots,A_n$是拓扑向量空间$X$中的凸紧集，则$co(A_1\bigcup\cdots \bigcup A_n)$是紧的。    
+ (b)设$X$是局部凸拓扑向量空间且$E\subset X$完全有界，则$\overline {co}(E)$是紧的。   
+ (c)设$X$是Fréchet空间且$K\subset X$是紧的，则$\overline{co}(K)$是紧的。   
+ (d)如果$K$是$\mathbb{R}^{n}$中的紧集，则$\overline{co}(K)$是紧的。   
+- **命题**：如果$E\subset \mathbb{R}^{n}$，$x\in co(E)$，则$x$属于$E$的某个最多包含$n+1$个元素的子集中。
+- **定理**：设$X$是拓扑向量空间，$X^{* }$在$X$上可分，如果$A$和$B$是$X$种互不相交的非空紧凸集，则存在$\Lambda \in X^{* }$使得
+ \begin{equation}
+ \sup_{x\in A}\Re{\Lambda x}< \inf_{x\in B}\Re{\Lambda x}.
+ \end{equation}
+- **端点**：设$K$是向量空间$X$的子集，且$S\subset K$，如果$x,y\in S$，$0< t< 1$且
+ \begin{equation}
+ tx+(1-t)x\in S,
+ \end{equation}
+ 则$x,y\in S$。我们就称$S$是$K$的端子集。一个点构成的端子集称为端点。所有的端点记作$E(K)$。
+- **Krein-Milman定理**：设$X$是拓扑向量空间，$X^{* }$在$X$上可分，如果$K$是$X$的非空紧凸集，则$K$是它的端点集合的闭凸包，即$K=co(E(K))$。
+- **定理**：如果$K$是局部凸空间的紧子集，则$K\subset \overline{co}(E(K))$。
+- **Milman定理**：如果$K$是局部凸空间的紧集且$\overline{co}(K)$也是紧的，则$\overline{co}(K)$的每一个端点属于$K$。
+
+
+<!-- ### 3.4 向量值积分
+
+- **定义**：
+- **定理**：
+- **定理**：
 
 ### 3.5 全纯函数
 
-### 3.6 习题
+- **定义**：
+- **定理**：
+- **定理**： -->
 
-\begin{equation}
- \end{equation}
+<!-- ### 3.6 习题 -->
 
-<!-- ## 4 Banach空间的对偶
+
+
+## 4 Banach空间的对偶
 
 ### 4.1 赋范空间的赋范对偶
 
-### 4.2 伴随
+- **$\mathcal{B}(X,Y)$**：$\mathcal{B}(X,Y)$表示所有$X$到$Y$的有界线性映射。
+
+- **$\mathcal{B}(X,Y)$是赋范线性空间**：设$X$和$Y$是赋范线性空间，定义$\mathcal{B}(X,Y)$上的函数
+ \begin{equation}
+ \Vert \Lambda \Vert =\sup\{\Vert \Lambda x\Vert:x\in X,\Vert x\Vert \le 1\}
+ \end{equation}
+ 则$\mathcal{B}(X,Y)$是赋范线性空间，且如果$Y$是Banach空间，则$\mathcal{B}(X,Y)$是Banach空间。
+
+- **定理**：设$B$是赋范空间$X$上的闭单位球，对于任意$x^{* }\in X^{* }$定义
+ \begin{equation}
+ \Vert x^{* }\Vert =\sup{\{\vert \langle x,x* \rangle \vert : x\in B\}}.
+ \end{equation}
+ 则有
+ 1. $X^{* }$在所定义范数是Banach空间。
+ 2. 设$B^{* }$是$X^{* }$上的闭单位球，对于任意$x\in X$，有
+  \begin{equation}
+  \Vert x\Vert =\sup{\{\vert \langle x,x^{* }\rangle\vert:x^{* }\in B^{* }\}}.
+  \end{equation}
+  故$x^{* }\to\langle x,x^{* }\rangle $是$X^{* }$上的有界线性泛函，并且范数是$\Vert x\Vert$。
+  3. $B^{* }$是弱$* $紧的。
+- **有界线性算子范数等价刻画**：设$X,Y$是赋范空间，如果$\Lambda \in \mathcal{B}(X,Y)$，则
+ \begin{equation}
+ \Vert \Lambda \Vert =\sup{\{\langle\Lambda x,y\rangle:\Vert x\Vert \le 1,\Vert y^{* }\Vert \le 1\}}.
+ \end{equation}
+
+- **自反空间**：设$X$是赋范空间，如果$X=X''$，则称$X$是自反的，其中等号是等距同构的意义，另外一般的赋范空间只满足$X\subset X''$。
+- **零化子**：设$X$是Banach空间，$M$是$X$的子空间，$N$是$X^{* }$的子空间(并没有假设$M$和$N$是闭的)，定义他们的零化子
+ \begin{equation}
+ M^{\bot}=\{x^{* }\in X^{* }:\forall{x\in M},\langle x,x^{* }\rangle=0\}
+ \end{equation}
+ \begin{equation}
+ ^{\bot}{N}=\{x\in X:\forall{x^{* }\in N},\langle x,x^{* }\rangle=0\}
+ \end{equation}
+- **零化子性质**：在零化子的假设下，有
+ 1. $^{\bot}(M^{\bot})$是$M$在$X$的闭包。
+ 2. $(^{\bot}N^{})^{\bot}$是$N$在$X^{* }$的弱$* $ 闭包。
+
+- **定理**：设$M$是Banach空间$X$的闭子空间，
+ 1. 任意$m^{* }\in M^{* }$可通过Hahn-Banach定理延拓到$x^{* }\in X^{* }$，定义映射
+  \begin{equation}
+  \sigma x^{* }=x^{* }+M^{\bot},
+  \end{equation}
+  则$\sigma$是$M^{* }$到$X^{* }/M^{\bot}$的等距同构。
+ 2. 设$\pi:X\to X/M$的商映射，记$Y=X/M$，对于任意$y^{* }\in Y^{* }$，定义
+  \begin{equation}
+  \tau y^{* }=y^{* }\pi,
+  \end{equation}
+  则$\tau$是$Y^{* }$到$M^{\bot}$上的等距同构。
+
+
+### 4.2 伴随算子
+
+- **定理**：设$X$和$Y$是赋范空间，对于任意的$T\in \mathcal{B}(X,Y)$，存在唯一的$T^{* }\in \mathcal{B}(Y^{* },X^{* })$满足对任意$x\in X$，$y^{* }\in Y^{* }$有
+ \begin{equation}
+ \langle Tx,y^{* }\rangle = \langle x,T^{* }y^{* }\rangle.
+ \end{equation}
+ 且有
+ \begin{equation}
+ \Vert T^{* }\Vert =\Vert T\Vert.
+ \end{equation}
+- **核空间和值域**：对于$X$到$Y$的映射$T$，$T$的核空间$\mathcal{N}(T)$和值域$\mathcal{R}(T)$是
+ \begin{equation}
+ \mathcal{N}(T)=\{x\in X: Tx=0\}
+ \end{equation}
+ \begin{equation}
+ \mathcal{R}(T)=\{Tx\in Y:x\in X\}.
+ \end{equation}
+
+- **定理**：设$X$和$Y$是Banach空间，$T\in\mathcal{B}(X,Y)$，则
+ \begin{equation}
+ \mathcal{N}(T^{* })=\mathcal{R}(T)^{\bot},\ \ \mathcal{N}(T)=^{\bot}\mathcal{R}(T^{* }).
+ \end{equation}
+ **推论**：
+ 1. $\mathcal{N}(T^{* })$在$Y^{* }$中弱$* $闭。
+ 2. $\mathcal{R}(T)$在$T$中稠密等价于$T^{* }$是单射。
+ 3. $T$是单射等价于$\mathcal{R}(T^{* })$在$X^{* }$中弱$* $稠密。
+
+- **定理**：设$U$和$V$分别是Banach空间$X$和$Y$的开单位球，如果$T\in \mathcal{B}(X,Y)$且$\delta >0$，则有(a)$\to$(b)$\to$(c)$\to$(d)成立.其中    
+ (a) 任意$y^{* }\in Y^{* }$，有$\Vert T^{* }y^{* }\Vert \ge \delta \Vert y^{* } \Vert$.    
+ (b) $\delta V \subset \overline{T(U)} $.    
+ (c) $\delta V \subset T(U) $.    
+ (d) $T(X)=Y$.   
+ 如果只有(d)成立，则存在$\delta >0$使得(a)成立。
+
+- **定理**：设$X$和$Y$是Banach空间，$T\in \mathcal{B}(X,Y)$，则以下三个命题等价
+ 1. $R(T)$在$Y$中是闭的。
+ 2. $R(T^{* })$在$X^{* }$中是弱$* $闭的。
+ 3. $R(T^{* })$在$X^{* }$中是以范数闭的。    
+ **注**：$R(T)$在$Y$中是闭的等价于$R(T)$是弱$* $闭的，但是在$X^{* }$中以范数闭的不一定是弱$* $闭的。
+
+- **定理**：设$X$和$Y$是Banach空间，$T\in \mathcal{B}(X,Y)$，则$\mathcal{R}(T)=Y$当且仅当$T^{* }$是单射且$\mathcal{R}(T^{* })$是以范数闭的。
 
 ### 4.3 紧算子
 
-### 习题 -->
+- **紧算子**：设$X$和$Y$是Banach空间，$U$是$X$的单位球，对于线性映射$T: X\to Y$，如果$T(U)$的闭包在$Y$中是紧的，则称$T$是紧算子。    
+ **注**：
+ 1. 显然$T$有界，故$T\in \mathcal{B}(X,Y)$。
+ 2. 由于$Y$是完备度量空间，故$Y$中具有紧闭包的子集等价于完全有界集，因此$T$是紧集等价于$T(U)$是完全有界集。
+ 3. $T$是紧的等价于对于$X$中的任意有界序列$\{x_n\}$，存在子列$\{x_{n_{i}}\}$在$Y$中收敛。
+
+- **定义**
+ 1. 设$X$是一个Banach空间，则$\mathcal{B}(X)$不仅是Banach空间，而且是一个代数，即如果$T,S\in \mathcal{B}(X)$，定义$ST\in \mathcal{B}(X)$：
+ \begin{equation}
+ ST(x)=S(T(x)),\ \ (x\in X).
+ \end{equation} 
+ 显然有不等式
+ \begin{equation}
+ \Vert ST \Vert =\Vert S\Vert \Vert T\Vert.
+ \end{equation} 
+ 特别可以定义$ST\in \mathcal{B}(X)$的幂，$T^{0}=I$，$T^{n}=TT^{n-1}$，$n=2,3,\cdots$。
+ 2. 对于算子$T\in \mathcal{B}(X)$，如果存在$S\in \mathcal{B}(X)$满足
+ \begin{equation}
+ ST=I=TS,
+ \end{equation}
+ 则称$T$为可逆的，记$S=T^{-1}$。通过开映射定理，$T$可逆当且仅当$\mathcal{N}(T)=\{0\}$且$\mathcal{R}(T)=X$。
+ 3. 算子$T\in \mathcal{B}(X)$的谱$\sigma (T)$是使得$T-\lambda I$不可逆的所有$\lambda$组成的集合。因此$\lambda \in \sigma(T)$等价于$T-\lambda I$非双射。如果$\lambda \in \sigma(T)$不是单射，则称$\lambda$是特征值，对应特征空间是$\mathcal{N}(T-\lambda I)$，任意$x\in \mathcal{N}(T-\lambda I)(x\neq 0)$是$T$的特征向量。
+
+- **定理**：设$X$和$Y$是Banach空间，
+ 1. 如果$T\in \mathcal{B}(X,Y)$且$\dim(\mathcal{R}(T))<\infty$，则$T$是紧的。
+ 2. 如果$T\in \mathcal{B}(X,Y)$是紧的，且$\mathcal{R}(T)$是闭的，则$\dim(\mathcal{R}(T))<\infty$。
+ 3. 紧算子以它的范数拓扑构成$\mathcal{B}(X,Y)$的一个闭子空间。
+ 4. 如果$T\in \mathcal{B}(X)$是紧的，且$\lambda\neq 0$，则$\dim(\mathcal{R}(T-\lambda I))<\infty$.
+ 5. 如果$\dim{X}=\infty$，$T\in \mathcal{B}(X)$是紧的，则$0\in \sigma(T)$.
+ 6. 如果$S,T\in \mathcal{B}(X)$且$T$是紧的，则$ST$和$TS$也是紧的。
+- **定理**：设$X$和$Y$是Banach空间，且$T\in\mathcal{B}(X,Y)$，则$T$是紧的当且仅当$T^{* }$是紧的。
+
+- **直和**：设$M$是拓扑向量空间$X$的闭子空间，如果存在$X$的闭子空间$N$满足
+ \begin{equation}
+ X=M+N,\ \ M\bigcap N=\{0\},
+ \end{equation}
+ 则称$M$在$X$中可余，$X$为$M$和$N$的直和，记作
+ \begin{equation}
+ X=M\oplus N.
+ \end{equation}
+
+- **引理**：设$M$是拓扑向量空间的闭子空间，
+ 1. 如果$X$局部凸且$\dim{M}<\infty$，则$M$在$X$可余。
+ 2. 如果$\dim{X/M}<\infty$，则$M$在$X$可余。$\dim{X/M}<\infty$也叫做$M$在$X$的余维数。
+- **引理**：设$M$是赋范空间的子空间，如果$M$在$X$不稠密，且$r>1$，则存在$x\in X$满足
+ \begin{equation}
+ \Vert x\Vert < r,\ \ \Vert x-y\Vert \ge 1(y\in M).
+ \end{equation}
+- **定理**：如果$X$是Banach空间，$T\in \mathcal{B}(X)$是紧的,且$\lambda \neq 0$，则$T-\lambda I$的值域是闭的。
+- **定理**：设$X$是Banach空间，$T\in \mathcal{B}(X)$是紧的，$r>0$，$T$的所有特征值$\lambda$中满足$\vert \lambda \vert >r$的部分组成的集合$E$，则任意$\lambda \in E$，$\mathcal{R}(T-\lambda I)\neq X$且$E$是有限集。
+- **定理**：设$X$是Banach空间，$T\in\mathcal{B}(X)$是紧的，则
+ 1. 如果$\lambda$则
+  \begin{equation}
+  \dim{\mathcal{N}(T-\lambda I)}=\dim{\mathcal{N}(T^{* }-\lambda I)} = \dim{X/\mathcal{R}(T-\lambda I)} = \dim{X^{* }/\mathcal{R}(T^{* }-\lambda I)}
+  \end{equation}
+  为有限值。
+ 2. 如果$\lambda\neq 0$且$\lambda \in \sigma(T)$，则$\lambda$是$T$和$T^{* }$的特征值。
+ 3. $\sigma(T)$是至多可数个元素的紧集，且至多有一个极限点$0$。
+
+<!-- ### 习题 -->
 
 
 
