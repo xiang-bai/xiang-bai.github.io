@@ -537,7 +537,7 @@ $X$拓扑向量空间，对应拓扑是$\tau$，
  称为$f$的图像。
 - **命题**：如果$X$是拓扑空间，$Y$是Hausdorff空间，且$f:X\to Y$连续，则$f$的图像是闭的。
 
-- **闭图像定理**：设$X$和$Y$是F空间，$\Lambda:X\to Y$是线性的，$G=\{(x,\Lambda x: x\in X)\}$在$X\times Y$上是闭的，则$\Lambda$连续。
+- **闭图像定理**：设$X$和$Y$是F空间，$\Lambda:X\to Y$是线性的，$G=\{(x,\Lambda x): x\in X\}$在$X\times Y$上是闭的，则$\Lambda$连续。
 
 
 ### 2.5 双线性映射
@@ -622,7 +622,7 @@ $X$拓扑向量空间，对应拓扑是$\tau$，
  \begin{equation}
  \{f^{-1}(V) : f \in \mathcal{F}, V\text{是}Y_{f}\text{中的开集}\}
  \end{equation}
- 通过有限交和无线并生成的集合。
+ 通过有限交和无限并生成的集合。
 
 - **引理**：设$\Lambda_1,\Lambda_2,\cdots,\Lambda_n$和$\Lambda$是向量空间$X$上的线性泛函。设
  \begin{equation}
