@@ -69,7 +69,10 @@ tags: other
  \end{equation}
  **解**：由三角函数基本公式有
  \begin{equation}
- \cos^2{(\frac{(k-1)\pi}{2n})}-\cos^2{(\frac{k\pi}{2n})}=\frac{1}{2}\big{(}\cos{(\frac{2(k-1)\pi}{2n})}-\cos{(\frac{2k\pi}{2n})}\big{)}=-\sin{(\frac{(2k-1)\pi}{2n})}\sin{(\frac{\pi}{2n})},
+ \begin{aligned}
+ \cos^2{(\frac{(k-1)\pi}{2n})}-\cos^2{(\frac{k\pi}{2n})}=&\frac{1}{2}\big{(}\cos{(\frac{2(k-1)\pi}{2n})}-\cos{(\frac{2k\pi}{2n})}\big{)}\newline
+ =&-\sin{(\frac{(2k-1)\pi}{2n})}\sin{(\frac{\pi}{2n})},
+ \end{aligned}
  \end{equation}
  从而可知
  \begin{equation}
