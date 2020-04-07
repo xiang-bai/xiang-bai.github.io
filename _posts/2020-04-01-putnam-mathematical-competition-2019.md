@@ -52,7 +52,7 @@ tags: other
  \end{equation}
  Prove that either
  \begin{equation}
- \lim_{x \to 0^+} g'(x) = 0 \qquad \mbox{or} \qquad \limsup_{x \to 0^+} x^r |g''(x)| = \infty.
+ \lim_{x \to 0^+} g'(x) = 0 \qquad \mbox{or} \qquad \limsup_{x \to 0^+} x^r \vert g''(x)\vert = \infty.
  \end{equation}
 
 ## B 部分
