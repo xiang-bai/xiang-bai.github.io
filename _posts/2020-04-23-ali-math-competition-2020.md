@@ -143,6 +143,6 @@ i \partial_{t} u+\Delta u=0, \quad u(0, x)=u_{0}(x), \quad x \in \mathbb{R}^{n}
  (1) 找到或描述分别最小化和最大化运输成本的两个单向运输，并证明它们的最优性.
  (2) 假设$(x_{n})_ {n=1,2,\ldots}$, 是一列来自标准正态分布的独立同分布序列, 并且$y_{i}=x_{i}+1$, $i=1,2, \ldots $. 令$T_{n}^{* }$为从$X_{n}:=\{x_{1}, \ldots, x_{n}\}$到$Y_{n}:=\{y_{1}, \ldots, y_{n}\}$ 的最大化运输成本的单向运输. 计算以下随机量
  \begin{equation}
- \frac{\# \{x \in X_{n}: x \leq 0, T_{n}^{* }(x) \leq 1\}}{n}
+ \frac{\sharp \{x \in X_{n}: x \leq 0, T_{n}^{* }(x) \leq 1\}}{n}
  \end{equation}
- 当$n \to \infty$时的极限(在几乎必然(a.s.)意义下),其中$\#$表示集合的势.
+ 当$n \to \infty$时的极限(在几乎必然(a.s.)意义下),其中$\sharp$表示集合的势.
