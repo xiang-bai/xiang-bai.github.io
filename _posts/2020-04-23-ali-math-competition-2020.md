@@ -26,12 +26,12 @@ tags: other
  (a) 试证如果$q$迷向,而$[E: F]$是奇数,那么 $q_{E}$ 也是迷向的。
  (b) 以上叙述在$[E: F]$为偶数时是否成立?
 4. 找出所有满足以下条件的有限群$G$：
- - $G$的阶是相异素数的积,换句话说,存往相异素数$p_{1}, \ldots, p_{m}$使得$\# G=p_{1} \cdots p_{m}$
- - $G$的所有非平凡元都是素数阶的,换句话说每个元素的阶数都属于$\left\{1, p_{1}, \ldots, p_{m}\right\}$    
+ - $G$的阶是相异素数的积,换句话说,存往相异素数$p_{1}, \ldots, p_{m}$使得$\sharp G=p_{1} \cdots p_{m}$
+ - $G$的所有非平凡元都是素数阶的,换句话说每个元素的阶数都属于$\{1, p_{1}, \ldots, p_{m}\}$    
  (注记:答案和$m$有关;例如当$m=2$时存在许多这样的$G$;您必须对它们分类。)
 5. 找出所有$(k, \alpha)$,其中$k>2$是整数而$\alpha \neq 0$是复数,使得
  \begin{equation}
- \alpha \in\left\{r e^{\frac{i \pi}{k}} \mid r \in \mathbb{R}\right\}, \quad \alpha+\alpha^{-1} \in\left\{m+n \sqrt{-2}\mid m, n \in \mathbb{Z}\right\}.
+ \alpha \in\{r e^{\frac{i \pi}{k}} \mid r \in \mathbb{R}\}, \quad \alpha+\alpha^{-1} \in\{m+n \sqrt{-2}\mid m, n \in \mathbb{Z}\}.
  \end{equation}
 
 
@@ -100,9 +100,26 @@ i \partial_{t} u+\Delta u=0, \quad u(0, x)=u_{0}(x), \quad x \in \mathbb{R}^{n}
 
 ## 应用与计算数学：组合数学、图论、概率、优化理论、常微分方程、偏微分方程、数值分析
 
-16. 
-17. 
-18.
+16. 一个简单图$G$称为“漂亮的”, 如果它的任意两个相邻顶点的度数不同. 对任意$n \geq 2$, 定义$f(n)$为$n$阶“漂亮的”简单图的边数的最大值. 求满足
+ \begin{equation}
+ \lim_{n \to \infty} \frac{
+ \begin{pmatrix}
+ n \newline
+ 2
+ \end{pmatrix}
+ -f(n)}{n^{a}}=b
+ \end{equation}
+ 的实数 $a, b \quad(b \neq 0)$.
+17. 令$a$和$b$为两个正整数, 在一个不透明的袋子里放了$a$个红球和$b$个蓝球. 红球和蓝球除了颜色以外的其它特征相同, 只能通过颜色来分辨. 小明进行如下的游戏: 每一轮她从袋子里随机抽取一个球, 如果这个球是蓝球, 那么游戏结束：如果是红球, 那么她将该球放回袋子并再加放一个红球到袋子之中（这样袋子中的红球增多了一个）. 令$E_{a, b}$为游戏总轮数的期望.   
+ (1) 当$a$与$b$为何值时, 期望$E_{a, b}$取有限值?   
+ (2) 将$E_{a, b}$表示为$a$与$b$的函数.   
+ (3) 假设小明知道袋中的总球数$N$但不知道$a$与$b$的值. 她先验地认为$a$在集合$\{1, \ldots, N-1\}$中均匀分布. 在第几轮抽到红球的情况下她可以有$90%$的把握猜测$E_{a, b}$取无穷值?
+18. 给定$n$个正实数$a_{1}, \cdots, a_{n}$, 假设它们满足$a_{1}^{2}+\cdots+a_{n}^{2}=1$和$a_{1}+\cdots+a_{n}=a$. 证明 存在一种挑选系数 $\epsilon_{1}, \cdots \epsilon_{n}$ 的方法，使得每个系数 $\epsilon_{i}$ 均为 $1$ 或 $-1$, 并且
+ \begin{equation}
+ \vert \epsilon_{1} a_{1}+\cdots+\epsilon_{n} a_{n}\vert \leq \frac{1}{a}
+ \end{equation}
+ 比如当$n=5$且$a_{1}=\cdots=a_{5}=1 / \sqrt{5}$时$a=\sqrt{5}$, 可以取$\epsilon_{1}=\epsilon_{2}=\epsilon_{3}=1, \epsilon_{4}=\epsilon_{5}=-1$, 
+ 这样$\vert \epsilon_{1} a_{1}+\cdots+\epsilon_{5} a_{5}\vert = 1 / \sqrt{5}=1 / a$.
 19. 在分子动力学中, 人们常使用 overdamped Langevin equation
  \begin{equation}
  \dot{x}=f(x)+\sqrt{2 \beta^{-1}} \eta
@@ -110,7 +127,7 @@ i \partial_{t} u+\Delta u=0, \quad u(0, x)=u_{0}(x), \quad x \in \mathbb{R}^{n}
  来采样 Boltzmann 分布 $\rho_{\beta}(x)=Z_{\beta}^{-1} e^{-\beta V(x)}$, 这里 $x \in \mathbb{R}^{3 n}, \beta=\frac{1}{k_{\beta} T}>0$, $k_{B}$是Boltzmann 常数, $T$是温度, $f(x)=-\nabla V(x)$ 是由势函数$V(x)$决定的作用力, $\eta$是一个$3 \mathrm{n}$维的白噪声, 而$Z_{\beta}=\int_{\mathrm{R}^{3n}} e^{-\beta V(x)} d x$ 是归一化常数. 考虑如下的两条耦合的采样轨道,
  \begin{equation}
  \begin{cases}
- \dot{x}_{1}=f(x_{1})+\sqrt{2 \beta_{1}^{-1}(t)} \eta_{1} \\
+ \dot{x}_{1}=f(x_{1})+\sqrt{2 \beta_{1}^{-1}(t)} \eta_{1} \newline
  \dot{x}_{2}=f(x_{2})+\sqrt{2 \beta_{2}^{-1}(t)} \eta_{2}
  \end{cases}
  \end{equation}
@@ -119,7 +136,7 @@ i \partial_{t} u+\Delta u=0, \quad u(0, x)=u_{0}(x), \quad x \in \mathbb{R}^{n}
  \min \left(\frac{\rho_{\bar{\beta}}(x_{1}) \rho_{\beta}(x_{2})}{\rho_{\beta}(x_{1}) \rho_{\bar{\beta}}(x_{2})}, 1\right)\ \ (1)
  \end{equation}
  而另外一种互换的接受概率类似可得. 写出（无需证明）当频率$\nu \to \infty$时$(1)$的极限方程, 我们称之为系统（A）. 写出另一个$x_1$和$x_{2}$满足的随机动力方程, 我们称之为系统（B），使得系统（B）中只含有常系数的噪声项, 且系统（A）和系统（B）对应一样的不变分布。
-20. 假设 $x_{1}, \ldots, x_{n}$ 是一组相异实数, $y_{1}, \ldots, y_{n}$是另一组相异实数, 并且对于每个$i=1, \ldots, n$都有$y_{i} \geq x_{i}$. 一个单向运输$T$是一个从$\left\{x_{1}, \ldots, x_{n}\right\}$到$\left\{y_{1}, \ldots, y_{n}\right\}$的一一映射，并且满足对于每个$i=1, \ldots, n$都有$T(x_{i}) \geq x_{i}$. (例如, 对每个$i=1, \ldots, n$使$T(x_{i})=y_{i}$就定义了一个单向运输.) $T$的运输成本定义为
+20. 假设 $x_{1}, \ldots, x_{n}$ 是一组相异实数, $y_{1}, \ldots, y_{n}$是另一组相异实数, 并且对于每个$i=1, \ldots, n$都有$y_{i} \geq x_{i}$. 一个单向运输$T$是一个从$\{x_{1}, \ldots, x_{n}\}$到$\{y_{1}, \ldots, y_{n}\}$的一一映射，并且满足对于每个$i=1, \ldots, n$都有$T(x_{i}) \geq x_{i}$. (例如, 对每个$i=1, \ldots, n$使$T(x_{i})=y_{i}$就定义了一个单向运输.) $T$的运输成本定义为
  \begin{equation}
  \sum_{i=1}^{n}(T(x_{i})-x_{i})^{2}
  \end{equation}
