@@ -127,8 +127,8 @@ i \partial_{t} u+\Delta u=0, \quad u(0, x)=u_{0}(x), \quad x \in \mathbb{R}^{n}
  来采样 Boltzmann 分布 $\rho_{\beta}(x)=Z_{\beta}^{-1} e^{-\beta V(x)}$, 这里 $x \in \mathbb{R}^{3 n}, \beta=\frac{1}{k_{\beta} T}>0$, $k_{B}$是Boltzmann 常数, $T$是温度, $f(x)=-\nabla V(x)$ 是由势函数$V(x)$决定的作用力, $\eta$是一个$3 \mathrm{n}$维的白噪声, 而$Z_{\beta}=\int_{\mathrm{R}^{3n}} e^{-\beta V(x)} d x$ 是归一化常数. 考虑如下的两条耦合的采样轨道,
  \begin{equation}
  \begin{cases}
- \dot{x}_{1}=f(x_{1})+\sqrt{2 \beta_{1}^{-1}(t)} \eta_{1} \newline
- \dot{x}_{2}=f(x_{2})+\sqrt{2 \beta_{2}^{-1}(t)} \eta_{2}
+ \dot{x}_ {1}=f(x_{1})+\sqrt{2 \beta_{1}^{-1}(t)} \eta_{1} \newline
+ \dot{x}_ {2}=f(x_{2})+\sqrt{2 \beta_{2}^{-1}(t)} \eta_{2}
  \end{cases}
  \end{equation}
  其中$\beta_{1}(t)$和$\beta_{2}(t)$会交替地取值$\beta>0$和$\bar{\beta}>0$. 例如, 可选 $\bar{\beta}<\beta$  (即 $\bar{\beta}^{-1}>\beta^{-1}$) 使得$\bar{\beta}$对应的温度高于原系统的温度以提高采样效率. 按照频率$\nu, \beta_{1}(t)$和$\beta_{2}(t)$会尝试互换取值, 如界互换是尝试从$(\beta_{1}, \beta_{2})=(\beta, \bar{\beta})$变成$(\beta_{1}, \beta_{2})=(\bar{\beta}, \beta)$, 那么这种互换的接受概率为
