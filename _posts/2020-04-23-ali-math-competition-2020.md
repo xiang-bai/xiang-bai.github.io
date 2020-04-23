@@ -102,12 +102,7 @@ i \partial_{t} u+\Delta u=0, \quad u(0, x)=u_{0}(x), \quad x \in \mathbb{R}^{n}
 
 16. 一个简单图$G$称为“漂亮的”, 如果它的任意两个相邻顶点的度数不同. 对任意$n \geq 2$, 定义$f(n)$为$n$阶“漂亮的”简单图的边数的最大值. 求满足
  \begin{equation}
- \lim_{n \to \infty} \frac{
- \begin{pmatrix}
- n \newline
- 2
- \end{pmatrix}
- -f(n)}{n^{a}}=b
+ \lim_{n \to \infty} \frac{\tbinom{n}{2}-f(n)}{n^{a}}=b
  \end{equation}
  的实数 $a, b \quad(b \neq 0)$.
 17. 令$a$和$b$为两个正整数, 在一个不透明的袋子里放了$a$个红球和$b$个蓝球. 红球和蓝球除了颜色以外的其它特征相同, 只能通过颜色来分辨. 小明进行如下的游戏: 每一轮她从袋子里随机抽取一个球, 如果这个球是蓝球, 那么游戏结束：如果是红球, 那么她将该球放回袋子并再加放一个红球到袋子之中（这样袋子中的红球增多了一个）. 令$E_{a, b}$为游戏总轮数的期望.   
