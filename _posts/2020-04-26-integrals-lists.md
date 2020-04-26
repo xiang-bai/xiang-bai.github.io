@@ -50,13 +50,13 @@ tags: other
 \end{equation}
 
 ## 含有${ax^2+b}$的积分
-    \begin{equation} 
-    \int {\frac {1}{ax^{2}+b}}{\mbox{d}}x={\frac {1}{\sqrt {ab}}}\arctan {\frac {{\sqrt {a}}x}{\sqrt {b}}}+C
-    \end{equation}
+ \begin{equation} 
+ \int {\frac {1}{ax^{2}+b}}{\mbox{d}}x={\frac {1}{\sqrt {ab}}}\arctan {\frac {{\sqrt {a}}x}{\sqrt {b}}}+C
+ \end{equation}
 
 ## 含有$ax^{2}+bx+c$的积分
-\begin{equation} \int ax^{2}+bx+c{\mbox{d}}x={\frac {ax^{3}}{3}}+{\frac {bx^{2}}{2}}+cx+C
-\end{equation}
+ \begin{equation} \int ax^{2}+bx+c{\mbox{d}}x={\frac {ax^{3}}{3}}+{\frac {bx^{2}}{2}}+cx+C
+ \end{equation}
 
 ## 含有$\sqrt{a^2+x^2}\qquad(a>0)$的积分
 \begin{equation} \int {\sqrt {a^{2}+x^{2}}}{\mbox{d}}x={\frac {1}{2}}x{\sqrt {a^{2}+x^{2}}}+{\frac {1}{2}}a^{2}\ln \left(x+{\sqrt {a^{2}+x^{2}}}\right)+C\end{equation}\begin{equation} \int {\sqrt {a^{2}+x^{2}}}{\mbox{d}}x={\frac {1}{2}}x{\sqrt {a^{2}+x^{2}}}+{\frac {1}{2}}a^{2}\ln \left(x+{\sqrt {a^{2}+x^{2}}}\right)+C\end{equation}
@@ -96,16 +96,22 @@ tags: other
 \end{equation}
 \begin{equation} 
 \int {\frac {{\mbox{d}}x}{R}}=-{\frac {1}{\sqrt {-a}}}\arcsin {\frac {2ax+b}{\sqrt {b^{2}-4ac}}}\qquad {\mbox{(for }}a<0{\mbox{, }}4ac-b^{2} < 0{\mbox{, }}\left(2ax+b\right)<{\sqrt {b^{2}-4ac}}{\mbox{)}}\end{equation}
-\begin{equation} \int {\frac {{\mbox{d}}x}{R}}=-{\frac {1}{\sqrt {-a}}}\arcsin {\frac {2ax+b}{\sqrt {b^{2}-4ac}}}\qquad {\mbox{(for }}a < 0{\mbox{, }}4ac-b^{2}<0{\mbox{, }}\left(2ax+b\right) < {\sqrt {b^{2}-4ac}}{\mbox{)}}\end{equation}
-\begin{equation} \int {\frac {{\mbox{d}}x}{R^{3}}}={\frac {4ax+2b}{(4ac-b^{2})R}}\end{equation}\begin{equation} \int {\frac {{\mbox{d}}x}{R^{3}}}={\frac {4ax+2b}{(4ac-b^{2})R}}\end{equation}
-\begin{equation} \int {\frac {{\mbox{d}}x}{R^{5}}}={\frac {4ax+2b}{3(4ac-b^{2})R}}\left({\frac {1}{R^{2}}}+{\frac {8a}{4ac-b^{2}}}\right)\end{equation}\begin{equation} \int {\frac {{\mbox{d}}x}{R^{5}}}={\frac {4ax+2b}{3(4ac-b^{2})R}}\left({\frac {1}{R^{2}}}+{\frac {8a}{4ac-b^{2}}}\right)\end{equation}
-\begin{equation} \int {\frac {{\mbox{d}}x}{R^{2n+1}}}={\frac {2}{(2n-1)(4ac-b^{2})}}\left[{\frac {2ax+b}{R^{2n-1}}}+4a(n-1)\int {\frac {{\mbox{d}}x}{R^{2n-1}}}\right]\end{equation}\begin{equation} \int {\frac {{\mbox{d}}x}{R^{2n+1}}}={\frac {2}{(2n-1)(4ac-b^{2})}}\left[{\frac {2ax+b}{R^{2n-1}}}+4a(n-1)\int {\frac {{\mbox{d}}x}{R^{2n-1}}}\right]\end{equation}
-\begin{equation} \int {\frac {x}{R}}\;{\mbox{d}}x={\frac {R}{a}}-{\frac {b}{2a}}\int {\frac {{\mbox{d}}x}{R}}\end{equation}\begin{equation} \int {\frac {x}{R}}\;{\mbox{d}}x={\frac {R}{a}}-{\frac {b}{2a}}\int {\frac {{\mbox{d}}x}{R}}\end{equation}
-\begin{equation} \int {\frac {x}{R^{3}}}\;{\mbox{d}}x=-{\frac {2bx+4c}{(4ac-b^{2})R}}\end{equation}\begin{equation} \int {\frac {x}{R^{3}}}\;{\mbox{d}}x=-{\frac {2bx+4c}{(4ac-b^{2})R}}\end{equation}
-\begin{equation} \int {\frac {x}{R^{2n+1}}}\;{\mbox{d}}x=-{\frac {1}{(2n-1)aR^{2n-1}}}-{\frac {b}{2a}}\int {\frac {{\mbox{d}}x}{R^{2n+1}}}\end{equation}\begin{equation} \int {\frac {x}{R^{2n+1}}}\;{\mbox{d}}x=-{\frac {1}{(2n-1)aR^{2n-1}}}-{\frac {b}{2a}}\int {\frac {{\mbox{d}}x}{R^{2n+1}}}\end{equation}
-\begin{equation} \int {\frac {{\mbox{d}}x}{xR}}=-{\frac {1}{\sqrt {c}}}\ln \left({\frac {2{\sqrt {c}}R+bx+2c}{x}}\right)\end{equation}\begin{equation} \int {\frac {{\mbox{d}}x}{xR}}=-{\frac {1}{\sqrt {c}}}\ln \left({\frac {2{\sqrt {c}}R+bx+2c}{x}}\right)\end{equation}
-\begin{equation} \int {\frac {{\mbox{d}}x}{xR}}=-{\frac {1}{\sqrt {c}}}\operatorname {arsinh} \left({\frac {bx+2c}{\vert x\vert {\sqrt {4ac-b^{2}}}}}\right)\end{equation}\begin{equation} \int {\frac {{\mbox{d}}x}{xR}}=-{\frac {1}{\sqrt {c}}}\operatorname {arsinh} \left({\frac {bx+2c}{\vert x\vert {\sqrt {4ac-b^{2}}}}}\right)
+\begin{equation} 
+\int {\frac {{\mbox{d}}x}{R^{3}}}={\frac {4ax+2b}{(4ac-b^{2})R}}\end{equation}
+\begin{equation} 
+\int {\frac {{\mbox{d}}x}{R^{5}}}={\frac {4ax+2b}{3(4ac-b^{2})R}}\left({\frac {1}{R^{2}}}+{\frac {8a}{4ac-b^{2}}}\right)\end{equation}
+\begin{equation} 
+\int {\frac {{\mbox{d}}x}{R^{2n+1}}}={\frac {2}{(2n-1)(4ac-b^{2})}}\left[{\frac {2ax+b}{R^{2n-1}}}+4a(n-1)\int {\frac {{\mbox{d}}x}{R^{2n-1}}}\right]\end{equation}
+\begin{equation} 
+\int {\frac {x}{R}}\;{\mbox{d}}x={\frac {R}{a}}-{\frac {b}{2a}}\int {\frac {{\mbox{d}}x}{R}}
 \end{equation}
+\begin{equation} 
+\int {\frac {x}{R^{3}}}\;{\mbox{d}}x=-{\frac {2bx+4c}{(4ac-b^{2})R}}
+\end{equation}
+\begin{equation} \int {\frac {x}{R^{2n+1}}}\;{\mbox{d}}x=-{\frac {1}{(2n-1)aR^{2n-1}}}-{\frac {b}{2a}}\int {\frac {{\mbox{d}}x}{R^{2n+1}}}\end{equation}
+\begin{equation} \int {\frac {{\mbox{d}}x}{xR}}=-{\frac {1}{\sqrt {c}}}\ln \left({\frac {2{\sqrt {c}}R+bx+2c}{x}}\right)\end{equation}
+\begin{equation} \int {\frac {{\mbox{d}}x}{xR}}=-{\frac {1}{\sqrt {c}}}\operatorname {arsinh} \left({\frac {bx+2c}{\vert x\vert {\sqrt {4ac-b^{2}}}}}\right)\end{equation}
+
 
 ## 含有三角函数的积分
 \begin{equation} 
