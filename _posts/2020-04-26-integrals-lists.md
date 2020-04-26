@@ -31,8 +31,8 @@ tags: other
 \begin{equation} \int {\frac {\sqrt {a+bx}}{x^{n}}}{\mbox{d}}x={\frac {-1}{a(n-1)}}{\frac {(a+bx)^{\frac {3}{2}}}{x^{n-1}}}-{\frac {(2n-5)b}{2a(n-1)}}\int {\frac {\sqrt {a+bx}}{x^{n-1}}}{\mbox{d}}x,n\neq 1\end{equation}\begin{equation} \int {\frac {\sqrt {a+bx}}{x^{n}}}{\mbox{d}}x={\frac {-1}{a(n-1)}}{\frac {(a+bx)^{\frac {3}{2}}}{x^{n-1}}}-{\frac {(2n-5)b}{2a(n-1)}}\int {\frac {\sqrt {a+bx}}{x^{n-1}}}{\mbox{d}}x,n\neq 1\end{equation}
 \begin{equation} 
 \begin{aligned}
-\int {\frac {1}{x{\sqrt {a+bx}}}}{\mbox{d}}x=&{\frac {1}{\sqrt {a}}}\ln \left({\frac {{\sqrt {a+bx}}-{\sqrt {a}}}{{\sqrt {a+bx}}+{\sqrt {a}}}}\right)+C,a>0 \newline
-=&{\frac {2}{\sqrt {-a}}}\arctan {\sqrt {\frac {a+bx}{-a}}}+C,a<0
+\int {\frac {1}{x{\sqrt {a+bx}}}}\mbox{d}x=&{\frac {1}{\sqrt {a}}}\ln \left({\frac {{\sqrt {a+bx}}-{\sqrt {a}}}{{\sqrt {a+bx}}+{\sqrt {a}}}}\right)+C,a > 0 \newline
+=&{\frac {2}{\sqrt {-a}}}\arctan {\sqrt {\frac {a+bx}{-a}}}+C,a < 0
 \end{aligned}
 \end{equation}
 \begin{equation} \int {\frac {x}{\sqrt {a+bx}}}{\mbox{d}}x={\frac {2(a+bx)^{\frac {3}{2}}}{3b^{2}}}-{\frac {(2a){\sqrt {a+bx}}}{b^{2}}}\end{equation}\begin{equation} \int {\frac {x}{\sqrt {a+bx}}}{\mbox{d}}x={\frac {2(a+bx)^{\frac {3}{2}}}{3b^{2}}}-{\frac {(2a){\sqrt {a+bx}}}{b^{2}}}
@@ -50,8 +50,9 @@ tags: other
 \end{equation}
 
 ## 含有${ax^2+b}$的积分
-\begin{equation} \int {\frac {1}{ax^{2}+b}}{\mbox{d}}x={\frac {1}{\sqrt {ab}}}\arctan {\frac {{\sqrt {a}}x}{\sqrt {b}}}+C
-\end{equation}
+    \begin{equation} 
+    \int {\frac {1}{ax^{2}+b}}{\mbox{d}}x={\frac {1}{\sqrt {ab}}}\arctan {\frac {{\sqrt {a}}x}{\sqrt {b}}}+C
+    \end{equation}
 
 ## 含有$ax^{2}+bx+c$的积分
 \begin{equation} \int ax^{2}+bx+c{\mbox{d}}x={\frac {ax^{3}}{3}}+{\frac {bx^{2}}{2}}+cx+C
@@ -84,10 +85,18 @@ tags: other
 \end{equation}
 
 ## 含有$R=\sqrt{\vert a\vert x^2+bx+c}\qquad(a\ne0)$的积分
-\begin{equation} \int {\frac {{\mbox{d}}x}{R}}={\frac {1}{\sqrt {a}}}\ln \left(2{\sqrt {a}}R+2ax+b\right)\qquad ({\mbox{for }}a>0)\end{equation}\begin{equation} \int {\frac {{\mbox{d}}x}{R}}={\frac {1}{\sqrt {a}}}\ln \left(2{\sqrt {a}}R+2ax+b\right)\qquad ({\mbox{for }}a>0)\end{equation}
-\begin{equation} \int {\frac {{\mbox{d}}x}{R}}={\frac {1}{\sqrt {a}}}\,\operatorname {arsinh} {\frac {2ax+b}{\sqrt {4ac-b^{2}}}}\qquad {\mbox{(for }}a>0{\mbox{, }}4ac-b^{2}>0{\mbox{)}}\end{equation}\begin{equation} \int {\frac {{\mbox{d}}x}{R}}={\frac {1}{\sqrt {a}}}\,\operatorname {arsinh} {\frac {2ax+b}{\sqrt {4ac-b^{2}}}}\qquad {\mbox{(for }}a>0{\mbox{, }}4ac-b^{2}>0{\mbox{)}}\end{equation}
-\begin{equation} \int {\frac {{\mbox{d}}x}{R}}={\frac {1}{\sqrt {a}}}\ln \vert 2ax+b\vert \quad {\mbox{(for }}a>0{\mbox{, }}4ac-b^{2}=0{\mbox{)}}\end{equation}\begin{equation} \int {\frac {{\mbox{d}}x}{R}}={\frac {1}{\sqrt {a}}}\ln \vert 2ax+b\vert \quad {\mbox{(for }}a>0{\mbox{, }}4ac-b^{2}=0{\mbox{)}}\end{equation}
-\begin{equation} \int {\frac {{\mbox{d}}x}{R}}=-{\frac {1}{\sqrt {-a}}}\arcsin {\frac {2ax+b}{\sqrt {b^{2}-4ac}}}\qquad {\mbox{(for }}a<0{\mbox{, }}4ac-b^{2}<0{\mbox{, }}\left(2ax+b\right)<{\sqrt {b^{2}-4ac}}{\mbox{)}}\end{equation}\begin{equation} \int {\frac {{\mbox{d}}x}{R}}=-{\frac {1}{\sqrt {-a}}}\arcsin {\frac {2ax+b}{\sqrt {b^{2}-4ac}}}\qquad {\mbox{(for }}a<0{\mbox{, }}4ac-b^{2}<0{\mbox{, }}\left(2ax+b\right)<{\sqrt {b^{2}-4ac}}{\mbox{)}}\end{equation}
+\begin{equation} 
+\int {\frac {{\mbox{d}}x}{R}}={\frac {1}{\sqrt {a}}}\ln \left(2{\sqrt {a}}R+2ax+b\right)\qquad ({\mbox{for }}a > 0)
+\end{equation}
+\begin{equation} 
+\int {\frac {{\mbox{d}}x}{R}}={\frac {1}{\sqrt {a}}}\,\operatorname {arsinh} {\frac {2ax+b}{\sqrt {4ac-b^{2}}}}\qquad {\mbox{(for }}a > 0{\mbox{, }}4ac-b^{2} > 0{\mbox{)}}
+\end{equation}
+\begin{equation} 
+\int {\frac {{\mbox{d}}x}{R}}={\frac {1}{\sqrt {a}}}\ln \vert 2ax+b\vert \quad {\mbox{(for }}a > 0{\mbox{, }}4ac-b^{2}=0{\mbox{)}}
+\end{equation}
+\begin{equation} 
+\int {\frac {{\mbox{d}}x}{R}}=-{\frac {1}{\sqrt {-a}}}\arcsin {\frac {2ax+b}{\sqrt {b^{2}-4ac}}}\qquad {\mbox{(for }}a<0{\mbox{, }}4ac-b^{2} < 0{\mbox{, }}\left(2ax+b\right)<{\sqrt {b^{2}-4ac}}{\mbox{)}}\end{equation}
+\begin{equation} \int {\frac {{\mbox{d}}x}{R}}=-{\frac {1}{\sqrt {-a}}}\arcsin {\frac {2ax+b}{\sqrt {b^{2}-4ac}}}\qquad {\mbox{(for }}a < 0{\mbox{, }}4ac-b^{2}<0{\mbox{, }}\left(2ax+b\right) < {\sqrt {b^{2}-4ac}}{\mbox{)}}\end{equation}
 \begin{equation} \int {\frac {{\mbox{d}}x}{R^{3}}}={\frac {4ax+2b}{(4ac-b^{2})R}}\end{equation}\begin{equation} \int {\frac {{\mbox{d}}x}{R^{3}}}={\frac {4ax+2b}{(4ac-b^{2})R}}\end{equation}
 \begin{equation} \int {\frac {{\mbox{d}}x}{R^{5}}}={\frac {4ax+2b}{3(4ac-b^{2})R}}\left({\frac {1}{R^{2}}}+{\frac {8a}{4ac-b^{2}}}\right)\end{equation}\begin{equation} \int {\frac {{\mbox{d}}x}{R^{5}}}={\frac {4ax+2b}{3(4ac-b^{2})R}}\left({\frac {1}{R^{2}}}+{\frac {8a}{4ac-b^{2}}}\right)\end{equation}
 \begin{equation} \int {\frac {{\mbox{d}}x}{R^{2n+1}}}={\frac {2}{(2n-1)(4ac-b^{2})}}\left[{\frac {2ax+b}{R^{2n-1}}}+4a(n-1)\int {\frac {{\mbox{d}}x}{R^{2n-1}}}\right]\end{equation}\begin{equation} \int {\frac {{\mbox{d}}x}{R^{2n+1}}}={\frac {2}{(2n-1)(4ac-b^{2})}}\left[{\frac {2ax+b}{R^{2n-1}}}+4a(n-1)\int {\frac {{\mbox{d}}x}{R^{2n-1}}}\right]\end{equation}
