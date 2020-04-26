@@ -31,13 +31,8 @@ tags: other
 \begin{equation} \int {\frac {\sqrt {a+bx}}{x^{n}}}{\mbox{d}}x={\frac {-1}{a(n-1)}}{\frac {(a+bx)^{\frac {3}{2}}}{x^{n-1}}}-{\frac {(2n-5)b}{2a(n-1)}}\int {\frac {\sqrt {a+bx}}{x^{n-1}}}{\mbox{d}}x,n\neq 1\end{equation}\begin{equation} \int {\frac {\sqrt {a+bx}}{x^{n}}}{\mbox{d}}x={\frac {-1}{a(n-1)}}{\frac {(a+bx)^{\frac {3}{2}}}{x^{n-1}}}-{\frac {(2n-5)b}{2a(n-1)}}\int {\frac {\sqrt {a+bx}}{x^{n-1}}}{\mbox{d}}x,n\neq 1\end{equation}
 \begin{equation} 
 \begin{aligned}
-\int {\frac {1}{x{\sqrt {a+bx}}}}\mbox{d}x=&\frac {1}{\sqrt {a}}\ln \left(\frac {\sqrt {a+bx}-\sqrt {a}}{\sqrt {a+bx}+\sqrt {a}}\right)+C,a > 0 \newline
+\int \frac {1}{x\sqrt {a+bx}}\mbox{d}x=&\frac {1}{\sqrt {a}}\ln \left(\frac {\sqrt {a+bx}-\sqrt {a}}{\sqrt {a+bx}+\sqrt {a}}\right)+C,a > 0 \newline
 =&\frac {2}{\sqrt {-a}}\arctan {\sqrt {\frac {a+bx}{-a}}}+C,a < 0
-\end{aligned}
-\end{equation}
-\begin{equation} 
-\begin{aligned}
-\int {\frac {1}{x{\sqrt {a+bx}}}}\mbox{d}x=\frac {1}{\sqrt {a}}\ln \left(\frac {\sqrt {a+bx}-\sqrt {a}}{\sqrt {a+bx}+\sqrt {a}}\right)+C,
 \end{aligned}
 \end{equation}
 \begin{equation} \int {\frac {x}{\sqrt {a+bx}}}{\mbox{d}}x={\frac {2(a+bx)^{\frac {3}{2}}}{3b^{2}}}-{\frac {(2a){\sqrt {a+bx}}}{b^{2}}}\end{equation}\begin{equation} \int {\frac {x}{\sqrt {a+bx}}}{\mbox{d}}x={\frac {2(a+bx)^{\frac {3}{2}}}{3b^{2}}}-{\frac {(2a){\sqrt {a+bx}}}{b^{2}}}
