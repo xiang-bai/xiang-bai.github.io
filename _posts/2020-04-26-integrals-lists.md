@@ -99,23 +99,25 @@ tags: other
 \begin{equation} 
 \int \frac {\mbox{d}x}{R^{3}}=\frac {4ax+2b}{(4ac-b^{2})R}\end{equation}
 \begin{equation} 
-\int {\frac {{\mbox{d}}x}{R^{5}}}=\frac {4ax+2b}{3(4ac-b^{2})R}\left({\frac {1}{R^{2}}}+{\frac {8a}{4ac-b^{2}}}\right)\end{equation}
+\int \frac {\mbox{d}x}{R^{5}}=\frac {4ax+2b}{3(4ac-b^{2})R}\left(\frac {1}{R^{2}}+\frac {8a}{4ac-b^{2}}\right)
+\end{equation}
 \begin{equation} 
-\int {\frac {{\mbox{d}}x}{R^{2n+1}}}=\frac {2}{(2n-1)(4ac-b^{2})}\left[{\frac {2ax+b}{R^{2n-1}}}+4a(n-1)\int {\frac {{\mbox{d}}x}{R^{2n-1}}}\right]\end{equation}
+\int \frac {\mbox{d}x}{R^{2n+1}}=\frac {2}{(2n-1)(4ac-b^{2})}\left[\frac {2ax+b}{R^{2n-1}}+4a(n-1)\int \frac {{\mbox{d}}x}{R^{2n-1}}\right]
+\end{equation}
 \begin{equation} 
-\int {\frac {x}{R}}\;{\mbox{d}}x={\frac {R}{a}}-\frac {b}{2a}\int {\frac {{\mbox{d}}x}{R}}
+\int \frac {x}{R}\;{\mbox{d}}x={\frac {R}{a}}-\frac {b}{2a}\int \frac {{\mbox{d}}x}{R}
 \end{equation}
 \begin{equation} 
 \int {\frac {x}{R^{3}}}\;{\mbox{d}}x=-\frac {2bx+4c}{(4ac-b^{2})R}
 \end{equation}
 \begin{equation} 
-\int \frac {x}{R^{2n+1}}\;{\mbox{d}}x=-\frac {1}{(2n-1)aR^{2n-1}}-\frac {b}{2a}\int \frac {{\mbox{d}}x}{R^{2n+1}}
+\int \frac {x}{R^{2n+1}}\;\mbox{d}x=-\frac {1}{(2n-1)aR^{2n-1}}-\frac {b}{2a}\int \frac {\mbox{d}x}{R^{2n+1}}
 \end{equation}
 \begin{equation} 
-\int {\frac {{\mbox{d}}x}{xR}}=-\frac {1}{\sqrt {c}}\ln \left(\frac {2\sqrt {c}R+bx+2c}{x}\right)
+\int \frac {\mbox{d}x}{xR}=-\frac {1}{\sqrt {c}}\ln \left(\frac {2\sqrt {c}R+bx+2c}{x}\right)
 \end{equation}
 \begin{equation} 
-\int {\frac {{\mbox{d}}x}{xR}}=-\frac {1}{\sqrt {c}}\operatorname {arsinh} \left(\frac {bx+2c}{\vert x\vert \sqrt {4ac-b^{2}}}\right)
+\int \frac {\mbox{d}x}{xR}=-\frac {1}{\sqrt {c}}\operatorname {arsinh} \left(\frac {bx+2c}{\vert x\vert \sqrt {4ac-b^{2}}}\right)
 \end{equation}
 
 
