@@ -102,10 +102,10 @@ tags: other
 \int \frac {\mbox{d}x}{R^{5}}=\frac {4ax+2b}{3(4ac-b^{2})R}\left(\frac {1}{R^{2}}+\frac {8a}{4ac-b^{2}}\right)
 \end{equation}
 \begin{equation} 
-\int \frac {\mbox{d}x}{R^{2n+1}}=\frac {2}{(2n-1)(4ac-b^{2})}\left[\frac {2ax+b}{R^{2n-1}}+4a(n-1)\int \frac {{\mbox{d}}x}{R^{2n-1}}\right]
+\int \frac {\mbox{d}x}{R^{2n+1}}=\frac {2}{(2n-1)(4ac-b^{2})}\left[\frac {2ax+b}{R^{2n-1}}+4a(n-1)\int \frac {\mbox{d}x}{R^{2n-1}}\right]
 \end{equation}
 \begin{equation} 
-\int \frac {x}{R}\;{\mbox{d}}x={\frac {R}{a}}-\frac {b}{2a}\int \frac {{\mbox{d}}x}{R}
+\int \frac {x}{R}\;{\mbox{d}}x={\frac {R}{a}}-\frac {b}{2a}\int \frac {\mbox{d}x}{R}
 \end{equation}
 \begin{equation} 
 \int {\frac {x}{R^{3}}}\;{\mbox{d}}x=-\frac {2bx+4c}{(4ac-b^{2})R}
