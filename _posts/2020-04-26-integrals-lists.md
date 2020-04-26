@@ -51,7 +51,7 @@ tags: other
 
 ## 含有${ax^2+b}$的积分
  \begin{equation} 
- \int {\frac {1}{ax^{2}+b}}{\mbox{d}}x={\frac {1}{\sqrt {ab}}}\arctan {\frac {{\sqrt {a}}x}{\sqrt {b}}}+C
+ \int \frac {1}{ax^{2}+b}{\mbox{d}}x=\frac {1}{\sqrt {ab}}\arctan {\frac {\sqrt {a}x}{\sqrt {b}}}+C
  \end{equation}
 
 ## 含有$ax^{2}+bx+c$的积分
