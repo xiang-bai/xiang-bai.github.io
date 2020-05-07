@@ -12,6 +12,7 @@ tags: other
 {:toc}
 
 ## 代数与数论：群论、丢番图方程、伽罗华理论、代数数论、抽象代数、交换代数
+
 1. 设$F$为域。考虑$F^n$上的如下环结构,加法是通常的向量加法,乘法定义为
  \begin{equation}
  \left(x_{1}, \ldots, x_{n}\right) \cdot\left(y_{1}, \ldots, y_{n}\right)=\left(x_{1} y_{1}, \ldots, x_{n} y_{n}\right)
@@ -141,3 +142,6 @@ i \partial_{t} u+\Delta u=0, \quad u(0, x)=u_{0}(x), \quad x \in \mathbb{R}^{n}
  \frac{\sharp \{x \in X_{n}: x \leq 0, T_{n}^{* }(x) \leq 1\}}{n}
  \end{equation}
  当$n \to \infty$时的极限(在几乎必然(a.s.)意义下),其中$\sharp$表示集合的势.
+
+## <a href="http://www.13ai.club/images/ali-math-competition-2020.pdf" download>PDF下载</a>
+ 
