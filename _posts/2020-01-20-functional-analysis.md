@@ -567,7 +567,7 @@ $X$拓扑向量空间，对应拓扑是$\tau$，
 
 - **对偶空间**：拓扑向量空间$X$的对偶空间$X^{* }$是$X$上的所有连续线性泛函组成的空间。其中加法和数乘的定义为
  \begin{equation}
- (\Lambda_1+\Lambda)x=\Lambda_1 x+\Lambda_2 x,\ \ (\alpha \Lambda)x=\alpha\cdot \Lambda x.
+ (\Lambda_1+\Lambda_2)x=\Lambda_1 x+\Lambda_2 x,\ \ (\alpha \Lambda)x=\alpha\cdot \Lambda x.
  \end{equation}
 
 - **控制延拓定理1**：假设$M$是实向量空间$X$的子空间，$p:X\to R$
