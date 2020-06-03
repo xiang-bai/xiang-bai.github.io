@@ -441,7 +441,7 @@ $X$拓扑向量空间，对应拓扑是$\tau$，
 - **定理**：设$X$和$Y$是两个拓扑向量空间，$\Gamma$是从$X$到$Y$的等度连续线性映射族，则对于$X$的任意有界子集$E$，存在$Y$的有界子集$F$，使得任意$\Lambda\in \Gamma$有，$\Lambda(E)\subset F$。    
  **证明**：按定义易得，略。
 
-- **一致有界原理(Banach-Steinhaus定理)**：设$X$和$Y$是两个拓扑向量空间，$\Gamma$是从$X$到$Y$的等度连续线性映射族，如果子集
+- **一致有界原理(Banach-Steinhaus定理)**：设$X$和$Y$是两个拓扑向量空间，$\Gamma$是从$X$到$Y$的连续线性映射族，如果子集
  \begin{equation}
  B=\{x\in X: \text{轨迹}\Gamma(x)=\{\Lambda x: \Lambda \in \Gamma,x\in B\}\text{在$Y$中有界}\}
  \end{equation}
@@ -573,7 +573,7 @@ $X$拓扑向量空间，对应拓扑是$\tau$，
 - **控制延拓定理1**：假设$M$是实向量空间$X$的子空间，$p:X\to R$
  满足任意的$x,y\in X$和$t\ge 0$有
  \begin{equation}
- p(x+y)\le p(x)+p(y),\ \ p(tx)=p(x),
+ p(x+y)\le p(x)+p(y),\ \ p(tx)=tp(x),
  \end{equation}
  $f:M\to R$是线性的且在$M$上有$f(x)\le p(x)$。则存在线性映射$\Lambda:X\to R$满足
  \begin{equation}
