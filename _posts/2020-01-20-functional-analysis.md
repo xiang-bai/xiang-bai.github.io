@@ -674,7 +674,7 @@ $X$拓扑向量空间，对应拓扑是$\tau$，
  \end{equation}
 - **定义**：(a)设$X$是向量空间且$E\subset X$，定义$E$的凸包是$X$中所有包含$E$的凸子集的交集，记作$co(E)$。等价的有
  \begin{equation}
- co(E) = \left\{ \sum_{j=1}^n t_j x_j\, : x_j \in E,\, \sum_{j=1}^n t_j = 1,\, t_j \in \lbrack 0, 1 \rbrack \, \right\}
+ co(E) = \{ \sum_{j=1}^n t_j x_j\, : x_j \in E,\, \sum_{j=1}^n t_j = 1,\, t_j \in \lbrack 0, 1 \rbrack \, \}
  \end{equation}
  (b)设$X$是向量空间且$E\subset X$，定义$E$的闭凸包是$co(E)$的闭包，记作$\overline{co}(E)$。    
  (c)设$X$是距离空间且$E\subset X$，如果任意$\varepsilon >0$，$E$包含于有限个半径为$\varepsilon$的开球的并集中，则称$E$完全有界。   
