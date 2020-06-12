@@ -28,6 +28,30 @@
       }
     };
     </script>
+    <script>
+    window.MathJax = {
+      loader: {
+      load: ['[tex]/tagFormat']
+      },
+      startup: {
+        pageReady: () => {
+        alert('Running MathJax')l;
+        return MathJax.startup.defaultPageReady();
+        }
+      },
+      tex: {
+        packages: {'[+]': ['tagFormat']},
+        tagSide: 'left',
+        macros: {
+          Setleft: '{\{}',
+          Setright: '{\}}'
+        },
+        tagFormat: {
+          tag: (n) => '[' + n + ']'
+        }
+      }
+    };
+    <script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
     </script>
    <!-- <script type="text/javascript"
