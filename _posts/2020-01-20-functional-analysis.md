@@ -442,11 +442,9 @@ $X$拓扑向量空间，对应拓扑是$\tau$，
  **证明**：按定义易得，略。
 
 - **一致有界原理(Banach-Steinhaus定理)**：设$X$和$Y$是两个拓扑向量空间，$\Gamma$是从$X$到$Y$的连续线性映射族，如果子集
- <div>
  \begin{equation}
  B=\{x\in X: \text{轨迹}\Gamma(x)=\{\Lambda x: \Lambda \in \Gamma,x\in B\}\text{在$Y$中有界}\}
  \end{equation}
- </div>
  在$X$上是第二纲集，则$B=X$且$\Gamma$等度连续。    
  **证明**：由于$\Gamma(x)$有界，则任意的$0$的邻域$U$，存在$n\in \mathbb{Z}^{+}$使得
  \begin{equation}
