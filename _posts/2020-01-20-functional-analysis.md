@@ -446,7 +446,7 @@ $X$拓扑向量空间，对应拓扑是$\tau$，
  \begin{equation}
  B=\{x\in X: \text{轨迹}\Gamma(x)=\{\Lambda x: \Lambda \in \Gamma,x\in B\}\text{在$Y$中有界}\}
  \end{equation}
-</div>
+ </div>
  在$X$上是第二纲集，则$B=X$且$\Gamma$等度连续。    
  **证明**：由于$\Gamma(x)$有界，则任意的$0$的邻域$U$，存在$n\in \mathbb{Z}^{+}$使得
  \begin{equation}
