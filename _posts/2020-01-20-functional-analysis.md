@@ -728,7 +728,7 @@ $X$拓扑向量空间，对应拓扑是$\tau$，
 
 - **定理**：设$B$是赋范空间$X$上的闭单位球，对于任意$x^{* }\in X^{* }$定义
  \begin{equation}
- \Vert x^{* }\Vert =\sup{\{\vert \langle x,x* \rangle \vert : x\in B\}}.
+ \Vert x^{* }\Vert =\sup{\{\vert \langle x,x^{* } \rangle \vert : x\in B\}}.
  \end{equation}
  则有
  1. $X^{* }$在所定义范数是Banach空间。
@@ -737,7 +737,7 @@ $X$拓扑向量空间，对应拓扑是$\tau$，
   \Vert x\Vert =\sup{\{\vert \langle x,x^{* }\rangle\vert:x^{* }\in B^{* }\}}.
   \end{equation}
   故$x^{* }\to\langle x,x^{* }\rangle $是$X^{* }$上的有界线性泛函，并且范数是$\Vert x\Vert$。
-  3. $B^{* }$是弱$* $紧的。
+ 3. $B^{* }$是弱$* $紧的。
 - **有界线性算子范数等价刻画**：设$X,Y$是赋范空间，如果$\Lambda \in \mathcal{B}(X,Y)$，则
  \begin{equation}
  \Vert \Lambda \Vert =\sup{\{\langle\Lambda x,y\rangle:\Vert x\Vert \le 1,\Vert y^{* }\Vert \le 1\}}.
@@ -825,7 +825,7 @@ $X$拓扑向量空间，对应拓扑是$\tau$，
  \end{equation} 
  显然有不等式
  \begin{equation}
- \Vert ST \Vert =\Vert S\Vert \Vert T\Vert.
+ \Vert ST \Vert \le \Vert S\Vert \Vert T\Vert.
  \end{equation} 
  特别可以定义$ST\in \mathcal{B}(X)$的幂，$T^{0}=I$，$T^{n}=TT^{n-1}$，$n=2,3,\cdots$。
  2. 对于算子$T\in \mathcal{B}(X)$，如果存在$S\in \mathcal{B}(X)$满足
@@ -863,7 +863,7 @@ $X$拓扑向量空间，对应拓扑是$\tau$，
 - **定理**：如果$X$是Banach空间，$T\in \mathcal{B}(X)$是紧的,且$\lambda \neq 0$，则$T-\lambda I$的值域是闭的。
 - **定理**：设$X$是Banach空间，$T\in \mathcal{B}(X)$是紧的，$r>0$，$T$的所有特征值$\lambda$中满足$\vert \lambda \vert >r$的部分组成的集合$E$，则任意$\lambda \in E$，$\mathcal{R}(T-\lambda I)\neq X$且$E$是有限集。
 - **定理**：设$X$是Banach空间，$T\in\mathcal{B}(X)$是紧的，则
- 1. 如果$\lambda$则
+ 1. 如果$\lambda\neq 0$则
   \begin{equation}
   \dim{\mathcal{N}(T-\lambda I)}=\dim{\mathcal{N}(T^{* }-\lambda I)} = \dim{X/\mathcal{R}(T-\lambda I)} = \dim{X^{* }/\mathcal{R}(T^{* }-\lambda I)}
   \end{equation}
