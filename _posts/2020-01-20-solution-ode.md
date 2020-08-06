@@ -3,7 +3,7 @@ layout: post
 title:  "常微分方程问题和解答"
 date:   2020-01-20 02:34:20 +0800
 categories: math
-tags: analysis
+tags: solution
 ---
 
 # 常微分方程问题和解答

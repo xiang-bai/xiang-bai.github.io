@@ -3,7 +3,7 @@ layout: post
 title:  "泛函函数基础习题解答"
 date:   2020-01-20 02:34:20 +0800
 categories: math
-tags: analysis
+tags: solution
 ---
 
 # 泛函函数基础习题解答
