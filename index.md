@@ -8,16 +8,22 @@ title: 13AI
     {% for cat in site.categories %}
       {% if cat[0] == "math" %}
         <h1> 数学文章列表 </h1>
+        {% for post in cat[1] %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
       {% endif %}
       {% if cat[0] == "AI" %}
         <h1> {{ cat[0] }}文章列表 </h1>
+        {% for post in cat[1] %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
       {% endif %}
       {% if cat[0] == "other" %}
         <h1> 其他文章列表 </h1>
-      {% endif %}
-      {% for post in cat[1] %}
+        {% for post in cat[1] %}
         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
+      {% endif %}
     {% endfor %}
   </ul>
 
