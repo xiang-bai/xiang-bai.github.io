@@ -12,7 +12,7 @@ tags: other
 {:toc}
 
 \begin{equation}
-\begin{array}{l}
+\begin{aligned}
 e^{x}=\sum_{n=0}^{\infty} \frac{1}{n !} x^{n}=1+x+\frac{1}{2 !} x^{2}+\cdots+\frac{1}{n !} x^{n}+\cdots, x \in(-\infty,+\infty)\newline
 \sin x=\sum_{p=0}^{\infty} \frac{(-1)^{n}}{(2 n+1) !} x^{2 x+1}=x-\frac{1}{3 !} x^{3}+\frac{1}{5 !} x^{5}-\cdots+\frac{(-1)^{n}}{(2 n+1) !} x^{2 n+1}+\cdots, x \in(-\infty,+\infty)\newline
 \cos x=\sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2 n) !} x^{2 n}=1-\frac{1}{2 !} x^{2}+\frac{1}{4 !} x^{4}-\cdots+\frac{(-1)^{n}}{(2 n) !} x^{2 n}+\cdots, x \in(-\infty,+\infty)\newline
@@ -32,5 +32,5 @@ e^{x}=\sum_{n=0}^{\infty} \frac{1}{n !} x^{n}=1+x+\frac{1}{2 !} x^{2}+\cdots+\fr
 \operatorname{arsh} x=\sum_{x=0}^{\infty}\left(\frac{(-1)^{n}(2 n) !}{2^{24}(n !)^{2}}\right) \frac{x^{20+1}}{(2 n+1)}=x-\frac{1}{6} x^{3}+\frac{3}{40} x^{5}-\frac{5}{112} x^{7}+\frac{35}{1152} x^{9}-\cdots+\left(\frac{(-1)^{n}(2 n) !}{2^{20}(n !)^{2}}\right) \frac{x^{2 n+1}}{(2 n+1)}+\cdots,|x|<1\newline
 \operatorname{arch} x=\ln 2 x-\sum_{n=1}^{\infty}\left(\frac{(-1)^{n}(2 n) !}{2^{2 n}(n !)^{2}}\right) \frac{x^{-2 n}}{2 n}=\ln 2 x-\left(\frac{1}{4} x^{-2}+\frac{3}{32} x^{-4}+\frac{15}{288} x^{-6}+\cdots+\left(\frac{(-1)^{n}(2 n) !}{2^{2 H}(n !)^{2}}\right) \frac{x^{-2 n}}{2 n}+\cdots\right),|x|>1\newline
 \text { arthx }=\sum_{n=0}^{\infty} \frac{x^{2 n+1}}{2 n+1}=x+\frac{x^{3}}{3}+\frac{x^{5}}{5}+\frac{x^{7}}{7}+\cdots+\frac{x^{2 n+1}}{2 n+1}+\cdots,|x|<1
-\end{array}
+\end{aligned}
 \end{equation}
