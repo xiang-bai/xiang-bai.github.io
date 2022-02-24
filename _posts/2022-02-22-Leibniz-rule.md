@@ -14,17 +14,17 @@ tags: other
 一维：    
 \begin{equation}
 \frac{d^{m}}{d t^{m}}(f g)=\sum_{k=0}^{m}\left(\begin{array}{l}
-m \\
+m \newline
 k
 \end{array}\right) \frac{d^{k} f}{d t^{k}} \frac{d^{m-k} g}{d t^{m-k}}
 \end{equation}
 高维：    
 \begin{equation}
 \partial^{\alpha}(f g)=\sum_{\beta \leq \alpha}\left(\begin{array}{c}
-\alpha_{1} \\
+\alpha_{1} \newline
 \beta_{1}
 \end{array}\right) \cdots\left(\begin{array}{c}
-\alpha_{n} \\
+\alpha_{n} \newline
 \beta_{n}
 \end{array}\right)\left(\partial^{\beta} f\right)\left(\partial^{\alpha-\beta} g\right)
 \end{equation}
