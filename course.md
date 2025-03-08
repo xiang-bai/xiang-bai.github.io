@@ -1,6 +1,6 @@
 ---
 layout: default
-title: course
+title: Courses
 ---
 
 <div id="home">
