@@ -2,6 +2,7 @@
 layout: default
 title: Publications
 ---
+<style>
 /* 去掉有序列表和无序列表的默认样式 */
 ol, ul {
   margin: 0;
@@ -20,6 +21,8 @@ ul {
   list-style-type: disc;
   margin-left: 20px;
 }
+</style>
+
 
 <div id="home">
     <h1>Preprint</h1>
