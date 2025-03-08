@@ -37,7 +37,7 @@ ul {
     <br>
     <h1>Published</h1>
     <ol reversed="reversed">
-        <li> X. B., Changhui Tan, Liutang Xue,<br> Global well-posedness and asymptotic behavior for the Euler-alignment system with pressure,  J. Differential Equations 407 (2024), 269–310. <a href="https://doi.org/10.1016/j.jde.2024.06.020">doi.org/10.1016/j.jde.2024.06.020</a> </li>
+        <li> X. B., Changhui Tan, Liutang Xue,<br><a href="https://doi.org/10.1016/j.jde.2024.06.020">Global well-posedness and asymptotic behavior for the Euler-alignment system with pressure</a>, J. Differential Equations 407 (2024), 269–310.</li>
       <li> X. B., Lin-An Li, Xiaojing Xu, <br>Asymptotic stability of rarefaction wave for compressible Euler system with velocity alignment, Nonlinearity 37 (2024), no. 6, No. 065014, 27 pp. </li>
       <li> X. B., Qianyun Miao, Changhui Tan and Liutang Xue, <br>Global well-posedness and asymptotic behavior in critical spaces for the compressible Euler system with velocity alignment, Nonlinearity, 37(2024), no.2, No. 025007, 46pp. </li>      
     </ol>
