@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 13AI
+title: Bai's homepage
 ---
 
 <div id="home">
