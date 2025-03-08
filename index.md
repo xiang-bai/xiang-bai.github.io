@@ -4,7 +4,7 @@ title: Bai's homepage
 ---
 
 <div id="home">
-  <p><h1> Xiang Bai</h1><img src="/bai.png" width="90" style="float:right"><br>某高校教师<br>数学院</p>
+  <p><img src="/bai.png" width="90" style="float:right"><h1> Xiang Bai</h1><br>某高校教师<br>数学院</p>
   <ul class="posts">
     {% for cat in site.categories %}
       {% if cat[0] == "math" %}
