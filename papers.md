@@ -14,7 +14,7 @@ ol, ul {
 ol {
   list-style-type: decimal;
   margin-left: 40px;
-/*   counter-reset */
+  counter-reset:sectioncounter;
 }
 ol li:before {
 content: "[" counter(sectioncounter) "]";
