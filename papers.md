@@ -13,7 +13,7 @@ ol, ul {
 /* 为有序列表添加数字编号 */
 ol {
   list-style-type: decimal;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 /* 为无序列表添加实心圆点符号 */
