@@ -1,6 +1,6 @@
 ---
 layout: default
-title: math
+title: Notes
 ---
 
 <div id="home">
