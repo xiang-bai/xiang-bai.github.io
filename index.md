@@ -4,7 +4,8 @@ title: Bai's homepage
 ---
 
 <div id="home">
-  <p><img src="/bai.png" width="90" style="float:right"><b> Xiang Bai</b><br>某高校教师<br>某学院</p>
+  <p><img src="/bai.png" width="90" style="float:right"><b> Xiang Bai</b><br>某高校教师<br>某学院<br>Beijing, P.R. China
+<br>Email: ottiou.bai@gmail.com <br>Ocrid: </p>
 
   <h1> 研究兴趣 </h1>
   <h1> 履历 </h1>
