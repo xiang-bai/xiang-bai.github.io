@@ -1,1 +1,120 @@
 
+<!DOCTYPE html>
+<html xmlns="http://www.xiangbai.cn" xml:lang="en" lang="en-us">
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }}</title>
+   <meta name="author" content="Ottiou Bai" />
+   <link href="http://www.xiangbai.cn" rel="alternate" title="Bai" type="application/atom+xml" />
+   <!-- icon -->
+   <link rel="icon" type="image/png" href="/favicon.ico"/>
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+   <link rel="bookmark" type="image/x-icon" href="/favicon.ico"/>
+   <link rel="apple-touch-icon" href="/apple-icon.png"/>
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/screen.css" type="text/css" media="screen, projection" />
+   
+   <!-- mathjax -->
+   <script>
+    MathJax = {
+      tex: {
+      inlineMath: [['$', '$']],
+      displayMath: [['$$','$$']],
+      processEscapes: true
+      }
+    };
+    </script>
+    <script>
+    window.MathJax = {
+      loader: {
+      load: ['[tex]/tagFormat']
+      },
+      startup: {
+        pageReady: () => {
+        alert('Running MathJax')l;
+        return MathJax.startup.defaultPageReady();
+        }
+      },
+      tex: {
+        packages: {'[+]': ['tagFormat']},
+        tagSide: 'left',
+        macros: {
+          Setleft: '{\{}',
+          Setright: '{\}}'
+        },
+        tagFormat: {
+          tag: (n) => '[' + n + ']'
+        }
+      }
+    };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+<!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script> -->
+    <!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> -->
+    <!-- </script> -->
+   <!-- <script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+     MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$']],
+        displayMath: [['$$','$$']],
+        processEscapes: true
+      }
+    });
+    </script> -->
+
+</head>
+<body>
+    <div class="site">
+    <div class="title">
+<!--         <img src="/images/logo.png"/></a> -->
+        <a href="/"><img src="/apple-icon.png" width="16" style="width:20px; height:20px; border-radius:100%;"/></a>
+<!--         <a /> -->
+<!--         <a href="/">Bai</a> -->
+<!--        <a class="extra" href="/">Home</a> -->
+        <a class="extra" href="/papers">Papers</a>
+        <a class="extra" href="/notes">Notes</a>
+        <a class="extra" href="/course">Courses</a>
+        <a class="extra" href="/about">CV</a>
+        <a class="extra" href="/tool">Other</a>
+    </div>
+
+    {{ content }}
+    
+    <div class="footer">
+    <div class="contact">
+      <p>
+        <img src="/apple-icon.png" width="20" style="width:20px; height:20px; border-radius:100%;"/>
+      </p>
+    </div>
+<!--     <div class="contact">
+      <p>
+        13AI
+      </p>
+    </div>
+    <div class="contact">
+      <p> 版权和内容问题请邮件联系。
+        
+      </p>
+    </div> -->
+    <div class="contact">
+      <p>
+        email:
+        <!--<br />-->
+        <a href="mailto:ottiou.bai@gmail.com">ottiou.bai@gmail.com</a>
+        <!--<br />-->
+        <!-- <a href="http://github.com/ottiou/">github.com/ottiou</a><br /> -->
+      </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
