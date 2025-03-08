@@ -14,12 +14,12 @@ ol, ul {
 ol {
   list-style-type: decimal;
   margin-left: 40px;
-  counter-reset:sectioncounter;
+/*   counter-reset:sectioncounter; */
 }
-ol li:before {
+/* ol li:before {
 content: "[" counter(sectioncounter) "]";
 counter-increment: sectioncounter;
-}
+} */
 
 /* 为无序列表添加实心圆点符号 */
 ul {
