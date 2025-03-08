@@ -1,6 +1,6 @@
 ---
 layout: default
-title: math
+title: Papers
 ---
 
 <div id="home">
