@@ -2,6 +2,24 @@
 layout: default
 title: Publications
 ---
+/* 去掉有序列表和无序列表的默认样式 */
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* 为有序列表添加数字编号 */
+ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+/* 为无序列表添加实心圆点符号 */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
 
 <div id="home">
     <h1>Preprint</h1>
