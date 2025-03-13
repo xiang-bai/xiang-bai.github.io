@@ -7,7 +7,7 @@ title: Curriculum Vitae
 
 <h2>Education</h2>
 
-<table style="border-collapse:separate; border-spacing:5px 10px;">
+<table style="border-collapse:separate; border-spacing:15px 10px;">
 <tbody>
 <tr>
 <td style="width: 10%;">
@@ -47,7 +47,7 @@ title: Curriculum Vitae
 
 <h2>Academic Positions</h2>
 
-<table style="border-collapse:separate; border-spacing:5px 10px; border-style: hidden;" border="0">
+<table style="border-collapse:separate; border-spacing:15px 10px; border-style: hidden;" border="0">
 <tbody>
 <tr>
 <td style="width: 10%;">
