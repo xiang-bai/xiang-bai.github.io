@@ -12,6 +12,7 @@ title: Curriculum Vitae
 <tr>
 <td style="width: 10%;">
 	<p>2020&ndash;2023</p>
+	<p></p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%;">
@@ -23,6 +24,7 @@ title: Curriculum Vitae
 <tr>
 <td style="width: 10%;">
 	<p>2015&ndash;2018</p>
+	<p></p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%;">
@@ -34,6 +36,7 @@ title: Curriculum Vitae
 <tr>
 <td style="width: 10%;">
 	<p>2011&ndash;2015</p>
+	<p></p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%;">
@@ -52,6 +55,7 @@ title: Curriculum Vitae
 <tr>
 <td style="width: 10%;">
 	<p>2023&ndash;2025</p>
+	<p></p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%; height: 100px;">
@@ -62,6 +66,7 @@ title: Curriculum Vitae
 <tr>
 <td style="width: 10%;">
 	<p>2025&ndash;Now</p>
+	<p></p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%; height: 100px;">
