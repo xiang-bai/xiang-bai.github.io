@@ -12,37 +12,31 @@ title: Curriculum Vitae
 <tr>
 <td style="width: 10%;">
 	<p>2020&ndash;2023</p>
-	<p></p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%;">
 <!-- <p>2020&ndash;2023, Doctor of Philosophy</p> -->
-<p>Doctor of Philosophy, Major: Mathematics, Supervisor: Xiaojing Xu</p>
-<p>School of Mathematical Sciences, Beijing Normal University</p>
+<p>Doctor of Philosophy, Major: Mathematics, Supervisor: Xiaojing Xu<br>School of Mathematical Sciences, Beijing Normal University</p>
 </td>
 </tr>
 <tr>
 <td style="width: 10%;">
 	<p>2015&ndash;2018</p>
-	<p></p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%;">
 <!-- <p>2015&ndash;2018, Master of Science</p> -->
-<p>Master of Science, Major: Mathematics, Supervisor: Qionglei Chen</p>
-<p>China Academy of Engineering Physics</p>
+<p>Master of Science, Major: Mathematics, Supervisor: Qionglei Chen<br>China Academy of Engineering Physics</p>
 </td>
 </tr>
 <tr>
 <td style="width: 10%;">
 	<p>2011&ndash;2015</p>
-	<p></p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%;">
 <!-- <p>2011&ndash;2015, Bachelor of Science</p> -->
-<p>Bachelor of Science, Major: Mathematics</p>
-<p>School of Mathematical Sciences, Inner Mongolia University</p>
+<p>Bachelor of Science, Major: Mathematics<br>School of Mathematical Sciences, Inner Mongolia University</p>
 </td>
 </tr>
 </tbody>
@@ -55,23 +49,19 @@ title: Curriculum Vitae
 <tr>
 <td style="width: 10%;">
 	<p>2023&ndash;2025</p>
-	<p></p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%; height: 100px;">
-<p>Postdoctor, Mentor: Yong Wang</p>
-<p>Academy of Mathematics and Systems Science, Chinese Academy of Sciences</p>
+<p>Postdoctor, Mentor: Yong Wang<br>Academy of Mathematics and Systems Science, Chinese Academy of Sciences</p>
 </td>
 </tr>
 <tr>
 <td style="width: 10%;">
 	<p>2025&ndash;Now</p>
-	<p></p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%; height: 100px;">
-<p>Assistant Professor</p>
-<p>University</p>
+<p>Assistant Professor<br>University</p>
 </td>
 </tr>
 </tbody>
