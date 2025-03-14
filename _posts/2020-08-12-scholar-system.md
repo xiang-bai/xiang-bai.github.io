@@ -2,7 +2,7 @@
 layout: post
 title:  "搭建个人学术平台"
 date:   2020-08-12 02:34:20 +0800
-categories: math
+categories: del
 tags: other
 ---
 
