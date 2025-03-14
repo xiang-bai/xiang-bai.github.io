@@ -53,16 +53,15 @@ table {
 
 ol, ul {
   list-style-type: none;
+  margin-left: 2em;
 }
 
 ol {
   list-style-type: decimal;
-  margin-left: 3em;
 }
 
 ul {
   list-style-type: disc;
-  margin-left: 3em;
 }
 
 /*****************************************************************************/
