@@ -53,7 +53,7 @@ table {
 
 ol, ul {
   list-style-type: none;
-  margin-left: 2em;
+  margin: 2em 0;
 }
 
 ol {
