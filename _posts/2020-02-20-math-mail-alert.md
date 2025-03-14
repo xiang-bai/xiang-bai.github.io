@@ -2,7 +2,7 @@
 layout: post
 title:  "数学顶级杂志邮箱提醒订阅"
 date:   2020-02-20 02:34:20 +0800
-categories: math
+categories: other
 tags: top
 ---
 
