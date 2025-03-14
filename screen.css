@@ -53,8 +53,8 @@ table {
 
 ol, ul {
   list-style-type: none;
-  margin: 1em 0;
-  margin-left: 2em;
+  margin: 1em 2em;
+/*  margin-left: 2em;*/
 }
 
 ol {
@@ -96,7 +96,7 @@ ul.posts {
   font-size: 110%;
   text-align: justify;
   width: 60em;
-  margin: 3em auto 2em auto;
+  margin: 0 auto 2em auto;
   line-height: 1.5em;
 }
 
