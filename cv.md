@@ -45,14 +45,14 @@ title: Curriculum Vitae
 <h2>Academic Positions</h2>
 
 
-<table style="border-collapse:separate; border-spacing:15px 0px; border-style: hidden;" border="0">
+<table style="border-collapse:separate; border-spacing:15px 0px;">
 <tbody>
 <tr>
 <td style="width: 10%;">
 	<p>2025&ndash;Now<br>&emsp;</p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
-<td style="width: 90%; height: 100px;">
+<td style="width: 90%;">
 <p>Assistant Professor<br>University</p>
 </td>
 </tr>
@@ -61,7 +61,7 @@ title: Curriculum Vitae
 	<p>2023&ndash;2025<br>&emsp;</p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
-<td style="width: 90%; height: 100px;">
+<td style="width: 90%;">
 <p>Postdoctor, Mentor: Yong Wang<br>Academy of Mathematics and Systems Science, Chinese Academy of Sciences</p>
 </td>
 </tr>
