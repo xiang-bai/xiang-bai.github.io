@@ -6,7 +6,7 @@ title: Publications
 <div id="home">
     <h1>Preprint</h1>
     <ol reversed="reversed">
-        <li> X. Bai,  </li>
+        <li> None  </li>
     </ol>
     <br>
     <h1>Published</h1>
