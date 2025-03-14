@@ -54,6 +54,7 @@ table {
 ol, ul {
   list-style-type: none;
   margin: 2em 0;
+  margin-left: 20px;
 }
 
 ol {
