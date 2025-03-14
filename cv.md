@@ -11,7 +11,7 @@ title: Curriculum Vitae
 <tbody>
 <tr>
 <td style="width: 10%;">
-	<p>2020&ndash;2023</p>
+	<p>2020&ndash;2023<br>&emsp;</p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%;">
@@ -21,7 +21,7 @@ title: Curriculum Vitae
 </tr>
 <tr>
 <td style="width: 10%;">
-	<p>2015&ndash;2018</p>
+	<p>2015&ndash;2018<br>&emsp;</p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%;">
@@ -31,7 +31,7 @@ title: Curriculum Vitae
 </tr>
 <tr>
 <td style="width: 10%;">
-	<p>2011&ndash;2015</p>
+	<p>2011&ndash;2015<br>&emsp;</p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%;">
@@ -44,36 +44,44 @@ title: Curriculum Vitae
 
 <h2>Academic Positions</h2>
 
+
 <table style="border-collapse:separate; border-spacing:15px 10px; border-style: hidden;" border="0">
 <tbody>
 <tr>
 <td style="width: 10%;">
-	<p>2023&ndash;2025</p>
-	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
-</td>
-<td style="width: 90%; height: 100px;">
-<p>Postdoctor, Mentor: Yong Wang<br>Academy of Mathematics and Systems Science, Chinese Academy of Sciences</p>
-</td>
-</tr>
-<tr>
-<td style="width: 10%;">
-	<p>2025&ndash;Now</p>
+	<p>2025&ndash;Now<br>&emsp;</p>
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%; height: 100px;">
 <p>Assistant Professor<br>University</p>
 </td>
 </tr>
+<tr>
+<td style="width: 10%;">
+	<p>2023&ndash;2025<br>&emsp;</p>
+	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
+</td>
+<td style="width: 90%; height: 100px;">
+<p>Postdoctor, Mentor: Yong Wang<br>Academy of Mathematics and Systems Science, Chinese Academy of Sciences</p>
+</td>
+</tr>
 </tbody>
 </table>
 
 <h2>Publications and Preprints</h2>
-
-See <a href="https://xiang-bai.github.io/papers">Papers</a>.
+<p>See <a href="https://xiang-bai.github.io/papers">Papers</a>.</p>
 
 <h2>Grants and Awards</h2>
 
+<ul>
+  <li>2023&emsp;北京师范大学“研究生学术创新奖特等奖”</li>
+  <li>2015&emsp;高教社杯全国大学生数学建模竞赛“全国一等奖”</li>
+</ul>
+
 <h2>Conferences, Workshops and Seminars</h2>
+<ul>
+  <li>2024.07&emsp; Workshop on Kinetic Theory, Tianyuan Mathematics Research Center,<br>Title: Well-posedness and asymptotic behavior for the Euler-alignment system. </li>
+</ul>
 
 <h2>Teaching</h2>
-See <a href="https://xiang-bai.github.io/course">Courses</a>.
+<p>See <a href="https://xiang-bai.github.io/course">Courses</a>.</p>
