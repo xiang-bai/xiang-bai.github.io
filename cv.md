@@ -7,7 +7,7 @@ title: Curriculum Vitae
 
 <h2>Education</h2>
 
-<table style="border-collapse:separate; border-spacing:15px 10px;">
+<table style="border-collapse:separate; border-spacing:15px 0px;">
 <tbody>
 <tr>
 <td style="width: 10%;">
@@ -45,7 +45,7 @@ title: Curriculum Vitae
 <h2>Academic Positions</h2>
 
 
-<table style="border-collapse:separate; border-spacing:15px 10px; border-style: hidden;" border="0">
+<table style="border-collapse:separate; border-spacing:15px 0px; border-style: hidden;" border="0">
 <tbody>
 <tr>
 <td style="width: 10%;">
@@ -72,16 +72,19 @@ title: Curriculum Vitae
 <p>See <a href="https://xiang-bai.github.io/papers">Papers</a>.</p>
 
 <h2>Grants and Awards</h2>
-
+<p>
 <ul>
   <li>2023&emsp;北京师范大学“研究生学术创新奖特等奖”</li>
   <li>2015&emsp;高教社杯全国大学生数学建模竞赛“全国一等奖”</li>
 </ul>
+</p>
 
 <h2>Conferences, Workshops and Seminars</h2>
+<p>
 <ul>
   <li>2024.07&emsp; Workshop on Kinetic Theory, Tianyuan Mathematics Research Center,<br>Title: Well-posedness and asymptotic behavior for the Euler-alignment system. </li>
 </ul>
+</p>
 
 <h2>Teaching</h2>
 <p>See <a href="https://xiang-bai.github.io/course">Courses</a>.</p>
