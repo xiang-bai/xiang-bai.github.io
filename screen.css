@@ -102,8 +102,9 @@ ul.posts {
 
 .title {
   color: #a00;
-  background-color: #FFFAFA;
+/*  background-color: #FFFAFA;*/
   font-weight: bold;
+  border-bottom: 4px solid #eee;
   margin-bottom: 2em;
 }
 
