@@ -2,7 +2,7 @@
 layout: post
 title:  "数学趣题"
 date:   2020-02-14 02:34:20 +0800
-categories: math
+categories: del
 tags: problem
 ---
 
