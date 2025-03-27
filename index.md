@@ -11,5 +11,5 @@ title: Bai's homepage
 <h2>Research Interests</h2>
 <ul>
   <li>Analysis of PDEs</li>
-  <li>Machine Learning for PDEs</li>
+  <li>Machine learning for PDEs</li>
 </ul>
