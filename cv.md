@@ -53,7 +53,7 @@ title: Curriculum Vitae
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%;">
-<p>Assistant Professor<br>University</p>
+<p>Assistant Professor<br>School of Science, China University of Geosciences</p>
 </td>
 </tr>
 <tr>
