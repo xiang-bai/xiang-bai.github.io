@@ -14,28 +14,28 @@ tags: top
 
 ## Annals of Mathematics (projecteuclid 的期刊类似)
 
-- **第一步**：打开官网    
+- **第一步**：打开官网
 <a href="https://projecteuclid.org/journals/annals-of-mathematics">https://projecteuclid.org/journals/annals-of-mathematics</a>
 - **第二步**：点击 Receive Email Alerts
 <a href="https://projecteuclid.org/journals/annals-of-mathematics">Receive Email Alerts</a>
 
 ## Acta Mathematica (intlpress 的期刊类似)
 
-- **第一步**：打开官网    
+- **第一步**：打开官网
 <a href="https://intlpress.com/journals/journalList?id=1804409921462136833">https://intlpress.com/journals/journalList?id=1804409921462136833</a>
 - **第二步**：好像不支持
 <a href="/"></a>
 
 ## Journal Of The American Mathematical Society (ams 的期刊类似)
 
-- **第一步**：打开官网    
+- **第一步**：打开官网
 <a href="https://www.ams.org/journals/jams">https://www.ams.org/journals/jams</a>
-- **第二步**：点击 Journal Email Notifications    
+- **第二步**：点击 Journal Email Notifications
 <a href="https://www.ams.org/jemail">Journal Email Notifications</a>
 
 ## Inventiones Mathematicae (springer  的期刊类似)
 
-- **第一步**：打开官网    
+- **第一步**：打开官网
 <a href="https://link.springer.com/journal/222">https://link.springer.com/journal/222</a>
 - **第二步**：点击 Sign up for alerts
 <a href="https://www.springer.com/alerts-frontend/subscribe?journalNo=222">Sign up for alerts</a>
