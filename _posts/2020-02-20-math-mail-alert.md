@@ -6,11 +6,11 @@ categories: other
 tags: top
 ---
 
-# 数学顶级杂志邮箱提醒订阅
+# 数学顶级期刊邮箱提醒订阅
 
 ## 引言
 
-为了方便可以订阅一些感兴趣杂志的更新提醒，现在杂志几乎都会提供邮箱提醒，除了邮箱提醒也可以使用RSS提醒，或=或者对于数学四大杂志("Annals","Acta","JAMS","Inventiones")可以关注公众号数学四大杂志小助手，下面给出四大杂志所在杂志社邮箱订阅地址。
+为了方便可以订阅一些感兴趣杂志的更新提醒，现在杂志几乎都会提供邮箱提醒，除了邮箱提醒也可以使用RSS提醒，下面以如下四个期刊("Annals","Acta","JAMS","Inventiones")为例给出出版社的邮箱订阅地址。
 
 ## Annals of Mathematics
 
@@ -19,8 +19,9 @@ tags: top
 
 ## Acta Mathematica
 
-- **地址**：    
-<a href="https://visitor.r20.constantcontact.com/manage/optin?v=001ddtd_5QlTtl0zVypHyoN6N5bjKo9Php-AOOg3Wu5SQCOukLPWoSsBg%3D%3D">https://visitor.r20.constantcontact.com/manage/optin?v=001ddtd_5QlTtl0zVypHyoN6N5bjKo9Php-AOOg3Wu5SQCOukLPWoSsBg%3D%3D</a>
+- **官网**：    
+<a href="https://projecteuclid.org/journals/annals-of-mathematics">https://projecteuclid.org/journals/annals-of-mathematics</a>
+点击 <a href="https://projecteuclid.org/journals/annals-of-mathematics">Receive Email Alerts</a>
 
 ## Journal Of The American Mathematical Society
 
