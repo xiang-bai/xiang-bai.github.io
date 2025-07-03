@@ -12,26 +12,33 @@ tags: top
 
 为了方便可以订阅一些感兴趣杂志的更新提醒，现在杂志几乎都会提供邮箱提醒，除了邮箱提醒也可以使用RSS提醒，下面以如下四个期刊("Annals","Acta","JAMS","Inventiones")为例给出出版社的邮箱订阅地址。
 
-## Annals of Mathematics
+## Annals of Mathematics (projecteuclid 的期刊类似)
 
-- **地址**：    
-<a href="https://about.jstor.org/etoc-alerts-signup/?c=annamath">https://about.jstor.org/etoc-alerts-signup/?c=annamath</a>
-
-## Acta Mathematica
-
-- **官网**：    
+- **第一步**：打开官网    
 <a href="https://projecteuclid.org/journals/annals-of-mathematics">https://projecteuclid.org/journals/annals-of-mathematics</a>
-点击 <a href="https://projecteuclid.org/journals/annals-of-mathematics">Receive Email Alerts</a>
+- **第二步**：点击 Receive Email Alerts
+<a href="https://projecteuclid.org/journals/annals-of-mathematics">Receive Email Alerts</a>
 
-## Journal Of The American Mathematical Society
+## Acta Mathematica (intlpress 的期刊类似)
 
-- **地址**：    
-<a href="https://www.ams.org/publications/journals/jemail">https://www.ams.org/publications/journals/jemail</a>
+- **第一步**：打开官网    
+<a href="https://intlpress.com/journals/journalList?id=1804409921462136833">https://intlpress.com/journals/journalList?id=1804409921462136833</a>
+- **第二步**：好像不支持
+<a href="/"></a>
 
-## Inventiones Mathematicae
+## Journal Of The American Mathematical Society (ams 的期刊类似)
 
-- **地址**：    
-<a href="https://www.springer.com/gp/stay-informed-with-springer-alerts/54290">https://www.springer.com/gp/stay-informed-with-springer-alerts/54290</a>
+- **第一步**：打开官网    
+<a href="https://www.ams.org/journals/jams">https://www.ams.org/journals/jams</a>
+- **第二步**：点击 Journal Email Notifications    
+<a href="https://www.ams.org/jemail">Journal Email Notifications</a>
+
+## Inventiones Mathematicae (springer  的期刊类似)
+
+- **第一步**：打开官网    
+<a href="https://link.springer.com/journal/222">https://link.springer.com/journal/222</a>
+- **第二步**：点击 Sign up for alerts
+<a href="https://www.springer.com/alerts-frontend/subscribe?journalNo=222">Sign up for alerts</a>
 
 ## 尾声
 
