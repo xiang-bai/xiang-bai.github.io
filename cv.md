@@ -26,7 +26,7 @@ title: Curriculum Vitae
 </td>
 <td style="width: 90%;">
 <!-- <p>2015&ndash;2018, Master of Science</p> -->
-<p>Master of Science, Major: Mathematics, Supervisor: Qionglei Chen<br>China Academy of Engineering Physics</p>
+<p>Master of Science, Major: Mathematics, Supervisor: <a href="http://www.iapcm.ac.cn/teaching_detail_21.html">Qionglei Chen</a><br>China Academy of Engineering Physics</p>
 </td>
 </tr>
 <tr>
