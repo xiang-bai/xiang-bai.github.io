@@ -16,7 +16,7 @@ title: Curriculum Vitae
 </td>
 <td style="width: 90%;">
 <!-- <p>2020&ndash;2023, Doctor of Philosophy</p> -->
-<p>Doctor of Philosophy, Major: Mathematics, Supervisor: Xiaojing Xu<br>School of Mathematical Sciences, Beijing Normal University</p>
+<p>Doctor of Philosophy, Major: Mathematics, Supervisor: <a href="http://math0.bnu.edu.cn/~xjxu/">Xiaojing Xu</a><br>School of Mathematical Sciences, Beijing Normal University</p>
 </td>
 </tr>
 <tr>
@@ -62,7 +62,7 @@ title: Curriculum Vitae
 	<!-- <img src="https://xiang-bai.github.io/apple-icon.png" alt="" width="32" /> -->
 </td>
 <td style="width: 90%;">
-<p>Postdoctor, Mentor: Yong Wang<br>Academy of Mathematics and Systems Science, Chinese Academy of Sciences</p>
+<p>Postdoctor, Mentor: <a href="http://homepage.amss.ac.cn/research/homePage/8b6817f3aac347c1885d33f74c2bdc06/myHomePage.html">Yong Wang</a><br>Academy of Mathematics and Systems Science, Chinese Academy of Sciences</p>
 </td>
 </tr>
 </tbody>
